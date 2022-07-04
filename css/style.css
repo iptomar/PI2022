@@ -19,7 +19,6 @@
 }
 
 .scroll {
-    align-items: side-bar;
     position: left;
     height:540px;
     overflow-y:scroll;
