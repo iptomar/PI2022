@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="algorhitmi" content="Projeto intregado">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>AlgorhitmI</title>
-</head>
-<style>
-    
-</style>
-<body background-image: src="img/fundo.jpeg">
-    <header class="cabecalho">
-        <h1 class="cabecalho-letras">Algorhitmi</h1>
-        <img class="cabecalho-imag" src="img/logo.jpeg" alt="Logotipo">
-
-    </header>
-    
-<div class="scroll">
-    
-    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lo ipsum </p>
-    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumum lorem ipsum </p>
-    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumpsum </p>
-    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lor </p>
-    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  ipsum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ipsum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum sum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum m </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumipsum </p>
-<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum m </p>
-
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="algorhitmi" content="Projeto integrado">
+		<title>Algorithmi</title>
+		<style>
+			dt{margin-left:4px; margin-right:4px;}
+			dt:hover{background-color:#C0C0C0;}
+			
+			.mainDiv{width:100%; height:100%;}
+			.header{height:170px; width:100%; text-align: center; }
+			.header_letters{color:#ffffff; font-weight: 20; font-size: 40px}
+			.bottom{height:540px; width:100%;}
+			.left{height:100%; float:left; width:15%; overflow-y:scroll;}
+			.right{background-color: #F5F5DC; border:1px solid black; height:100%; float:right; width:84%; overflow-y:scroll;}
+			
+		</style>
+		<script>
+			function init(){
+				//init - funções chamadas aquando ao carregamento da página
+				mostraVista(0);
+				
+			}
+			
+			//mostra apenas a vista indicada pelo respetivo número
+			function mostraVista(n){
+				//iterador e nº de vistas
+				var i, nv = document.getElementsByClassName("right").length;
+				//desabilita todas as vistas
+				for(i=0; i<=nv-1; i++){
+					refId("vista"+i).style.display = "none";
+				}
+				//habilita a vista indicada
+				refId("vista"+n).style.display = "block";
+			}
+			
+			//gera uma referência ao objeto HTML cujo ID se indica
+			function refId(idObj){
+				return document.getElementById(idObj);
+			}
+			
+			//produz o output do conteúdo indicado no contentor cujo ID se indica
+			function outId(idCont, cont){
+				document.getElementById(idCont).innerHTML = cont;
+			}
+		</script>
+	</head>
+	
+	<body onload="init()">
+		<div class="mainDiv">
+			<div class="header" style="background: linear-gradient(50deg, #00ff15 40%, #0c800a 50%); border:1px solid black;">
+				 <h1 class="header_letters"> Algorithmi</h1>
+			</div>
+			
+			<div class="bottom">
+				<div class="left" style="background-color: #7A7A6E; border:1px solid black;">
+					<dl>
+						<dt id="btn1" onclick="mostraVista(1)">Operadores aritméticos</dt><br>
+						<dt id="btn2" onclick="mostraVista(2)">Funções</dt><br>
+						<dt id="btn3" onclick="mostraVista(3)">Arrays</dt><br>
+						<dt id="btn4" onclick="mostraVista(4)">Procedimentos com parâmetros</dt><br>
+						<dt id="btn5" onclick="mostraVista(5)">Procedimentos</dt><br>
+						
+					</dl>
+				</div>
+				<div class="right" id="vista0" ><!-- Vista principal AKA: Vista 0-->
+					<h1>Bem Vindo!</h1>
+				</div>
+				<div class="right" id="vista1"> <!-- Vista 1-->
+					<h2>Operadores aritméticos</h2>
+				</div>
+				<div class="right" id="vista2" > <!-- Vista 2-->
+					<h2>Funções</h2>
+				</div>
+				<div class="right" id="vista3"> <!-- Vista 3-->
+					<h2>Arrays</h2>
+				</div>
+				<div class="right" id="vista4"> <!-- Vista 4-->
+					<h2>Procedimentos com parâmetros</h2>
+				</div>
+				<div class="right" id="vista5" > <!-- Vista 5-->
+					<h2>Procedimentos</h2>
+				</div>
+				
+			</div>
+		</div>
+	</body>
 </html>
