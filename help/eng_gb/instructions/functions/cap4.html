@@ -1,0 +1,157 @@
+<!--Inicio cap4-->
+<h1>4.1.2 Function with parameters</h1>
+<h2>The parameters of a function work like local variables of the function and serve to make its usefulness flexible.
+    Example –> Say Hello with Calculus
+    Algorithm that prints hello world on the console through a function
+</h2>
+
+
+<table border="5">
+    <tr>
+        <th colspan="2">GAL</th>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Flowchart</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4.1.2.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuENG4.1.2.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Result</th>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4.1.2.png"></td>
+    </tr>
+</table >
+
+
+
+
+
+<br><hr>
+<h1>4.1.3 Get a value from a function</h1>
+<h2>Functions can perform calculations that are returned to the location where the function was invoked. The RETURN statement allows returning a value from the function. Whenever this instruction is executed the function ends.</h2>
+
+<table border="5">
+    <tr>
+        <th>Flowchart</th>
+        <th>GAL</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/"></td>
+        <td>return *expression*</td>
+    </tr>
+</table>
+
+<ul>
+    <li>*expression* –> Computational expression compatible with the function's return data type</li>
+    <ul>
+        <li>If the function returns Empty , the expression must be empty.</li>
+    </ul>
+</ul>
+
+<h2>Exemplo 1 - Say hello with parameters<br>
+    Algorithm that prints hello world on the console through a function:
+</h2>
+
+<table border="5">
+    <tr>
+        <th colspan="2">GAL</th>
+    </tr>
+    <tr>
+        <td colspan="2">BEGIN MAIN_PROGRAM_NAME
+            <br>EXECUTE dizOla ROUND_OPEN ROUND_CLOSE 
+            <br>END MAIN_PROGRAM_NAME
+            <br>
+            <br>FUNCTION VOID dizOla ROUND_OPEN ROUND_CLOSE
+            <br>WRITE "Hello World"
+            </td>
+    </tr>
+    <tr>
+        <th>Flowchart</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4.1.3.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuEN4.1.3.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Result</th>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4.1.3.png"></td>
+    </tr>
+</table>
+
+
+
+<br><hr>
+<h1>4.1.4 Global memory</h1>
+<h2>Each function has its memory that can be used by its instructions. However, algorithmi allows defining a global memory that is common to all functions and can be used by them.</h2>
+
+<table border="5">
+    <tr>
+        <th>Flowchart</th>
+        <th>Gal</th>
+    </tr>Flowchart
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+        <td>MEMORY 
+            <br>*define* DEFINE REAL ver SET 1.0
+            <br>END 
+          </td>
+    </tr>
+</table>
+
+<ul>
+    <li>*define* -> Definition of global variables</li>
+    <ul>
+        <li>See definition of variables.</li>
+    </ul>
+</ul>
+
+<h2>Example 1 ->    Global memory usage</h2>
+
+<table border="5">
+    <tr>
+        <th colspan="2">GAL</th>
+    </tr>
+    <tr>
+        <td colspan="2">MEMORY GLOBAL_MEMORY_NAME
+            <br>DEFINE REAL ver SET 1.0
+        <br>END GLOBAL_MEMORY_NAME
+    
+        <br>BEGIN MAIN_PROGRAM_NAME
+            <br>DEFINE TEXT prog SET " Algorithmi "
+            <br>ITERATE INTEGER i FROM 1  TO 10  STEP 1 
+                <br>WRITE dizOla ROUND_OPEN i SUM prog ROUND_CLOSE 
+            <br>END ITERATE
+        <br>END MAIN_PROGRAM_NAME
+    
+        <br>FUNCTION TEXT dizOla ROUND_OPEN TEXT nome ROUND_CLOSE
+            <br>DEFINE TEXT msg SET "Olá " SUM nome
+            <br>RETURN msg SUM ver SUM "\n" 
+        <br>END dizOlaO
+    </td>
+    </tr>
+    <tr>
+        <th>Flowchart</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Result</th>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+    </tr>
+</table>
+<!--Fim cap4-->

@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<style>
+
+		h2{font:bold 30px arial; color:black; text-align: center;}
+
+		body{background-color:#3050a0;}
+		.quadro {height: 1000px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
+		}
+		.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
+		
+		#col{background-color:#3050a0;}
+		
+		th {
+			border: 1px solid rgb(190, 190, 190);
+			padding: 10px;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		th[scope="col"] {
+			background-color: #3050a0;
+			color: #fff;
+		}
+
+		th[scope="row"] {
+			background-color: #d7d9f2;
+		}
+		
+
+		table {
+			border-collapse: collapse;
+			border: 2px solid rgb(200, 200, 200);
+			letter-spacing: 1px;
+			font-family: sans-serif;
+			font-size: .8rem;
+		}
+
+		</style>
+		<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
+		</head>
+		<body>
+
+		<div class="quadro">
+			<h2>Definir Variaveis</h2>
+				<p style="font-size:15px text-align:center-right ">
+					Defines one or more variables in memory. It is said to be variable because its content can vary, but never its name or type.
+The definition of a variable forces you to initialize it with an expression that is compatible with the variable's data type,
+the multi-instruction came to allow that in a single command multiple definitions and initializations of these can be repeated.
+				</p>
+		  
+
+			<table>
+				<tr>
+					<th scope="col">Fluxogram</th>
+					<th scope="col">Pseudocode en-GB</th>
+				</tr>
+				<tr>
+					<th scope="row"> <img src="../../../../imgs/definevar/define.png" /></th>
+					<td scope="row">DEFINE &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expression&gt;] …]</td>
+				</tr>
+			</table><br>
+			
+			•	&lt;TYPE&gt; – data types (INTEGER | REAL | LOGIC | TEXT)<br>
+			•	&lt;VAR&gt; – Variable name is subject to the following rules<br>
+			<br>&emsp;o	Cant be a reserved word <br>
+			&emsp;o	Can only start with a letter (a-z; A-Z)<br>
+			&emsp;o	Can contain digits (0-9)<br>
+			&emsp;o	Must be significant of what it stores<br>
+			<br>•	[&lt;expression&gt;] - 
+			computational expression whose result type is compatible with the data type of the variable, this is optional because if it is not inserted the variable will take the value by default.
+			<br><h3>Exemplo – Define Variables</h3><br>
+			Algorithm that shows the definition of variables of the types present in Algorithmi.<br>
+			
+			<br><table>
+				<tr>
+					<th scope="col">Fluxogram en-GB</th>
+					<th scope="col">Pseudocode en-GB</th>
+				</tr>
+				<tr>
+					<th scope="row"> <img src="../../../../imgs/definevar/fluxogramaing.png" /></th>
+					<td scope="row"> begin MainProgram<br>
+						define integer a = 2 + 3<br>
+						define integer i = 2 + 3 * 5 ^ 2,j = 0<br>
+						define real r = _PI + 2.5 * i,t = 0.0<br>
+						define boolean l = false,k = false<br>
+						define string z = " i = " + i,y = " j = " + j,x = ""<br>
+					end MainProgram<br>
+</td>
+				</tr>
+			</table><br>
+		  
+		</div>
+	</body>
+</html>

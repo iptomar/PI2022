@@ -1,0 +1,151 @@
+<!--Inicio cap4-->
+<h1>4.1.2 Função com parametros</h1>
+
+<h2>Os parâmetros de uma função funcionam como variáveis locais da função e servem para flexibilizar a sua utilidade.
+    Exemplo  –> Dizer Olá com Cálculo
+    Algoritmo que imprime na consola os Olá mundo através de uma função
+</h2>
+
+
+<table name="g" border="5">
+    <tr>
+        <th>GAL</th>
+    </tr>
+    <tr>
+        <td>BEGIN MAIN_PROGRAM_NAME<br>
+            EXECUTE dizOla ROUND_OPEN ROUND_CLOSE <br>
+        END MAIN_PROGRAM_NAME<br>
+    
+        FUNCTION VOID dizOla ROUND_OPEN ROUND_CLOSE<br>
+            WRITE "O</td>
+    </tr>
+    <tr>
+        <th>Fluxograma</th>
+        <th>Pseudocodigo</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4-1-2.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuPT4-1-2.png"></td>
+    </tr>
+</table >
+
+<br><h3>Resultado:</h3><br>
+<img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-2.png">
+
+
+
+
+
+
+<h1>4.1.3 Retomar um valor de uma função</h1>
+
+<h2>As funções podem executar cálculos que são retornados para o local onde a função foi evocada. A Instrução RETURN permite devolver um valor da função. Sempre que esta instrução é executada o função termina.</h2>
+
+<table border="5">
+    <tr>
+        <th>Fluxograma</th>
+        <th>Gal</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/return.png"></td>
+        <td>retorna *expressao*</td>
+    </tr>
+</table>
+
+<ul>
+    <li>*expressao* –> Expressão computacional compatível com o tipo de dados de retorno da função.</li>
+    <ul>
+        <li>Se a função tiver o retorno Vazio, a expressão deve ser vazia.</li>
+    </ul>
+</ul>
+
+<h2>Exemplo 1 - Dizer Olá com parâmetros<br>
+    Algoritmo que imprime na consola os Olá mundo através de uma função:
+</h2>
+
+<table name="g" border="5">
+    <tr>
+        <th>GAL</th>
+    </tr>
+    <tr>
+        <td>BEGIN MAIN_PROGRAM_NAME
+            EXECUTE dizOla ROUND_OPEN ROUND_CLOSE 
+            END MAIN_PROGRAM_NAME
+            
+            FUNCTION VOID dizOla ROUND_OPEN ROUND_CLOSE
+            WRITE "O</td>
+    </tr>
+    <tr>
+        <th>Fluxograma</th>
+        <th>pseudocodigo</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4-1-3.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuPT4-1-3.png"></td>
+    </tr>
+</table>
+<br><h3>Resultado:</h3><br>
+<img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-3.png">
+
+
+
+
+<h1>4.1.4 Memoria Global</h1>
+
+<h2>Cada função possui a sua memória que pode ser utilizada pelas suas instruções. No entanto o algorithmi permite definir uma memória global que é comum a todas as funções e pode por elas ser utilizada</h2>
+
+<table border="5">
+    <tr>
+        <th>Fluxograma</th>
+        <th>Gal</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/terminator.png"></td>
+        <td>MEMORY 
+            <define>DEFINE REAL ver SET 1.0
+          END"
+    </tr>
+</table>
+
+<ul>
+    <li>*define* –> Definição das variáveis globais</li>
+    <ul>
+        <li>Ver definição de variáveis.</li>
+    </ul>
+</ul>
+
+<h2>Exemplo 1 –>    Utilização da memória global</h2>
+
+<table name="g" border="5">
+    <tr>
+        <th>GAL</th>
+    </tr>
+    <tr>
+        <td>    MEMORY GLOBAL_MEMORY_NAME
+            DEFINE REAL ver SET 1.0
+        END GLOBAL_MEMORY_NAME
+    
+        BEGIN MAIN_PROGRAM_NAME
+            DEFINE TEXT prog SET " Algorithmi "
+           ITERATE INTEGER i FROM 1  TO 10  STEP 1 
+                WRITE dizOla ROUND_OPEN i SUM prog ROUND_CLOSE 
+            END ITERATE
+        END MAIN_PROGRAM_NAME
+    
+        FUNCTION TEXT dizOla ROUND_OPEN TEXT nome ROUND_CLOSE
+            DEFINE TEXT msg SET "Olá " SUM nome
+            RETURN msg SUM ver SUM "\n" 
+        END dizOlaO</td>
+    </tr>
+    <tr>
+        <th>Fluxograma</th>
+        <th>pseudocodigo</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4-1-4.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuPT-4-1-4.png"></td>
+    </tr>
+</table>
+<br><h3>Resultado:</h3><br>
+<img src="../../../../imgs/funcoes-arrays/Ima-cap4/result5-1-3.png">
+<!--Fim cap4-->
