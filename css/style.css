@@ -1,5 +1,6 @@
 .cabecalho {
     background: linear-gradient(50deg, #00ff15 40%, #0c800a 50%);
+    height:70px;
     display: flex;
     flex-direction: row;
     align-items: right;
@@ -19,8 +20,19 @@
 }
 
 .scroll {
-    position: left;
-    height:540px;
-    overflow-y:scroll;padding:5px 25px;
+    height:590px;
+    width: 100px;
+    overflow-y:scroll;
+    padding:5px 25px;
     border: #100e0b;
+    background-color: #153718;
+}
+
+.caixa-scroll {
+  color:#ffffff;
+
+}
+
+.fundo {
+  background-color: #100e0b;
 }
