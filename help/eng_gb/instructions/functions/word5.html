@@ -1,0 +1,108 @@
+<!--Inicio capitulo5-->
+<h1>5 Arrays</h1>
+
+Define uma variável indexada em memória. As variáveis indexadas são conjuntos homogéneos de dados que são acessíveis através de índices.
+Defines an indexed variable in memory. Indexed variables are homogeneous sets of data that are accessible through indices.
+
+O Algorithmi permite definir o número de dimensões da variável indexada que o utilizador desejar.
+Algorithmi allows defining the number of dimensions of the indexed variable that the user wants.
+
+Na definição de um vetor são definidas o número de dimensões e a quantidade de elementos em cada dimensão. As variáveis indexadas são inicializadas com os valores por defeito:
+When defining a vector, the number of dimensions and the number of elements in each dimension are defined. Indexed variables are initialized with default values:
+<table>
+    <tr>
+        <th>Fluxograma</th>
+        <th>pt</th>
+        <th>en</th>
+    </tr>
+    <tr>
+        <td><img src="define.png"/></td>
+        <td>definir *tipo* *var* [<ex>]…[<ex>]</td>
+        <td>DEFINE *TYPE* *var* [<ex>]…[<ex>]</td>
+    </tr>
+</table> 
+
+    <ul>
+        <li>*tipo* ->   Tipo de dados (INTEGER | REAL | LOGIC | TEXT)</li>
+        <li>*type* ->   type of data (INTEGER | REAL | LOGIC | TEXT)</li>
+    </ul>
+    <ul>
+        <li>*var* –>    Nome da variável sujeita ás seguintes regras</li>
+        <li>*var* –>    Variable name subject to the following rules</li>
+        <ul>
+            <li>Não pode ser uma palavra reservada</li>
+            <li>Tem de começar por uma letra (a-z ; A-Z)</li>
+            <li>Pode conter dígitos (0-9)</li>
+            <li>Deve ser significativo daquilo que armazena</li>
+
+            <li>It can't be a reserved word</li>
+            <li>Must start with a letter (a-z; A-Z)</li>
+            <li>May contain digits (0-9)</li>
+            <li>Must be significant of what stores</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>[<ex>] ->   Expressão computacional cujo resultado é um inteiro positvo</li>
+        <li>[<ex>] ->   Computational expression whose result is a positive integer</li>
+    </ul>
+
+
+<h1>5.1.1 Exemplo 1 –> Calculo e impressão de um vetor</h1>
+    <table>
+        <tr>
+            <th>GAL</th>
+            <th>Fluxograma pt</th>
+            <th>pseudocodigo pt</th>
+            <th>Fluxogram en</th>
+            <th>pseudocodigo</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>BEGIN MAIN_PROGRAM_NAME
+                DEFINE INTEGER vetor SQUARE_OPEN 5  SQUARE_CLOSE
+                ITERATE INTEGER i FROM 0  TO ELEMENTS_OF ROUND_OPEN vetor ROUND_CLOSE  STEP 1 
+                   EXECUTE vetor SQUARE_OPEN i  SQUARE_CLOSE SET i MULT 10 
+                   WRITE "\nVetor[" SUM i SUM "] = " SUM vetor SQUARE_OPEN i SQUARE_CLOSE 
+                END ITERATE
+               END MAIN_PROGRAM_NAME
+            </td>
+            <td><img src="ptpseudo.png"></td>
+            <td><img src="ptflux.png"></td>
+            <td><img src="enfluxo.png"></td>
+            <td><img src="enpseudo.png"></td>
+            <td><img src="result5-1-1.png"></td>
+        </tr>
+    </table>
+
+<h1>5.1.2 Calculo e impressão de um vetor bidimensional</h1>
+
+
+<h1>5.1.3 Passagem de um vetor para uma função</h1>
+<h2>Os vetores são passados para as funções sempre por referência. As alterações feitas no vetor passado como parâmetros refletem-se no vetor principal.</h2>
+<table>
+    <tr>
+        <th>Fluxogram</th>
+    </tr>
+    <tr>
+        <td><img src=""></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>pseudocodigo</th>
+    </tr>
+    <tr>
+        <td><img src=""></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>result</th>
+    </tr>
+    <tr>
+        <td><img src=""></td>
+    </tr>
+</table>
+<!--Fim capitulo 5-->
