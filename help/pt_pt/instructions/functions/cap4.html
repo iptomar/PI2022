@@ -5,34 +5,32 @@
     Exemplo  –> Dizer Olá com Cálculo
     Algoritmo que imprime na consola os Olá mundo através de uma função
 </h2>
-<h2>The parameters of a function work like local variables of the function and serve to make its usefulness flexible.
-    Example –> Say Hello with Calculus
-    Algorithm that prints hello world on the console through a function
-</h2>
 
 
-<table name="g">
+<table name="g" border="5">
     <tr>
         <th>GAL</th>
     </tr>
     <tr>
-        <td><img src=""></td>
+        <td>BEGIN MAIN_PROGRAM_NAME<br>
+            EXECUTE dizOla ROUND_OPEN ROUND_CLOSE <br>
+        END MAIN_PROGRAM_NAME<br>
+    
+        FUNCTION VOID dizOla ROUND_OPEN ROUND_CLOSE<br>
+            WRITE "O</td>
     </tr>
     <tr>
         <th>Fluxograma</th>
-        <th>Pseudo</th>
+        <th>Pseudocodigo</th>
     </tr>
     <tr>
-        <td><img src=""></td>
-        <td><img src=""></td>
-    </tr>
-    <tr>
-        <th>Result</th>
-    </tr>
-    <tr>
-        <td><img src=""></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4-1-2.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuPT4-1-2.png"></td>
     </tr>
 </table >
+
+<br><h3>Resultado:</h3><br>
+<img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-2.png">
 
 
 
@@ -42,26 +40,22 @@
 <h1>4.1.3 Retomar um valor de uma função</h1>
 
 <h2>As funções podem executar cálculos que são retornados para o local onde a função foi evocada. A Instrução RETURN permite devolver um valor da função. Sempre que esta instrução é executada o função termina.</h2>
-<h2>Functions can perform calculations that are returned to the location where the function was invoked. The RETURN statement allows returning a value from the function. Whenever this instruction is executed the function ends.</h2>
 
-<table>
+<table border="5">
     <tr>
         <th>Fluxograma</th>
         <th>Gal</th>
     </tr>
     <tr>
-        <td><img src=""></td>
-        <td>return *expression*</td>
+        <td><img src="../../../../imgs/funcoes-arrays/return.png"></td>
+        <td>retorna *expressao*</td>
     </tr>
 </table>
 
 <ul>
-    <li>*expression* –> Expressão computacional compatível com o tipo de dados de retorno da função.</li>
-    <li>*expression* –> Computational expression compatible with the function's return data type</li>
+    <li>*expressao* –> Expressão computacional compatível com o tipo de dados de retorno da função.</li>
     <ul>
         <li>Se a função tiver o retorno Vazio, a expressão deve ser vazia.</li>
-
-        <li>If the function returns Empty , the expression must be empty.</li>
     </ul>
 </ul>
 
@@ -69,28 +63,29 @@
     Algoritmo que imprime na consola os Olá mundo através de uma função:
 </h2>
 
-<table name="g">
+<table name="g" border="5">
     <tr>
         <th>GAL</th>
     </tr>
     <tr>
-        <td><img src=""></td>
+        <td>BEGIN MAIN_PROGRAM_NAME
+            EXECUTE dizOla ROUND_OPEN ROUND_CLOSE 
+            END MAIN_PROGRAM_NAME
+            
+            FUNCTION VOID dizOla ROUND_OPEN ROUND_CLOSE
+            WRITE "O</td>
     </tr>
     <tr>
         <th>Fluxograma</th>
-        <th>Pseudo</th>
+        <th>pseudocodigo</th>
     </tr>
     <tr>
-        <td><img src=""></td>
-        <td><img src=""></td>
-    </tr>
-    <tr>
-        <th>Resultado</th>
-    </tr>
-    <tr>
-        <td><img src=""></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4-1-3.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuPT4-1-3.png"></td>
     </tr>
 </table>
+<br><h3>Resultado:</h3><br>
+<img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-3.png">
 
 
 
@@ -98,51 +93,59 @@
 <h1>4.1.4 Memoria Global</h1>
 
 <h2>Cada função possui a sua memória que pode ser utilizada pelas suas instruções. No entanto o algorithmi permite definir uma memória global que é comum a todas as funções e pode por elas ser utilizada</h2>
-<h2>Each function has its memory that can be used by its instructions. However, algorithmi allows defining a global memory that is common to all functions and can be used by them.</h2>
 
-<table>
+<table border="5">
     <tr>
         <th>Fluxograma</th>
         <th>Gal</th>
     </tr>
     <tr>
-        <td><img src=""></td>
-        <td><img src=""></td>
+        <td><img src="../../../../imgs/funcoes-arrays/terminator.png"></td>
+        <td>MEMORY 
+            <define>DEFINE REAL ver SET 1.0
+          END"
     </tr>
 </table>
 
 <ul>
     <li>*define* –> Definição das variáveis globais</li>
-    <li>*define* -> Definition of global variables</li>
     <ul>
         <li>Ver definição de variáveis.</li>
-        <li>See definition of variables.</li>
     </ul>
 </ul>
 
 <h2>Exemplo 1 –>    Utilização da memória global</h2>
-<h2>Example 1 ->    Global memory usage</h2>
 
-<table name="g">
+<table name="g" border="5">
     <tr>
         <th>GAL</th>
     </tr>
     <tr>
-        <td><img src=""></td>
+        <td>    MEMORY GLOBAL_MEMORY_NAME
+            DEFINE REAL ver SET 1.0
+        END GLOBAL_MEMORY_NAME
+    
+        BEGIN MAIN_PROGRAM_NAME
+            DEFINE TEXT prog SET " Algorithmi "
+           ITERATE INTEGER i FROM 1  TO 10  STEP 1 
+                WRITE dizOla ROUND_OPEN i SUM prog ROUND_CLOSE 
+            END ITERATE
+        END MAIN_PROGRAM_NAME
+    
+        FUNCTION TEXT dizOla ROUND_OPEN TEXT nome ROUND_CLOSE
+            DEFINE TEXT msg SET "Olá " SUM nome
+            RETURN msg SUM ver SUM "\n" 
+        END dizOlaO</td>
     </tr>
     <tr>
         <th>Fluxograma</th>
-        <th>Pseudo</th>
+        <th>pseudocodigo</th>
     </tr>
     <tr>
-        <td><img src=""></td>
-        <td><img src=""></td>
-    </tr>
-    <tr>
-        <th>Resultado</th>
-    </tr>
-    <tr>
-        <td><img src=""></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4-1-4.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuPT-4-1-4.png"></td>
     </tr>
 </table>
+<br><h3>Resultado:</h3><br>
+<img src="../../../../imgs/funcoes-arrays/Ima-cap4/result5-1-3.png">
 <!--Fim cap4-->
