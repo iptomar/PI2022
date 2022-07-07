@@ -5,7 +5,7 @@
 h2{font:bold 30px arial; color:black; text-align: center;}
 
 body{background-color:#3050a0;}
-.quadro {height: 1000px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
+.quadro {height: 800px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
 }
 .botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
 table {
@@ -29,7 +29,7 @@ a{
 <body>
 
 <div class="quadro">
-  <h2>Ler</h2>
+  <h2>Escrever</h2>
   
   Lê uma ou mais variáveis definida na memória a partir da consola. A instrução também permite definir novas variáveis para a memória e cujo valor é inicializado pela consola. É também possível definir uma mensagem para ser apresentada quando o valor for pedido.
 				
@@ -39,11 +39,11 @@ a{
     <th>pseudocodigo pt-PT</th>
    </tr>
   <tr>
-    <td><img src="../../../../imgs/readvar/Read_img.png"height="150px" weight="500px" ></td>
-    <td>Ler [&lt;Tipo&gt;] &lt;var&gt;[,&lt;var&gt; …] [&lt;mensagem&gt;]</td>
+    <td><img src="../../../../imgs/Read_img.png"></td>
+    <td>Le [&lt;Tipo&gt;] &lt;var&gt;[,&lt;var&gt; …] [&lt;mensagem&gt;]</td>
   </tr>
 </table>
-•	[&lt;Tipo&gt;] –Tipo de dados (INTEIRO | REAL | LOGICO | TEXTO) [Opcional]
+•	[&lt;Tipo&gt;] –Tipo de dados (INTEGER | REAL | LOGIC | TEXT) [Opcional]
   •	&lt;var&gt; – Nome da variável definida ou a definir em memória. O nome da variável deve seguir as seguintes regras:<br>
   o	Não pode ser uma palavra reservada<br>
   o	Tem de começar por uma letra (a-z; A-Z)<br>
@@ -51,33 +51,30 @@ a{
   o	Deve ser significativo daquilo que armazena<br>
   •	[&lt;mensagem&gt;] – mensagem a ser apresentada antes da leitura das variáveis [Opcional]<br><br>
   Exemplo – Ler variáveis
+  Algoritmo que mostra algumas versões da instrução de leitura:
   <br><table>
 				<tr>
 					<th scope="col">Fluxograma pt-PT</th>
 					<th scope="col">Pseudocódigo pt-PT</th>
 				</tr>
 				<tr>
-					<th scope="row"> <img src="../../../../imgs/readvar/exemplo_read1.png" height="150px" weight="500px" /></th>
-					<td scope="row">inicio ProgramaPrincipal<br>
-            inicio ProgramaPrincipal<br>
-            escrever "Introduza um numero qualquer :"<br>
-            ler real var1<br>
-            escrever "O numero introduzido foi : " + var1<br>
-        fim ProgramaPrincipal<br>
+					<th scope="row"> <img src="../../../../imgs/exemplo_read1.png" height="150px" weight="500px" /></th>
+					<td scope="row">inicio ProgramaPrincipal
+            definir inteiro a = 0,b = 0<br>
+            ler a<br>
+            ler inteiro c<br>
+            ler a "Insira a: "<br>
+            ler inteiro h "Insira h: "<br>
+            ler a,b<br>
+            ler inteiro d,e<br>
+            ler a,b "insira a e b: "<br>
+            ler inteiro f,g "insira f e g: "<br>
+      fim ProgramaPrincipal<br>
 
 
 </td>
 				</tr>
 			</table><br>
-      <table>
-
-        <th>resultado</th>
-       </tr>
-      <tr>
-          <td><img src="../../../../imgs/readvar/exemplo_read_conclusao1.png"height="150px" weight="500px" ></td>
-    </td>
-      </tr>
-      </table>
 
 
   
