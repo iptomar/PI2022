@@ -1,0 +1,81 @@
+
+<h1>3.2.4 Iterating a set of values</h1>
+
+<h2>Lets you iterate over a set of values within the range [ex1, ex2 [ where values are separated by ex3. The starting iterator limit is included and the ending limit is not. The instruction allows you to define na iteration variable or use and existing numeric variable. 
+</h2>
+
+
+<table name="g" border="5">
+    <tr>
+        <th>Algorithmi</th>
+    </tr>
+    <tr>
+       <td>BEGIN MainProgram <br>
+            ITERATE INTEGER i FROM 0 TO 10 STEP 1 <br>
+                  WRITE i SUM " "   <br>
+            END ITERATE<br> 
+				END MainProgram<br>
+		<br>
+    
+       </td>
+    </tr>
+    <tr>
+        <th>Fluxogram</th>
+        <th>Pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/EnquantoFaz-iterar/Para_X_de_Y_GB.png"></td>
+        <td><img src="../../../../imgs/EnquantoFaz-iterar/Para_X_de_Y_Pseudo_GB.png"></td>
+    </tr>
+</table >
+<h3>
+	(Type) – numeric variable type( INTEGER | REAL) - Opcional<br>
+	(var) - iteration variable name<br>
+	(ex1) – computational expression to determine the initial value<br>
+	(ex2) – computational expression to determine the final value<br>
+	(ex3) – computational expression to determine the separation <br>between the range values <br>
+<br>
+
+</h3>
+
+
+<br><h4>Result:</h4><br>
+<img src="../../../../imgs/EnquantoFaz-iterar/Enquanto_faz_resultado.png">
+
+	<h5>
+		Note:
+		There is no variable defined at the end of the cycle because the iterator i is internal to the cycle
+	</h5>
+
+
+
+<h1>3.2.2Repetition with initial control – While …doing</h1>
+
+<h2>Allows you to repeat a set of intructions based on a condition that is evaluated at the beginning of the repetition.</h2>
+
+
+<table name="g" border="5">
+    <tr>
+        <th>Algorithmi</th>
+    </tr>
+    <tr>
+        <td>BEGIN MainProgram <br>
+            DEFINE INTEGER i SET 0 <br>
+            WHILE i less than 10   <br>
+                  WRITE i SUM " "   <br>
+                  EXECUTE i SET i SUB 1 <br>
+            END WHILE <br>
+			END MainProgram <br>
+			</td>
+    </tr>
+    <tr>
+        <th>Fluxogram</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/EnquantoFaz-iterar/Enquanto_faz_GB.png"></td>
+        <td><img src="../../../../imgs/EnquantoFaz-iterar/Enquanto_faz_Pseudo_GB.png"></td>
+    </tr>
+</table>
+<br><h3>Result:</h3><br>
+<img src="../../../../imgs/EnquantoFaz-iterar/Enquanto_faz_resultado.png">

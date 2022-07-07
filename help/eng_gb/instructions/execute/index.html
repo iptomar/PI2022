@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<style>
+
+		h2{font:bold 30px arial; color:black; text-align: center;}
+
+		body{background-color:#3050a0;}
+		.quadro {height: 1000px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
+		}
+		.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
+		
+		#col{background-color:#3050a0;}
+		
+		th {
+			border: 1px solid rgb(190, 190, 190);
+			padding: 10px;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		th[scope="col"] {
+			background-color: #3050a0;
+			color: #fff;
+		}
+
+		th[scope="row"] {
+			background-color: #d7d9f2;
+		}
+		
+
+		table {
+			border-collapse: collapse;
+			border: 2px solid rgb(200, 200, 200);
+			letter-spacing: 1px;
+			font-family: sans-serif;
+			font-size: .8rem;
+		}
+
+		</style>
+		<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
+		</head>
+		<body>
+
+		<div class="quadro">
+			<h2>Execute</h2>
+				<p style="font-size:15px text-align:center-right ">
+					It is used to perform calculations on computational expressions and store their result in a variable defined in memory.
+                    It also serves to execute procedures, that is, functions that do not calculate values.
+                    This one with the multi-instruction allows you to do multiple calculations in one form.
+
+				</p>
+				
+					
+		  
+
+			<table>
+				<tr>
+					<th scope="col">Fluxogram</th>
+	                <th scope="col">Pseudocode en-GB</th>
+				</tr>
+				<tr>
+					<th scope="row"> <img src="../../../../imgs/execute/execute.png" /></th>
+					<td scope="row">execute &lt;function&gt; | &lt;var&gt; = &lt;expression&gt;[, &lt;function&gt; | &lt;var&gt; = &lt;expression&gt; …] </td>
+				</tr>
+			</table><br>
+			
+			•	&lt;var&gt; – variable defined in memory<br>
+				•	&lt;expression&gt; – computacional expression<br>
+				•	&lt;function&gt; – fuction defined by the user<br>
+				The simbol “|” represents “or”, this means that it can be &lt;function&gt; ou &lt;var&gt; = &lt;expression&gt;<br><br>
+
+				Example – Define, read, calculate and print
+                Algorithm that exemplifies asks the user for the radius of a circle and then calculates the perimeter, area and diameter and prints the result on the console.
+
+			
+			<br><table>
+				<tr>
+					<th scope="col">Fluxogram en-GB</th>
+	                <th scope="col">Pseudocode en-GB</th>
+				</tr>
+				</tr>
+				<tr>
+					<th scope="row"> <img src="../../../../imgs/execute/fluxoexemplo1ing.png" height="150px" weight="500px" /></th>
+					<td scope="row"> begin MainProgram
+                        define real perimeter = 0.0,area = 0.0,diameter = 0.0
+                        read real radius "insert the radius of the circle"
+                        execute perimeter = 2 * _PI * radius, area = _PI * pow(radius , 2), diameter = 2 * radius
+                        write "raio:" + radius + "\n" , "perimeter:" + perimeter + "\n" , "area: " + area + "\n" , "diameter: " + diameter
+                    end MainProgram
+                
+</td>
+				</tr>
+			</table><br>
+			<table>
+
+				<th scope="col">resultado</th>
+			   </tr>
+			  <tr>
+				  <td><img src="../../../../imgs/execute/resultadoing.png"height="150px" weight="500px" ></td>
+			</td>
+			  </tr>
+			  </table>
+		  
+		</div>
+	</body>
+</html>
