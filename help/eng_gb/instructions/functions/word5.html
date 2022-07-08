@@ -2,7 +2,11 @@
 <html>
 <head>
     <title></title>
-    <style></style>
+    <style>
+        th{
+            background-color: bisque;
+        }
+        </style>
 </head>
 <body>
 <!--Inicio capitulo5-->
@@ -15,7 +19,7 @@
 <table border="5">
     <tr>
         <th>Flowchart</th>
-        <th>en</th>
+        <th>EN-GB</th>
     </tr>
     <tr>
         <td><img src="../../../../imgs/funcoes-arrays/define.png"/></td>
@@ -40,27 +44,15 @@
     </ul>
 
 <br><hr>
+<section id="calPrintArray">
 <h1>5.1.1 Example 1 –> Calculating and printing a array</h1>
     <table border="5">
-        <tr>
-            <th colspan="2">GAL</th>
-        </tr>
-        <tr>
-            <td colspan="2">BEGIN MAIN_PROGRAM_NAME
-                <br>DEFINE INTEGER vetor SQUARE_OPEN 5  SQUARE_CLOSE
-                <br>ITERATE INTEGER i FROM 0  TO ELEMENTS_OF ROUND_OPEN vetor ROUND_CLOSE  STEP 1 
-                    <br>EXECUTE vetor SQUARE_OPEN i  SQUARE_CLOSE SET i MULT 10 
-                    <br>WRITE "\nVetor[" SUM i SUM "] = " SUM vetor SQUARE_OPEN i SQUARE_CLOSE 
-                <br>END ITERATE
-                <br>END MAIN_PROGRAM_NAME
-            </td>
-        </tr>
         <tr>
             <th>Flowchart </th>
             <th>pseudocode</th>
         </tr>
         <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-1.png"></td>
+            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-1EN.png"></td>
             <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/pseuENG5-1-1.png"></td>
         </tr>
         <tr>
@@ -70,28 +62,32 @@
             <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap5/result5-1-1.png"></td>
         </tr>
     </table>
+</section>
 <br><hr>
+<section id="calPrint2dimArray">
 <h1>5.1.2 Calculation and printing of a two-dimensional array</h1>
 <table border="5">
     <tr>
         <th>Flowchart en-gb</th>
     </tr>
     <tr>
-        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-2.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-2EN.png"></td>
     </tr>
     <tr>
-        <th>Pseudocodigo</th>
+        <th>Pseudocode</th>
     </tr>
     <tr>
         <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/pseuENG5-1-2.png"></td>
     </tr>
     <tr>    
-        <th>Resultado</th>
+        <th>Result</th>
     </tr>
     <tr>    
         <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/result5-1-2.png"></td>
     </tr>
-</table border="5">
+</table>
+</section>
+<section id="arraytoFunc">
 <br><hr>
 <h1>5.1.3 Passing from a array to a function</h1>
 <h2>Arrays are always passed to functions by reference. Changes made to the array passed as parameters are reflected in the main array.</h2>
@@ -100,11 +96,11 @@
         <th colspan="2">Flowchart</th>
     </tr>
     <tr>
-        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-3p1.png"></td>
-        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-3p2.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-3EN.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-3ENp2.png"></td>
     </tr>
     <tr>
-        <th colspan="2">pseudocodigo</th>
+        <th colspan="2">pseudocode</th>
     </tr>
     <tr>
         <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap5/pseuENG5-1-3.png"></td>
@@ -116,6 +112,7 @@
         <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap5/result5-1-3.png"></td>
     </tr>
 </table>
+</section>
 <!--Fim capitulo 5(ARRAYs)-->
 </body>
 </html>
