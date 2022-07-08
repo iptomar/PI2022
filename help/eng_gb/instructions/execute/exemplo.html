@@ -40,14 +40,15 @@
 
 		</style>
 		<button class="botao" onclick="window.location.href='../../index.html'">Return To Main Page</button>
-		<button class="botao" onclick="window.location.href='index.html'" style="position:relative;top:9px;">Return</button>
+        <button class="botao" onclick="window.location.href='index.html'" style="position:relative;top:9px;">Return</button>
 		</head>
 		<body>
 
 		<div class="quadro">
 			
-			<br><h3>Example – Define variable</h3><br>
-			Algoritmh that shows how to define variables of the types present in Algorithmi.<br>
+			<br><h3>Example – Define, read, calculate and print out</h3>
+                Algoritmh that exemplifies,this algorithm asks the user the radius of a circumference and then calculates the perimeter,the area and the diameter and prints out those results on the console.
+                
 			
 			<br><table>
 				<tr>
@@ -55,14 +56,18 @@
 					<th scope="col">Pseudocode</th>
 				</tr>
 				<tr>
-					<th scope="row"><img src="definevar_fluxograma_ENG.png" style="width:345px;"/></th>
-
-					<td scope="row"><img src="definevar_pseudocodigo_ENG.png" style="width:420px; height:200px;"/></td>
+					<th scope="row"> <img src="execute_fluxograma_ENG.png" style="width:400px;"/></th>
+					<td scope="row" style="text-align:left;">Begin MainProgram<br>
+						Define real perimeter = 0.0,area = 0.0,diameter = 0.0<br>
+						Read real radius "Insert the radius of the circumference: "<br>
+						Execute perimeter = 2 * _PI * radius, area = _PI * pow(radius , 2), diameter = 2 * radius<br>
+						Write "radius: " + radius + "\n" , "perimeter: " + perimeter + "\n" , "area: " + area + "\n" , "diameter: " + diameter<br>
+					End MainProgram<br>
+</td>
 				</tr>
 			</table><br>
-			Result:<br>
-			<img src="definevar_resultado_ENG.png" style=" height:500px;"/>
-		  
+            Result:<br>
+			<img src="execute_resultado_ENG.png" />
 		  
 		</div>
 	</body>
