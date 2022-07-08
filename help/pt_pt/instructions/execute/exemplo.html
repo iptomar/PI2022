@@ -40,13 +40,15 @@
 
 		</style>
 		<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
+        <button class="botao" onclick="window.location.href='index.html'" style="position:relative;top:9px;">Voltar atras</button>
 		</head>
 		<body>
 
 		<div class="quadro">
 			
-			<br><h3>Exemplo – Definir variáveis</h3><br>
-			Algoritmo que mostra as a definição de variáveis dos tipos presentes no Algorithmi.<br>
+			<br><h3>Exemplo – Definir, ler, calcular e imprimir</h3>
+                Algoritmo que exemplifica solicita ao utilizador o raio de um círculo e que de seguida calcula o perímetro, área e diâmetro e imprime o resultado na consola.
+                
 			
 			<br><table>
 				<tr>
@@ -54,12 +56,19 @@
 					<th scope="col">Pseudocódigo pt-PT</th>
 				</tr>
 				<tr>
-					<th scope="row"> <img src="../../../../imgs/definevar/fluxograma.png" /></th>
-					<td scope="row">inicio ProgramaPrincipal<br> inteiro a = 2 + 3 <br>definir inteiro i = 2 + 3 * 5 ^ 2, j <br>definir real r = _PI + 2.5 * i, t <br>definir logico l = falso, k <br>definir texto z = " i = " + i, y = " j = " + j, x
-		<br>fim ProgramaPrincipal
+					<th scope="row"> <img src="executeexemplo.png" /></th>
+					<td scope="row">inicio ProgramaPrincipal<br>
+                        definir real perimetro = 0.0,area = 0.0,diametro = 0.0<br>
+                        ler real raio "Insira o raio do circulo: "<br>
+                        executar perimetro = 2 * _PI * raio , area = _PI * pow(raio , 2) , diametro = 2 * raio<br>
+                        escrever "raio: " + raio + "\n" , "perimetro: " + perimetro + "\n" , "area: " + area + "\n" , "diametro: " + diametro<br>
+                  fim ProgramaPrincipal
+            
 </td>
 				</tr>
 			</table><br>
+            Resultado:<br>
+			<img src="resultado.png" />
 		  
 		</div>
 	</body>
