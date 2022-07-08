@@ -6,12 +6,13 @@
 		<title>Algorithmi</title>
 		<style>
 			dt{margin-left:4px; margin-right:4px;}
-			dt:hover{background-color:#C0C0C0;}
+			dt:hover{background-color:#80ff80;}
 			dd{width:100px;}
-			dd:hover{background-color:#C0C0C0;}
+			dd:hover{background-color:#80ff80;}
+			.headerimg{height:10%;}
 			.mainDiv{width:100%; height:100%;}
-			.head{height:170px; width:100%; text-align: center; }
-			.head_left{margin:10px 0px 0px 10px;float:left;}
+			.head{height:20%; width:100%; text-align: center; }
+			.head_left{margin:10px 0px 0px 10px;float:left; height:10%}
 			.head_middle{}
 			.head_right{margin:-20px 10px 0px 0px;float:right;}
 			.header_letters{color:#ffffff; font-weight: 20; font-size: 40px}
@@ -71,7 +72,7 @@
 		
 			<div class="head" style="background: linear-gradient(50deg, #00ff15 40%, #0c800a 50%); border:1px solid black;">
 				<div class="head_left">
-					<img class="cabecalho-imag" src="../../imgs/logotipo.png" alt="Logotipo">
+					<img class="headerimg" src="../../imgs/logotipo.png" alt="Logotipo">
 				</div>
 				<div class="head_middle">
 					<h1 class="header_letters">Pagina de Ajuda - Algorithmi</h1>
@@ -85,7 +86,7 @@
 			</div>
 			
 			<div class="bottom">
-				<div class="bottom_left" style="background-color: #7A7A6E; border:1px solid black;">
+				<div class="bottom_left" style="background-color: #80ff80; border:1px solid black;">
 					<p> Instruções </p>
 					<button type="button" class="collapsible">definir</button>
 						<div class="content">
@@ -150,10 +151,10 @@
 						</div>
 					<button type="button" class="collapsible">Operadores aritméticos</button>
 						<div class="content">
-						<p onclick="loadContent('pages/soma.html')">Soma (+)</p>
-						<p onclick="loadContent('pages/subtracao.html')">Subtração (-)</p>
-						<p onclick="loadContent('pages/multiplicacao.html')">Multiplicação (x)</p>
-						<p onclick="loadContent('pages/divisao.html')">Divisão (/)</p>
+						<p onclick="loadContent('instructions/index.html')">Soma (+)</p>
+						<p onclick="loadContent('../pages/subtracao.html')">Subtração (-)</p>
+						<p onclick="loadContent('../pages/multiplicacao.html')">Multiplicação (x)</p>
+						<p onclick="loadContent('../pages/divisao.html')">Divisão (/)</p>
 						</div>
 					<button type="button" class="collapsible">Simbolos</button>
 						<div class="content">
