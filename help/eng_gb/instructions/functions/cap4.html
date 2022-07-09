@@ -1,189 +1,157 @@
-<!DOCTYPE html>
-<html lang="en-gb">
-<head>
-    <meta charset="UTF-8">
-    <title>Functions</title>
-    <style>
-        th{
-            background-color: bisque;
-        }
-        section{
-            padding-bottom: 250px;
-        }
-        a{
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
 <!--Inicio cap4-->
-<section id="func">
-    <h1>4 Functions</h1>
-    <h3>Functions do not function as subs that can be invoked within instructions.</h3><br>
-    <table border=5>
-        <tr>
-            <th>Flowchart</th>
-            <th width="250px">EN-GH</th>
-        </tr>
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/Funcoes.png"  /></td>
-            <td>Function  *<a href="#type">type*</a> *name*([*param*,..,*param*])<br>*instructions*<br>end name</td>
-        </tr>
-    </table>
+<h1>4.1.2 Function with parameters</h1>
+<h2>The parameters of a function work like local variables of the function and serve to make its usefulness flexible.
+    Example –> Say Hello with Calculus
+    Algorithm that prints hello world on the console through a function
+</h2>
 
-    <h3><a href="*type.html*">Type</a>     –> type of calculation performed by the function</h3>
 
-    <h3>Name    -> Role name subject to the following rules:</h3>
-    <ul>
-        <li>Cannot be a reserved word or other function</li>
-        <li>Must start with a letter (a-z ; A-Z)</li>
-        <li>May contain digits (0-9)</li>
-        <li>Must be significant of what stores</li>
-    </ul>
+<table border="5">
+    <tr>
+        <th colspan="2">GAL</th>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Flowchart</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4.1.2.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuENG4.1.2.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Result</th>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4.1.2.png"></td>
+    </tr>
+</table >
 
-    <h3>(*Parameter*)   –> Function Parameters (Optional)</h3>
-    <ul>
-        <li><a href="*type.html*">type</a> –> Parameter data type</li>
-        <li>Variables   -> Parameter name</li>
-    </ul>
-</section>
-<section id="funcEmpReturn">
-    <h1><center>4.1.1 Functions with empty return</center></h1><br>
 
-    <h3>Functions with empty return, usually called procedures, serve to execute a set of instructions. These functions can only be invoked from an EXECUTE command</h3><br>
-    <h4>Example 1 –> Say hello:</h4>
-    <h5>Algorithm that prints the Hello world on the console through a function</h5>
-    <table border="1px solid black">
-        <tr>
-            <th colspan="2">Fluxograma EN-GB</th>
-            <th>Pseudocodigo EN-GB</th>
-        </tr>
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-1p1png.png" /></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-1p2.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuENG4-1-1.png" /></td>
-        </tr>
-    </table><br>
-    <h3>Result:</h3><br>
-        <img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-1.png"/>
-</section>
-<section id="funcParam">
-    <h1>4.1.2 Function with parameters</h1>
-    <h2>The parameters of a function work like local variables of the function and serve to make its usefulness flexible.
-        Example –> Say Hello with Calculus
-        Algorithm that prints hello world on the console through a function
-    </h2>
 
-    <table border="5">
-        <tr>
-            <th colspan="2">Flowchart</th>
-            <th>pseudocode</th>
-        </tr>
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-2p1png.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-2p2.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuENG4-1-2.png"></td>
-        </tr>
-        <tr>
-            <th colspan="3">Result</th>
-        </tr>
-        <tr>
-            <td colspan="3"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-2.png"></td>
-        </tr>
-    </table >
-</section>
+
+
 <br><hr>
-    <section id="funcValu">
-    <h1>4.1.3 Get a value from a function</h1>
-    <h2>Functions can perform calculations that are returned to the location where the function was invoked. The RETURN statement allows returning a value from the function. Whenever this instruction is executed the function ends.</h2>
+<h1>4.1.3 Get a value from a function</h1>
+<h2>Functions can perform calculations that are returned to the location where the function was invoked. The RETURN statement allows returning a value from the function. Whenever this instruction is executed the function ends.</h2>
 
-    <table border="5">
-        <tr>
-            <th>Flowchart</th>
-            <th>GAL</th>
-        </tr>
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/return.png"></td>
-            <td>return *expression*</td>
-        </tr>
-    </table>
+<table border="5">
+    <tr>
+        <th>Flowchart</th>
+        <th>GAL</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/"></td>
+        <td>return *expression*</td>
+    </tr>
+</table>
 
+<ul>
+    <li>*expression* –> Computational expression compatible with the function's return data type</li>
     <ul>
-        <li>*expression* –> Computational expression compatible with the function's return data type</li>
-        <ul>
-            <li>If the function returns Empty , the expression must be empty.</li>
-        </ul>
+        <li>If the function returns Empty , the expression must be empty.</li>
     </ul>
+</ul>
 
-    <h2>Example 1 - Say hello with parameters<br>
-        Algorithm that prints hello world on the console through a function:
-    </h2>
+<h2>Exemplo 1 - Say hello with parameters<br>
+    Algorithm that prints hello world on the console through a function:
+</h2>
 
-    <table border="5">
-        <tr>
-            <th colspan="2">Flowchart</th>
-            <th>pseudocode</th>
-        </tr>
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-3p1.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-3p2.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuEN4-1-3.png"></td>
-        </tr>
-        <tr>
-            <th colspan="3">Result</th>
-        </tr>
-        <tr>
-            <td colspan="3"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-3.png"></td>
-        </tr>
-    </table>
-</section>
-<br><hr>
-<section id="globalMem">
-    <h1>4.1.4 Global memory</h1>
-    <h2>Each function has its memory that can be used by its instructions. However, algorithmi allows defining a global memory that is common to all functions and can be used by them.</h2>
-
-    <table border="5">
-        <tr>
-            <th>Flowchart</th>
-            <th>Gal</th>
-        </tr>Flowchart
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/terminator.png"></td>
-            <td>MEMORY 
-                <br>*define* DEFINE REAL ver SET 1.0
-                <br>END 
+<table border="5">
+    <tr>
+        <th colspan="2">GAL</th>
+    </tr>
+    <tr>
+        <td colspan="2">BEGIN MAIN_PROGRAM_NAME
+            <br>EXECUTE dizOla ROUND_OPEN ROUND_CLOSE 
+            <br>END MAIN_PROGRAM_NAME
+            <br>
+            <br>FUNCTION VOID dizOla ROUND_OPEN ROUND_CLOSE
+            <br>WRITE "Hello World"
             </td>
-        </tr>
-    </table>
+    </tr>
+    <tr>
+        <th>Flowchart</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/fluxo4.1.3.png"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuEN4.1.3.png"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Result</th>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4.1.3.png"></td>
+    </tr>
+</table>
 
+
+
+<br><hr>
+<h1>4.1.4 Global memory</h1>
+<h2>Each function has its memory that can be used by its instructions. However, algorithmi allows defining a global memory that is common to all functions and can be used by them.</h2>
+
+<table border="5">
+    <tr>
+        <th>Flowchart</th>
+        <th>Gal</th>
+    </tr>Flowchart
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+        <td>MEMORY 
+            <br>*define* DEFINE REAL ver SET 1.0
+            <br>END 
+          </td>
+    </tr>
+</table>
+
+<ul>
+    <li>*define* -> Definition of global variables</li>
     <ul>
-        <li>*define* -> Definition of global variables</li>
-        <ul>
-            <li>See definition of variables.</li>
-        </ul>
+        <li>See definition of variables.</li>
     </ul>
+</ul>
 
-    <h2>Example 1 ->    Global memory usage</h2>
+<h2>Example 1 ->    Global memory usage</h2>
 
-    <table border="5">
-        <tr>
-            <th colspan="3">Flowchart</th>
-            <th>pseudocode</th>
-        </tr>
-        <tr>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-4p1.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-4p2.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/flux4-1-4p3.png"></td>
-            <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/pseuEN4-1-4.png"></td>
-        </tr>
-        <tr>
-            <th colspan="4">Result</th>
-        </tr>
-        <tr>
-            <td colspan="4"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/result4-1-4.png"></td>
-        </tr>
-    </table>
-</section>
+<table border="5">
+    <tr>
+        <th colspan="2">GAL</th>
+    </tr>
+    <tr>
+        <td colspan="2">MEMORY GLOBAL_MEMORY_NAME
+            <br>DEFINE REAL ver SET 1.0
+        <br>END GLOBAL_MEMORY_NAME
+    
+        <br>BEGIN MAIN_PROGRAM_NAME
+            <br>DEFINE TEXT prog SET " Algorithmi "
+            <br>ITERATE INTEGER i FROM 1  TO 10  STEP 1 
+                <br>WRITE dizOla ROUND_OPEN i SUM prog ROUND_CLOSE 
+            <br>END ITERATE
+        <br>END MAIN_PROGRAM_NAME
+    
+        <br>FUNCTION TEXT dizOla ROUND_OPEN TEXT nome ROUND_CLOSE
+            <br>DEFINE TEXT msg SET "Olá " SUM nome
+            <br>RETURN msg SUM ver SUM "\n" 
+        <br>END dizOlaO
+    </td>
+    </tr>
+    <tr>
+        <th>Flowchart</th>
+        <th>pseudocode</th>
+    </tr>
+    <tr>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+        <td><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Result</th>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../../../imgs/funcoes-arrays/Ima-cap4/"></td>
+    </tr>
+</table>
 <!--Fim cap4-->
-</body>
-</html>
