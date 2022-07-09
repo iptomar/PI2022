@@ -1,2 +1,0 @@
-Algoritmo que solicita um número inteiro ao utilizador e imprime o seu valor absoluto
-
