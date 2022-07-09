@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+
+h2{font:bold 30px arial; color:black; text-align: center;}
+
+body{background-color:#3050a0;}
+.quadro {height: 800px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
+}
+.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+</style>
+<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
+</head>
+<body>
+
+<div class="quadro">
+  <h2>Trigonometria Hiperbólica</h2>
+  <p style="font-size:20px">Algoritmo que solicita um angulo em radianos em relaçao á hiperbole e de seguida imprime o seu seno, coseno e tagente hiperbolicos</p>
+  <table>
+		<tr>
+			<th bgcolor="#92d8ff">Fluxograma pt-PT</th>
+			<th bgcolor="#92d8ff">Pseudocódigo pt-PT</th>
+		</tr>
+		<tr>
+			<th><img src="Hiperbolico_Sen_Cos_Tan.png" width="400" height="200" align="center"/></th>
+				<td>inicio ProgramaPrincipal<br>ler real ang "Ângulo \t\t\t: "<br>escrever "Seno hiperbólico \t= " + sinh(ang) + "\n"<br>escrever "Coseno hiperbólico \t= " + cosh(ang) + "\n"<br>escrever "Tangente hiperbólica \t= " + tanh(ang)<br>fim ProgramaPrincipal<br>
+				</td>
+		</tr>
+</table>
+<br>
+<p style="font-size:30px;">Output:</p>
+<img src="Hiperbolico_Sen_Cos_Tan_Out.png" width="200" height="250"/>
+</div>
+</body>
+</html>
