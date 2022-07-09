@@ -39,26 +39,15 @@ end Global
 <br><strong>	&lt;namevar&gt;</strong>	 – Variable name
 <br><br>
 <h2> Examples: </h2>
-EXAMPLE 1 - Global memory usage
+EXAMPLE 1 - Global memory
 <pre>memory Global
-    define real ver = 1.0
+
 end Global
-
-begin MainProgram
-    define string prog = " algorithmi"
-    for integer i from 1 to 10 step 1
-        write sayHello(i + prog)
-end MainProgram
-
-function string sayHello(string name)
-    define string msg = "Olá " + name
-    return msg + ver + "\n"
-end sayHello
 </pre>
 
 <h2> Programs </h2>
 
-<a onclick="window.location.href='example1/.html'">Example 1 – Global memory usage</button>
+<a onclick="window.location.href='examples/globFunc.html'">Example 1 – Global memory usage</button>
 <br>
 </body>
 </html>
