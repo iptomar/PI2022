@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Memoria Global </title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1> Memoria Global </H1></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+			
+		 <img src="define.png"   >
+				
+           
+<plain>
+    Cada função possui a sua memória que pode ser utilizada pelas suas instruções. No entanto o algorithmi permite definir uma memória global que é comum a todas as funções e pode por elas ser utilizada
+
+</plain>
+
+<h2> Sintaxe </h2>
+<pre>
+Memoria &lt;nome&gt;
+    &lt;definir&gt; Definir &lt;tipo&gt; &lt;nome variavel&gt; = &lt;valor&gt;]) <br>fim &lt;nome&gt;
+  </pre> 
+<br>
+			
+<br><strong>	&lt;*expressao*&gt; </strong> –> Expressão computacional compatível com o tipo de dados de retorno da função.<br><br>
+&emsp;o Se a função tiver o retorno Vazio, a expressão deve ser vazia.
+	
+			
+			
+	
+
+    
+<h2> Exemplos </h2>
+EXEMPLO 1
+Exemplo 1 - Utilização da memória global	
+<pre> memoria Global
+    definir real ver = 1.0
+fim Global
+
+inicio ProgramaPrincipal
+    definir texto prog = " Algorithmi "
+    iterar inteiro i de 1 até 10  passo 1
+        escrever dizOla(i + prog)
+    fim iterar
+fim ProgramaPrincipal
+
+funcao texto dizOla(texto nome)
+    definir texto msg = "Olá " + nome
+    retornar msg + ver + "\n"
+fim dizOla
+</pre>
+
+
+<h2> Programas </h2>
+
+<a onclick="window.location.href='example1/index.html'">Exemplo 1 – Utilização da memória global </button>	
+<br>
+
+
+
+
+
+</body>
+</html>
