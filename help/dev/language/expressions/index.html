@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+
+h2{font:bold 30px arial; color:black; text-align: center;}
+
+body{background-color:#3050a0;}
+.quadro {height: 1250px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
+}
+.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
+</head>
+<body>
+
+<div class="quadro">
+  <h2>Expressões computacionais</h2>
+  <p style="font-size:20px">As expressões são um conjunto de variáveis, constantes, operadores e funções. As expressões são avaliadas da esquerda para a direita, respeitando a prioridade dos operadores, e os parêntesis curvos alteram essa prioridade.</p>
+  <h2>Exemplo – expressões numéricas</h2>
+  <p style="font-size:20px">Ó resultado de uma expressão numérica é sempre um inteiro se todos os operandos forem inteiros e real se pelo menos um deles for real.</p>
+  <table>
+  <tr>
+  <tr bgcolor="#92d8ff">
+    <th>Matemática</th>
+    <th>Computação</th>
+    <th>Tipo</th>
+  </tr>
+  <tr>
+    <td>(2+3)/4</td>
+    <td>(2+3)/4</td>
+    <td>inteiro</td>
+  </tr>
+  <tr>
+    <td>(2+3)/4.0</td>
+    <td>(2+3)/4.0</td>
+    <td>real</td>
+  </tr>
+  <tr>
+    <td>a² + b³</td>
+    <td>a*a + b*b*b
+a^2 + b^3
+pow(a,2)+pow(b,3)</td>
+    <td>real ou inteiro</td>
+  </tr>
+  <tr>
+    <td>πr²</td>
+    <td>_PI * r * r
+_PI * r ^2
+_PI * pow(r,2)</td>
+    <td>real</td>
+  </tr>
+  <tr>
+    <td>-b + √(b² - 4ac) / 2a</td>
+    <td>(-b + sqrt( b*b – 4*a*c))/(2*a)
+(-b + ( b^2 – 4*a*c)^0.5)/(2*a)</td>
+    <td>real</td>
+  </tr>
+</table>
+	<h2>Exemplo – Expressões textuais</h2>
+	<p style="font-size:20px">As expressões textuais têm apenas o operador de soma definido que possui o significado de concatenação.</p>
+<table>
+  <tr>
+  <tr bgcolor="#92d8ff">
+    <th>Computação</th>
+    <th>Resultado</th>
+  </tr>
+  <tr>
+    <td>“OLA” + “MUNDO”</td>
+    <td>“OLAMUNDO”</td>
+  </tr>
+  <tr>
+    <td>“Var = “ + 5</td>
+    <td>“Var = 5”</td>
+  </tr>
+  <tr>
+    <td>“Var = “ + 5 * 2</td>
+    <td>“Var = 10”</td>
+  </tr>
+  <tr>
+    <td>“Var = “ + 5 + 2 + 1</td>
+    <td>“Var = 521”</td>
+  </tr>
+  <tr>
+    <td>2+3*4+“ Var = “ + 5</td>
+    <td>“14 Var = 5”</td>
+  </tr>
+  <tr>
+    <td>“Var = “ + (5 + 2 + 1)</td>
+    <td>“Var = 8”</td>
+  </tr>
+</table>
+<h2>Exemplo – Expressões lógicas</h2>
+	<p style="font-size:20px">As expressões lógicas possuem variáveis lógicas, operadores relacionais ou operadores lógicos.</p>
+<table>
+  <tr>
+  <tr bgcolor="#92d8ff">
+    <th>Computação</th>
+    <th>Resultado</th>
+  </tr>
+  <tr>
+    <td>1 > 2</td>
+    <td>Falso</td>
+  </tr>
+  <tr>
+    <td>1 < 2 && 2 > 0</td>
+    <td>Verdadeiro</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

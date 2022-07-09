@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/style.css">
+        <title>Global memory</title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1>Global memory</H1></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+			
+		 <img src="../../../../../imgs/funcoes-arrays/terminator.png">
+				
+           
+<plain>
+    Each function has its memory that can be used by its instructions. However, algorithmi allows defining a global memory that is common to all functions and can be used by them.
+</plain>
+
+<h2> Syntax </h2>
+<pre>
+        Syntax Text
+memory Global
+    define &lt;type&gt; &lt;namevar&gt; = 1.0
+end Global
+</pre>
+ 
+<br>
+<strong>	&lt;type&gt;</strong>	 – Parameter data type<br>
+<br><strong>	&lt;namevar&gt;</strong>	 – Variable name
+<br><br>
+<h2> Examples: </h2>
+EXAMPLE 1 - Global memory usage
+<pre>memory Global
+    define real ver = 1.0
+end Global
+
+begin MainProgram
+    define string prog = " algorithmi"
+    for integer i from 1 to 10 step 1
+        write sayHello(i + prog)
+end MainProgram
+
+function string sayHello(string name)
+    define string msg = "Olá " + name
+    return msg + ver + "\n"
+end sayHello
+</pre>
+
+<h2> Programs </h2>
+
+<a onclick="window.location.href='example1/.html'">Example 1 – Global memory usage</button>
+<br>
+</body>
+</html>
