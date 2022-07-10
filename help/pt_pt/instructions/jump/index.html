@@ -26,7 +26,7 @@
 
 <h2> Sintaxe </h2>
 <pre>
-  JUMP_BREAK JUMP_CONTINUE
+  &lt;JUMP_BREAK> &lt;JUMP_CONTINUE>
   </pre> 
 <br>
 			
@@ -35,21 +35,30 @@
 <br><strong>	A instrução JUMP_CONTINUE continua o ciclo quando é executada, ou seja, salta imediatamente para a condição de controlo.<br>
 			
 <h2> Exemplos </h2>
-definir uma variável inteira	com o valor 10	
-<pre> definir inteiro i = 10  </pre>
+definir hora 0	
+<pre> defenir inteiro hora = 0  </pre>
 
-definir uma variável real	( com o valor 0.0 por defeito)	
-<pre> definir real r   </pre>
+Enquanto verdadeiro faz escrever hora e lé
+<pre> enquanto verdadeiro faz
+   escrever "Hora : "
+   ler hora  </pre>
 
 
-definir duas variaveis interiras ( com o valor zero por defeito)	
-<pre> definir inteiro i1,i2   </pre>
+Se a hora for menor que 0H ou menor que 23H	escrever hora errada
+<pre> dse hora < 0 || hora > 23 então
+   escrever "Hora errada\n"
+   continuar   </pre>
+
+Se não saltar e escrever 	nunca executado
+<pre> senão 
+  quebrar fim se
+   escrever "nunca executado!"  </pre>
 
 definir uma variavel de texto ( omissão do tipo)	
 <pre> texto txt = "Algorithmi"   </pre>
 
 <h2> Programas </h2>
-<a onclick="window.location.href='example1/index.html'">Exemplo 1 – Faz enquanto</button>	
+<a onclick="window.location.href='example1/index.html'">Exemplo 1 – saltar passo</button>	
 
 
 
