@@ -11,15 +11,15 @@
         <table  style="width:100%" >
             <tr>
 			<th><H1> Array </H1></th>
-                 <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../../../../imgs/help.png"  width = "32" height="32" ></a></th>
 				
             </tr> 
 			<tr>
 			
 		</table>	
 			
-			
-		 <img src="define.png"   >
+		
+		<br><img src="define.png"   >
 				
              
 <plain>
@@ -46,53 +46,18 @@
 			
 	<br><strong>[&lt;expression&gt;] 	</strong>- expressão computacional cujo tipo de resultado é compatível com o tipo de dados da variável, esta é opcional pois se não for inserida a variável irá tomar o valor por defeito.<br>
 			
-<h2> Exemplos </h2>
-Exemplo 1 - Calculo e impressão de um vetor
-<pre> inicio Programa principal
-    definir inteiro vetor[5]
-    iterar inteiro i de 0 até length(vetor)  passo 1
-         executar vetor[i] = i * 10
-         escrever "\nVetor[" + i + "] = " + vetor[i]
-    fim iterar
-   fim Programa principal
-     </pre>
+<br><br><h2> Exemplos </h2>
 
+Exemplo 1 - Definir um vetor/Array inteiro com 10 posições
+<pre> definir inteiro i[10]</pre>
 
-Exemplo 2 - Calculo e impressão de um vetor bidimensional	
-<pre> inicio Programa principal
-    definir inteiro array[8][4]
-    iterar inteiro i de 0 até length(array)  passo 1
-          iterar inteiro j de 0 até length(array[i])   
-                                             passo 1
-              executar array[i][j] = i * 10 + j
-             escrever "\t" + array[i][j]
-           fim iterar
-           escrever "\n"
-    fim iterar
-   fim Programa principal
-      </pre>
+Exemplo 2 - definir um vetor de texto com 2 posições	
+<pre>definir texto vetor[2]</pre>
 
-Exemplo 3 - Passagem de um vetor para uma função
-<pre> 
-    inicio Programa principal
-    definir inteiro array[8][4]
-    iterar inteiro i de 0 até length(array)  passo 1
-        executar preenche(array[i])
-        iterar inteiro j de 0 até length(array[i])  passo 1
-            escrever "\t" + array[i][j]
-        fim iterar
-        escrever "\n"
-    fim iterar
-fim Programa principal
+Exemplo 2 - definir dois vetores interiros ( com o valor zero por defeito)
+<pre>definir inteiro vetor1[], vetor2[]</pre>
 
-funcao vazio preenche(inteiro v[])
-    iterar inteiro i de 0 até length(v)  passo 1
-        executar v[i] = int(random() * 10)
-    fim iterar
-fim preenchera uma função	
-</pre>
-
-<h2> Programas </h2>
+<br><h2> Programas </h2>
 <a onclick="window.location.href='example1/index.html'">Exemplo 1 – Definir variáveis</button><br>
     
     <a onclick="window.location.href='example2/index.html'">Exemplo 2 – Calculo e impressão de um vetor bidimensional</button><br>

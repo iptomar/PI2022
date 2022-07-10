@@ -33,13 +33,13 @@
             } 
         </style>
         <!------------- CSS - Cascading Style Sheets code --------------------->
-        <title>Passagem de um vetor para uma função</title>
+        <title>dem-func</title>
     </head>
     <body>
-        <h1 style="color:green">Passagem de um vetor para uma função</h1>
+        <h1 style="color:green">dem-func.html</h1>
         <plain> 
-        <br>   
-        <a  href="Example1.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+        <br>
+        <a  href="Example1.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a>   
         <br> 
         </plain>
         <pre>
@@ -48,23 +48,14 @@
 //Main Function
         function main() {
 	document.write("\n");
-        var array = new Array(8 ).fill(new Array(4 ).fill(0));
-        for( var i = 0; i < array.length; i = i + 1 ) {
-            preenche(array[i] ) ;
-            for( var j = 0; j < array[i] .length; j = j + 1 ) {
-                document.write("\t" + array[i][j] );
-            }
-            document.write("\n" );
-        }
+        function01() ;
     }
 
     //::::::::::::::::::::::::::::::::::::::::::::::::::
     //User Defined Functions Code
     //::::::::::::::::::::::::::::::::::::::::::::::::::
-    function preenche(v) {
-        for( var i = 0; i < v.length; i = i + 1 ) {
-            v[i] = parseInt( Math.random( ) * 10 ) ;
-        }
+    function function01() {
+        document.write("Ola Mundo das Funcoes" );
     }
 
 main()
