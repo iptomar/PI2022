@@ -36,10 +36,10 @@
         <title>Example1</title>
     </head>
     <body>
-        <h1 style="color:green">Example1.html</h1>
+        <h1 style="color:green">Example2.html</h1>
         <plain> 
         <br>   
-        <a  href="Example1.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+        <a  href="Example2.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
         <br> 
         </plain>
         <pre>
@@ -47,14 +47,18 @@
 //----------------------------- Javascript Code -------------------------------
 //Main Function
         function main() {
-		  var nota= Math.floor(Math.random()*21);
-		  document.write("Nota:", nota, "\n");
+		  var num = Math.floor(Math.random()*99) + 1; 
+        num *= Math.round(Math.random()) ? 1 : -1; 
+		  document.write("Numero:", num, "\n");
 			
-        if (nota >=10) {
-			document.write("Aprovado");
+        if (num >0) {
+			document.write("Positivo");
+		  }
+		  else if(num==0){
+		  document.write("Nulo");
 		  }
 		  else{
-		  document.write("Reprovado");
+		  document.write("Negativo")
 		  }
 		  
     }
