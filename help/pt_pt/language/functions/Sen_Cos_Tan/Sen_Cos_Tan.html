@@ -1,47 +1,48 @@
+<!DOCTYPE html>
 <html>
-<head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../style.css">
+        <title> Sen/Cos/Tan </title>
+    </head>
+    <body>
+     
+        <h1>Seno, Cosseno e Tangente</h1>
+<plain>
+  Algoritmo que solicita um angulo e imprime o seu seno, coseno e tangente.
 
-h2{font:bold 30px arial; color:black; text-align: center;}
+</plain>
 
-body{background-color:#3050a0;}
-.quadro {height: 800px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
-}
-.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+		
+        <table  style="width:100%" >
+            <tbody>
+                    <th>Fluxograma</th>	
+                    <th>Pseudocódigo</th>		  
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
+                </tr>
+                <tr>
 
-</style>
-<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
-</head>
-<body>
+            <td  valign=top>
+<img src="Sen_Cos_Tan.png"></td>
+            <td valign=top><pre>    inicio ProgramaPrincipal
+        ler real ang "Ângulo (rad) \t: "
+        escrever "Seno \t\t= " + sin(ang) + "\n"
+        escrever "Coseno \t\t= " + cos(ang) + "\n"
+            escrever "Tangente \t= " + tan(ang)
+            fim ProgramaPrincipal
 
-<div class="quadro">
-  <h2>Seno Coseno e Tangente</h2>
-  <p style="font-size:20px">Algoritmo que solicita um angulo e imprime o seu seno, coseno e tangente.</p>
-  <table>
-		<tr>
-			<th bgcolor="#92d8ff">Fluxograma pt-PT</th>
-			<th bgcolor="#92d8ff">Pseudocódigo pt-PT</th>
-		</tr>
-		<tr>
-			<th><img src="Sen_Cos_Tan.png" width="400" height="200" align="center"/></th>
-				<td>inicio ProgramaPrincipal<br>ler real ang "Ângulo (rad) \t: "<br>escrever "Seno \t\t= " + sin(ang) + "\n"<br>escrever "Coseno \t\t= " + cos(ang) + "\n"<br>escrever "Tangente \t= " + tan(ang)<br>fim ProgramaPrincipal<br>
-				</td>
-		</tr>
+</pre></td>                    
+        </tr>
+    </tbody>
 </table>
-<br>
-<p style="font-size:30px;">Output:</p>
-<img src="Sen_Cos_Tan_Out.png" width="200" height="250"/>
-</div>
+<h2> Output </h2>
+
+<input_output>
+<img src="Sen_Cos_Tan_Out.png">
+
+</input_output>
+
+
+
 </body>
 </html>
