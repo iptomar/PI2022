@@ -46,17 +46,17 @@
         <script>
 //----------------------------- Javascript Code -------------------------------
 //Main Function
-        function main() {
-	document.write("\n");
-        var var1 = 0 ;
-        document.write("var1 = " + var1 );
-        var var2 = 10 ;
-        var var3 = 20 ;
-        document.write("\nvar2 = " + var2 );
-        document.write("\nvar3 = " + var3 );
-    }
-
-main()
+function main() {
+    var n = 0 ;
+    do{
+        document.write("n : " );
+        document.write();// print text
+        n = parseInt(prompt("n","0") );
+        
+        document.write(n + "\n");// print input 
+    }while(n <= 0 );
+    document.write("Valor de n = " + n );
+}
 //----------------------------- Javascript Code -------------------------------
         </script>
         <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
