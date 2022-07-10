@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Array </title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1> Array </H1></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../../../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+		
+		<br><img src="define.png"   >
+				
+             
+<plain>
+    Defines an indexed variable in memory. Indexed variables are homogeneous sets of data that are accessible through indices.
+    Algorithmi allows defining the number of dimensions of the indexed variable that the user wants.
+    When defining a vector, the number of dimensions and the number of elements in each dimension are defined. Indexed variables are initialized with default values:
+
+</plain>
+
+<h2> syntax </h2>
+<pre>
+[define] &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expression&gt;] …]
+  </pre> 
+<br>
+			
+<br><strong>	&lt;TYPE&gt; </strong>	 – Type of data (inteiro | real | logico | texto)<br><br>
+
+<strong>	&lt;var&gt;</strong>	 – Variable name subject to the following rules
+			<br>&emsp;o	It can't be a reserved word<br>
+			&emsp;o	Must start with a letter (a-z; A-Z)<br>
+			&emsp;o	May contain digits (0-9)<br>
+			&emsp;o	Must be significant of what stores<br>	
+			
+			
+	<br><strong>[&lt;expression&gt;] 	</strong>- Computational expression whose result is a positive integer.<br>
+			
+<br><br><h2> Examples </h2>
+
+Exemplo 1 - define vetor/Array intenger with 10 positions
+<pre> define intenger i[10]</pre>
+
+Exemplo 2 - define vetor text with 2 positions	
+<pre>define text vetor[2]</pre>
+
+Exemplo 2 - definir dois vetores interiros ( com o valor zero por defeito)
+<pre>define intenger vetor1[], vetor2[]</pre>
+
+<br><h2> Programas </h2>
+<a onclick="window.location.href='example1/index.html'">Example 1 –     Calculating and printing a array</button><br>
+    
+    <a onclick="window.location.href='example2/index.html'">Example 2 –     Calculation and printing of a two-dimensional array    </button><br>
+
+        <a onclick="window.location.href='example3/index.html'">Example 3 –     Passing from a array to a function        </button>
+</body>
+</html>
