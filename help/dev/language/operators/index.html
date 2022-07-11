@@ -1,78 +1,64 @@
+<!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Tipo inteiro</title>
+    </head>
 <style>
-
-h2{font:bold 30px arial; color:black; text-align: center;}
-
-body{background-color:#3050a0;}
-.quadro {height: 1200px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
+.center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 35%;
 }
-.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.center1 {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 100%;
 }
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
 </style>
-<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
-</head>
-<body>
-
-<div class="quadro">
-<h2>Operadores aritméticos</h2>
- 
-  <table>
-  <tr bgcolor="#92d8ff">
-    <th>GAL</th>
+    <body>
+<h1>Operadores</h1>	
+<table>
+  <tr>
     <th>Descrição</th>
     <th>Prioridade</th>
     <th>Símbolo</th>
-    <th>Exemplo</th>
+    <th><a href="aritmético/index.html">Exemplos</th>
   </tr>
   <tr>
-    <td>POWER</td>
     <td>Potência</td>
     <td>33</td>
     <td>^</td>
     <td>2 ^ 3 = 8; 2.0 ^ 3 = 8.0</td>
   </tr>
   <tr>
-    <td>MOD</td>
     <td>Resto da divisão</td>
     <td>32</td>
     <td>%</td>
     <td>3 % 2 = 1; 4 % 2 = 0</td>
   </tr>
   <tr>
-    <td>DIV</td>
     <td>Divisão</td>
     <td>32</td>
     <td>/</td>
     <td>3 / 2 = 1; 3.0 / 2 = 1.5</td>
   </tr>
   <tr>
-    <td>MULT</td>
     <td>Multiplicação</td>
     <td>32</td>
     <td></td>
     <td>2 3 = 6; 2.5 * 2 = 5.0</td>
   </tr>
   <tr>
-    <td>SUB</td>
     <td>Subtração</td>
     <td>31</td>
     <td>-</td>
     <td>3 - 2 = 1; 2.5 + 1 = 1.5</td>
   </tr>
   <tr>
-    <td>SUM</td>
     <td>Adição</td>
     <td>31</td>
     <td>+</td>
@@ -82,15 +68,13 @@ td, th {
 
   <h2>Operadores relacionais</h2>
   <table>
-  <tr bgcolor="#92d8ff">
-    <th>GAL</th>
+  <tr>
     <th>Descrição</th>
     <th>Prioridade</th>
 	<th>Símbolo</th>
 	<th>Exemplo</th>
   </tr>
   <tr>
-    <td>LESS_OR_EQUAL</td>
     <td>Menor ou igual</td>
     <td>21</td>
 	<td>&lt=</td>
@@ -98,7 +82,6 @@ td, th {
 1 &lt= 1 = Verdadeiro</td>
   </tr>
   <tr>
-    <td>LESS_THAN</td>
     <td>Menor</td>
     <td>21</td>
 	<td>&lt </td>
@@ -106,7 +89,6 @@ td, th {
 1 &lt= 1 = Verdadeiro</td>
   </tr>
   <tr>
-    <td>GREATHER_OR_EQUAL</td>
     <td>Maior ou igual</td>
     <td>21</td>
 	<td>&gt=</td>
@@ -114,7 +96,6 @@ td, th {
 1 &gt= 1 = Verdadeiro</td>
   </tr>
   <tr>
-    <td>GREATHER_THAN</td>
     <td>Maior</td>
     <td>21</td>
 	<td>&gt </td>
@@ -122,7 +103,6 @@ td, th {
 1 &gt 1 = Falso</td>
   </tr>
   <tr>
-    <td>DIFFERENT</td>
     <td>Diferente</td>
     <td>20</td>
 	<td>!=</td>
@@ -130,7 +110,6 @@ td, th {
 1 != 1 = Falso</td>
   </tr>
   <tr>
-    <td>EQUAL</td>
     <td>Igual</td>
     <td>20</td>
 	<td>==</td>
@@ -140,30 +119,28 @@ td, th {
 </table>
 <h2>Operadores Lógicos</h2>
 <table>
-  <tr bgcolor="#92d8ff">
-    <th>GAL</th>
+  <tr>
     <th>Descrição</th>
     <th>Prioridade</th>
 	<th>Símbolo e Tabela de Verdade</th>
   </tr>
   <tr>
-    <td>AND</td>
     <td>Disjunção – OU</td>
     <td>12</td>
 	<td>
 		<table>
 			<tr>
 				<th>&&</th>
-				<th bgcolor="#92d8ff">V</th>
-				<th bgcolor="#92d8ff">F</th>
+				<th>V</th>
+				<th>F</th>
 			</tr>
 			<tr>
-				<td bgcolor="#92d8ff">V</td>
+				<td>V</td>
 				<td>V</td>
 				<td>F</td>
 			</tr>
 			<tr>
-				<td bgcolor="#92d8ff">V</td>
+				<td>V</td>
 				<td>F</td>
 				<td>F</td>
 			</tr>
@@ -171,23 +148,22 @@ td, th {
 	</td>
   </tr>
   <tr>
-    <td>OR</td>
     <td>Disjunção – OU</td>
     <td>11</td>
 	<td>
 		<table>
 			<tr>
 				<th>||</th>
-				<th bgcolor="#92d8ff">V</th>
-				<th bgcolor="#92d8ff">F</th>
+				<th>V</th>
+				<th>F</th>
 			</tr>
 			<tr>
-				<td bgcolor="#92d8ff">V</td>
+				<td>V</td>
 				<td>V</td>
 				<td>V</td>
 			</tr>
 			<tr>
-				<td bgcolor="#92d8ff">V</td>
+				<td>V</td>
 				<td>V</td>
 				<td>F</td>
 			</tr>
@@ -195,18 +171,17 @@ td, th {
 	</td>
   </tr>
   <tr>
-    <td>NOT</td>
     <td>Disjunção – OU</td>
     <td>13</td>
 	<td>
 		<table>
 			<tr>
 				<th>!</th>
-				<th bgcolor="#92d8ff">V</th>
-				<th bgcolor="#92d8ff">F</th>
+				<th>V</th>
+				<th>F</th>
 			</tr>
 			<tr>
-				<td bgcolor="#92d8ff"></td>
+				<td></td>
 				<td>F</td>
 				<td>V</td>
 			</tr>

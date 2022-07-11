@@ -10,8 +10,8 @@
 	
         <table  style="width:100%" >
             <tr>
-			<th><H1> Definir Variaveis </H1></th>
-                 <th><a href="../../index.html" target="_parent"> <img src="../../../imgs/help.png"  width = "32" height="32" ></a></th>
+			<th><H1> Faz... enquanto </H1></th>
+                  <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
 				
             </tr> 
 			<tr>
@@ -19,7 +19,7 @@
 		</table>	
 			
 			
-		 <img src="../../../../imgs/Faz Enquanto/logotipo.PNG"   >
+		 <img src="enquanto.png"   >
 				
            
 <plain>
@@ -28,38 +28,28 @@
 
 <h2> Sintaxe </h2>
 <pre>
-[definir] &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expressão&gt;] …]
+DO &lt;instructions&gt; WHILE &lt;logic expression>&lt;/logic>
   </pre> 
-<br>
-			
-<br><strong>	&lt;logic expression&gt; </strong>	 – Tipo de dados (inteiro | real | logico | texto)<br><br>
-
-<strong>	&lt;logic expression&gt;</strong>	 – expressão lógica
-			<br>&emsp;o	Não pode ser uma palavra reservada<br>
-			&emsp;o	Tem de começar por uma letra (a-z; A-Z)<br>
-			&emsp;o	Pode conter dígitos (0-9)<br>
-			&emsp;o	Deve ser significativo daquilo que armazena<br>	
-			
-			
-	<br><strong>[&lt;expression&gt;] 	</strong>- expressão computacional cujo tipo de resultado é compatível com o tipo de dados da variável, esta é opcional pois se não for inserida a variável irá tomar o valor por defeito.<br>
+  
+<br><strong>    &lt;TYPE> </strong> – Tipo de dados (inteiro | real | logico | texto)<br>		
+<br><strong>	&lt;logic expression&gt; </strong>	 – expressão lógica<br>
+<br><strong>	&lt;instruction&gt;</strong>	 – instruções do algoritmo<br>
 			
 <h2> Exemplos </h2>
-definir uma variável inteira	com o valor 10	
-<pre> definir inteiro i = 10  </pre>
+Define variavel inteira 0
+<pre> definir inteiro n = 0  </pre>
 
-definir uma variável real	( com o valor 0.0 por defeito)	
-<pre> definir real r   </pre>
+ecreve e executa
+<pre> escrever n + " " 
+ executar n = n + 1 </pre>
 
+Enquanto variavel for menor que 10
+<pre> enquanto n < 10  </pre>
 
-definir duas variaveis interiras ( com o valor zero por defeito)	
-<pre> definir inteiro i1,i2   </pre>
-
-definir uma variavel de texto ( omissão do tipo)	
-<pre> texto txt = "Algorithmi"   </pre>
 
 <h2> Programas </h2>
-<a onclick="window.location.href='example1/index.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 1 – Definir variáveis</button>	
-
+<a onclick="window.location.href='example1/index.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 1 – Faz enquanto</button>	<br>
+<a onclick="window.location.href='example1/index2.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 2 – Faz enquanto</button>
 
 
 
