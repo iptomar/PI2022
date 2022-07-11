@@ -9,28 +9,32 @@
      
         <h1>Array</h1>
 <plain>
-    Calculating and printing a array
+    Definir variáveis
 
 </plain>
 
 		
         <table  style="width:100%" >
             <tbody>
-                    <th>Flowchart</th>	
-                    <th>pseudocode</th>		  
+                    <th>Fluxograma</th>	
+                    <th>Pseudocódigo</th>		  
 
                 </tr>
                 <tr>
 
             <td  valign=top>
-            <img src="../../../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-1EN.png"></td>
-            <td valign=top><pre>            begin MainProgram
-                define integer vetor[5]
-                for integer i from 0 to elementsOf(vetor) step 1
-                    execute vetor[i]=i*10
-                    write "\nVetor[" + i + "] = "+vetor[i]
-                end for
-            end MainProgram
+            <img src="fluxo.png"></td>
+            <td valign=top><pre>           inicio Programa principal
+                definir inteiro array[8][4]
+                iterar inteiro i de 0 até length(array)  passo 1
+                      iterar inteiro j de 0 até length(array[i])   
+                                                         passo 1
+                          executar array[i][j] = i * 10 + j
+                         escrever "\t" + array[i][j]
+                       fim iterar
+                       escrever "\n"
+                fim iterar
+               fim Programa principal
 
 </pre></td>                    
         </tr>
