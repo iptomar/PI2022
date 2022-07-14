@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../../style.css">
-        <title> Definir Variaveis </title>
+        <title> Define variables </title>
     </head>
     <body>
 	
 	
         <table  style="width:100%" >
             <tr>
-			<th><H1> Definir Variaveis </H1></th>
+			<th><H1> Define variables </H1></th>
                  <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
 				
             </tr> 
@@ -23,43 +23,44 @@
 				
            
 <plain>
-Define uma ou mais variáveis em memória. Diz-se variável porque o seu conteúdo pode variar, mas nunca o seu nome ou o seu tipo. 
-A definição de uma variável obriga a fazer a sua inicialização com uma expressão que seja compatível com o tipo de dados da variável.
+Defines one or more variables in memory. It is said to be variable because its content may vary, but never its name or its type.
+The definition of a variable forces you to boot with an expression that is compatible with the data type of the variable,
+the multi-statement has allowed multiple settings and initializations of these settings to be rescaned in a single command.
 </plain>
 
-<h2> Sintaxe </h2>
+<h2> Syntax </h2>
 <pre>
-[definir] &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expressão&gt;] …]
+[define] &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expression&gt;] …]
   </pre> 
 <br>
 			
-<br><strong>	&lt;TYPE&gt; </strong>	 – Tipo de dados (inteiro | real | logico | texto)<br><br>
+<br><strong>	&lt;TYPE&gt; </strong>	 – Data type (int | real | logic | text)<br><br>
 
-<strong>	&lt;var&gt;</strong>	 – Nome da variável sujeita às seguintes regras
-			<br>&emsp;o	Não pode ser uma palavra reservada<br>
-			&emsp;o	Tem de começar por uma letra (a-z; A-Z)<br>
-			&emsp;o	Pode conter dígitos (0-9)<br>
-			&emsp;o	Deve ser significativo daquilo que armazena<br>	
+<strong>	&lt;var&gt;</strong>	 – Variable name subject to the following rules
+			<br>&emsp;o	It can't be a reserved word<br>
+			&emsp;o	You must start with a letter (a-z; A-Z)<br>
+			&emsp;o	May contain digits (0-9)<br>
+			&emsp;o	It should be significant from what stores<br>	
 			
 			
-	<br><strong>[&lt;expression&gt;] 	</strong>- expressão computacional cujo tipo de resultado é compatível com o tipo de dados da variável, esta é opcional pois se não for inserida a variável irá tomar o valor por defeito.<br>
+	<br><strong>[&lt;expression&gt;] 	</strong>- computational expression whose result type is compatible with the variable data type, this is optional because if not inserted the variable will take the default value<br>
 			
-<h2> Exemplos </h2>
-definir uma variável inteira	com o valor 10	
-<pre> definir inteiro i = 10  </pre>
+<h2> Example </h2>
+set an integer variable with the value 10
+<pre> define integer i = 10  </pre>
 
-definir uma variável real	( com o valor 0.0 por defeito)	
-<pre> definir real r   </pre>
+define a real variable	( with the value 0.0 by default)	
+<pre> define real r   </pre>
 
 
-definir duas variaveis interiras ( com o valor zero por defeito)	
-<pre> definir inteiro i1,i2   </pre>
+set two integer variables (with zero value by default)
+<pre> define integer i1,i2   </pre>
 
-definir uma variavel de texto ( omissão do tipo)	
-<pre> texto txt = "Algorithmi"   </pre>
+define a varied text (omission of the type)	
+<pre> define string txt = "Algorithmi"   </pre>
 
-<h2> Programas </h2>
-<a onclick="window.location.href='example1/index.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 1 – Definir variáveis</button>	
+<h2> Programs </h2>
+<a onclick="window.location.href='example1/index.html'"> <img src="../../imgs/alg.png" width = "32"> Example – Define variables</button>	
 
 
 
