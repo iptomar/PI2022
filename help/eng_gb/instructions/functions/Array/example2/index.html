@@ -3,39 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../style.css">
-        <title> Calculation and printing of a two-dimensional array </title>
+        <title> Função com parametros </title>
     </head>
     <body>
      
         <h1>Array</h1>
 <plain>
-    Calculation and printing of a two-dimensional array
+    Calculo e impressão de um vetor bidimensional
 
 </plain>
 
 		
         <table  style="width:100%" >
             <tbody>
-                    <th>Flowchart</th>	
-                    <th>Pseudocode</th>		  
+                    <th>Fluxograma</th>	
+                    <th>Pseudocódigo</th>		  
 
                 </tr>
                 <tr>
 
             <td  valign=top>
-                <img src="../../../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-2EN.png"></td>
+                <img src="fluxo.png"></td>
             <td valign=top><pre>
-            begin MainProgram
-                define integer array[8][4]
-                for integer i from 0 to elementsOf(array) step 1
-                    for integer j from 0 to length(array[i]) step 1
-                        execute array[i][j]=i*10+j
-                        write "\t"+array[i][j]
-                    end for
-                write "\n"
-                end for
-            end MainProgram
-                
+            inicio Programa principal
+                definir inteiro array[8][4]
+                iterar inteiro i de 0 até length(array)  passo 1
+                      iterar inteiro j de 0 até length(array[i])   
+                                                         passo 1
+                          executar array[i][j] = i * 10 + j
+                         escrever "\t" + array[i][j]
+                       fim iterar
+                       escrever "\n"
+                fim iterar
+            fim Programa principal
+
 </pre></td>                    
         </tr>
     </tbody>

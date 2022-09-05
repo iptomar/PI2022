@@ -1,48 +1,54 @@
-<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <title> Iteração </title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1> Iteração de um conjunto de valores </H1></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+			
+		 <img src="iterar.png"   >
+				
+           
+<plain>
+Permite iterar um conjunto de valores dentro do intervalo [ex1 , ex2[ onde os valores estão separados por ex3. O limite inicial de iterador está incluído e o limite final não. A instrução permite definir uma variável de iteração ou utilizar uma variável numérica já existente.
+</plain>
 
-<body>
-<div class = "quadro">
-<h1>Iteration of a set of values</h1>
+<h2> Sintaxe </h2>
+<pre>
+iTERAR &lt;[TIPO]&gt; &lt;var&gt; DE &lt;ex1&gt; ATÉ &lt;ex2&gt; PASSO &lt;ex3&gt;<br>
+&lt;instruções do algoritmo&gt <br>
+Fim
+  </pre> 
+<br>
+			
+<br><strong>	&lt;TIPO&gt; </strong>	 – tipo de variável numérica ( INTEGER | REAL) - Opcional.<br>
 
-<p>Lets you iterate over a set of values ​​within the range [ex1 , ex2[ where values ​​are separated by ex3. The starting iterator limit is included and the ending limit is not. The instruction allows you to define an iteration variable or use an existing numeric variable. </p>
+<strong>	&lt;var&gt;</strong>	 nome da variável de iteração.<br>
+<strong>    &lt;ex1&gt;</strong>	expressão computacional para determinar o valor inicial.<br>
+<strong>	&lt;ex2&gt;</strong>	expressão computacional para determinar o valor final.<br>
+<strong>	&lt;ex3&gt;</strong>	expressão computacional para determinar a separação entre os valores do intervalo.<br>	
 
-<td><img src="../../../../imgs/iterar/algorithmi_gb.png"></td>
-<p>(Type) - numeric variable type ( INTEGER | REAL) - Opcional<br>
-    (var) - iteration variable name<br> 
-    (ex1) - computational expression to determine the initial value<br> 
-    (ex2) - computational expression to determine the final value<br>
-    (ex3) - computational expression to determine the separation between the range values<br>
-</p>
-<h4>Example 1 - count in ascending order</h4>
-<h5>Algorithm that prints in the console the integers between 0 and 10 in ascending order</h5>
+<h2> Exemplo </h2>
+Adicionar uma instrução de iterar
+<pre> inteiro i de 0 até 5 passo 1  </pre>
 
-<table name="g" border="5">
-    <tr>
-        <th>Fluxogram</th>
-        <th>pseudocode</th>
-    </tr>
-    <tr>
-        <td><img src="../../../../imgs/iterar/Para_X_de_Y_GB.png"></td>
-        <td><img src="../../../../imgs/iterar/Para_X_de_Y_pseudo_GB.png"></td>
-    </tr>
-</table>
-<br><h4>Result:</h4><br>
-<img src="../../../../imgs/iterar/para_resultado.png">
+<h2> Programas </h2>
+<a onclick="window.location.href='example1/index.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 1 – contar por ordem crescente</button><br>	
+<a onclick="window.location.href='example2/index.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 2 – Soma dos 5 primeiros pares</button>	
 
-<h4>Example 2 - count in ascending order</h4>
-<h5>Algorithm that prints in the console the integers between 0 and 10 in ascending order</h5>
 
-<table name="g" border="5">
-    <tr>
-        <th>Fluxogram</th>
-        <th>pseudocode</th>
-    </tr>
-    <tr>
-        <td><img src="../../../../imgs/iterar/exemplo2_gb.png"></td>
-        <td><img src="../../../../imgs/iterar/exemplo2_pseudo_gb.png"></td>
-    </tr>
-</table>
-<br><h4>Result:</h4><br>
-<img src="../../../../imgs/iterar/resultado_GB.png">
-</div>
-</body> 
+</body>
+</html>

@@ -8,39 +8,41 @@
     <body>
      
         <h1>Array</h1>
-<plain> 
-    Passing from a array to a function
+<plain>
+    Passagem de um vetor para uma função
 
 </plain>
 
 		
         <table  style="width:100%" >
             <tbody>
-                    <th colspan="2">Flowchart</th>	
-                    <th>Pseudocode</th>		  
+                    <th colspan="2">Fluxograma</th>	
+                    <th>Pseudocódigo</th>		  
 
                 </tr>
                 <tr>
 
             <td  valign=top>
-            <img src="../../../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-3EN.png"></td>
-              <td>  <img src="../../../../../../imgs/funcoes-arrays/Ima-cap5/fluxo5-1-3ENp2.png"></td>
-            <td valign=top><pre>begin MainProgram
-    define integer array[8][4]
-    for integer i from 0 to elementsOf(array) step 1
-        execute fill(array[i])
-        for integer j from 0 to length(array[i]) step 1
-            write "\t"+array[i][j]
-        end for
-        write "\n"
-    end for
-end MainProgram
+            <img src="fluxop1.png"></td>
+              <td>  <img src="fluxop2.png"></td>
+            <td valign=top><pre>
+                inicio Programa principal
+    definir inteiro array[8][4]
+    iterar inteiro i de 0 até length(array)  passo 1
+        executar preenche(array[i])
+        iterar inteiro j de 0 até length(array[i])  passo 1
+            escrever "\t" + array[i][j]
+        fim iterar
+        escrever "\n"
+    fim iterar
+fim Programa principal
 
-function void fill(integer v[])
-    for integer i from 0 to elementsOf(v) step 1
-        execute v[i] = int(rand()*10)
-    end for
-end fill
+funcao vazio preenche(inteiro v[])
+    iterar inteiro i de 0 até length(v)  passo 1
+        executar v[i] = int(random() * 10)
+    fim iterar
+fim preenche
+
 </pre></td>                    
         </tr>
     </tbody>

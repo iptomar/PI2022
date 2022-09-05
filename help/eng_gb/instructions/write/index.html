@@ -1,52 +1,56 @@
+<!DOCTYPE html>
 <html>
-<head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <title> Escrever na consola </title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1> Escrever na consola </H1></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+			
+		 <img src="write.png"   >
+				
+           
+<plain>
+Escreve o valor de uma ou mais expressões na consola. As expressões podem ser constituídas por variáveis simples, e neste caso escreve o seu conteúdo, ou uma expressão complexa e neste caso escreve o resultado depois de ser convertido para texto
+</plain>
 
-h2{font:bold 30px arial; color:black; text-align: center;}
+<h2> Sintaxe </h2>
+<pre>
+escrever &lt;expressão&gt;[, &lt;expressão&gt; …]
+  </pre> 
+<br>
+			
+<br><strong>	&lt;TYPE&gt; </strong>	 – Tipo de dados (inteiro | real | logico | texto)<br><br>
 
-body{background-color:#3050a0;}
-.quadro {height: 800px; width: 800px; border: 5px outset black; background-color: #F5F5DC; text-align: left; font:20px; position:relative; left:365px ; top:35px;
-}
-.botao{font:15px Arial; width:150px; height:50px; margin-bottom:5px;}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-a{
-  border-bottom: 4px solid blue;
-  cursor:pointer;
-}
+<strong>•	&lt;expressão&gt;– expressão computacional	<br>
+			
+<h2> Exemplos </h2>
+Escrever a frase "Hello World"	
+<pre> escrever "Hello World"  </pre>
 
-</style>
-<button class="botao" onclick="window.location.href='../../index.html'">Return To Main Page</button>
-</head>
-<body>
+escreve uma variavel de texto ( omissão do tipo)	
+<pre> definir texto txt = "Algorithmi"<br>
+escrever txt   </pre>
 
-<div class="quadro">
-  <h2>Write</h2>
-  Write the value of one or more expressions on the console. the expressions could be constituted by simple variable, and in this case write the content, or one complex expression and in this case writes the result after being converted to text
-  <table>
-  <tr>
-    <th>Fluxogram Simbol</th>
-    <th>pseudocode en-GB</th>
-   </tr>
-  <tr>
-    <td><img src="../../../../imgs/Write_img.png"></td>
-    <td>write &lt;expression&gt;[, &lt;expression&gt; …]</td>
-  </tr>
-</table>
-  •	&lt;expression&gt;– computacional expression<br>
+<h2> Programas </h2>
+<a onclick="window.location.href='example1/index.html'"> <img src="../../imgs/alg.png" width = "32"> Exemplo 1 – Escrever na consola</button>	
 
 
-  <a onclick="window.location.href='../write/exemplo.html'">exemple - Writes on console</button>
 
 
-</div>
+
+
 </body>
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <title> Executar </title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1>Executar</H1></th>
+                 <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+			
+		 <img src="execute_logo.png"   >
+				
+           
+<plain>
+    Serve para executar cálculos em expressões computacionais e guardar o seu resultado numa variável definida em memória.
+    Também serve para executar procedimentos, isto é, função que não calculam valores.
+    Este com a multi-instrução permite fazer múltiplos cálculos numa só forma.
+
+</plain>
+
+<h2> Sintaxe </h2>
+<pre>
+Execute &lt;function&gt; | &lt;var&gt; = &lt;expression&gt;[, &lt;function&gt; | &lt;var&gt; = &lt;expression&gt; …] ]
+  </pre> 
+<br>
+			
+<br><strong>	&lt;TYPE&gt; </strong>	 – •	<TYPE> – Tipo de dados (INTEGER | REAL | LOGIC | TEXT)<br><br>
+
+<strong>	•	&lt;var&gt; </strong>– variável definida em memória</br>
+    •	<strong>&lt;expression&gt; </strong>– expressão computacional</br>
+    •	<strong>&lt;function&gt; </strong>– função definida pelo utilizador</br>
+    O símbolo “|” representa “ou”, isto significa que pode ser <strong>&lt;function&gt;</strong> ou <strong>&lt;var&gt; = &lt;expression&gt;</strong></br>
+    
+			
+			
+	
+			
+<h2> Exemplos </h2>
+<strong>EXEMPLO 1</strong>
+
+<br>
+Ler 2 variáveis(n1,n2), de seguida defenir uma dessas variáveis como a soma de ambas usando a instrução executar e depois escrever esse valor
+<pre>    ler inteiro n1 "1º número : "
+    ler inteiro n2 "2º número : "
+    executar n1 = n1 + n2
+    escrever "Soma = " + n1 </pre>
+    
+<strong> EXEMPLO 2</strong>
+<br>
+Definir duas variáveis inteiras, var1 com o valor 10 e i com o valor de 0,de seguida criar um ciclo enquanto...faz	onde se vai utilizar a instrução executar para mudar o valor da variável i e por último usar uma instrução escrever fora do ciclo para verificar que o valor de i foi alterado
+<pre>   definir inteiro var1 = 10
+    definir inteiro i = 0
+    enquanto i < var1 faz
+        executar i = i + 1
+    fim enquanto
+    escrever i  
+
+</pre>
+<strong>EXEMPLO 3</strong>
+<br>
+Criar uma função separada do programa principal e de seguida chamar essa função para o programa principal usando a instrução executar  
+<pre>   funcao vazio funcao1()
+        escrever "Olá mundo das funções"
+   fim funcao1 
+
+   inicio ProgramaPrincipal
+        executar funcao1()
+   fim ProgramaPrincipal
+</pre>
+
+
+<h2> Programas </h2>
+
+<a onclick="window.location.href='example_execute/index1.html'"> testar Exemplo 1 </button>	
+<br>
+
+
+<a onclick="window.location.href='example_execute/index2.html'"> testar Exemplo 2 </button>	
+<br>
+
+
+<a onclick="window.location.href='example_execute/index3.html'"> testar Exemplo 3 </button>	
+<br>
+
+
+
+
+
+
+
+</body>
+</html>
