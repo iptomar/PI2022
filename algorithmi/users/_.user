@@ -1,5 +1,5 @@
 #Algorithmi 22.05
-#Fri Jul 08 15:29:23 BST 2022
+#Mon Sep 05 10:25:29 BST 2022
 writeColor_R=210
 readColor_G=153
 terminatorColor_R=178
@@ -122,7 +122,7 @@ keySintaxNormal_A=255
 executedColor_B=153
 executedColor_A=128
 executeColor_G=255
-keyLastProgramOpened=C\:/Users/manso/Documents/GitHub/PI2022/algorithmi/code/noName.prog
+keyLastProgramOpened=D\:/OneDrive/OneDrive - Instituto Polit\u00E9cnico de Tomar/Documentos/GitHub/PI2022/algorithmi/code/noName.prog
 executeColor_B=210
 executeColor_A=255
 readColor_R=255
