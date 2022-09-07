@@ -22,6 +22,10 @@ input_output {
     padding: 10pt;
 }
 
+help{
+    align-items: flex-end;
+}
+
 plain {
     white-space: pre-wrap;
     font-family: monospace;
