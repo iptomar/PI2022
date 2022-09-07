@@ -1,7 +1,9 @@
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
 <style>
-
+/*
 h2{font:bold 30px arial; color:black; text-align: center;}
 
 body{background-color:#3050a0;}
@@ -19,120 +21,126 @@ td, th {
   text-align: left;
   padding: 8px;
 }
-
+*/
 </style>
-<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
-</head>
+
 <body>
+  <table  style="width:100%" >
+    <tr>
+     <th><H1> Operators </H1></th>
+         <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+    </tr> 
+     <tr>
+  </table>
 
 <div class="quadro">
-<h2>Operadores aritméticos</h2>
+<h2>Arithmetic operators</h2>
  
   <table>
   <tr>
-    <th>Descrição</th>
-    <th>Prioridade</th>
-    <th>Símbolo</th>
-    <th>Exemplo</th>
+    <th>Description</th>
+    <th>Priority</th>
+    <th>Symbol</th>
+    <th>Exemple</th>
   </tr>
   <tr>
-    <td>Potência</td>
+    <td>Potency</td>
     <td>33</td>
     <td>^</td>
     <td>2 ^ 3 = 8; 2.0 ^ 3 = 8.0</td>
   </tr>
   <tr>
-    <td>Resto da divisão</td>
+    <td>Rest of Division</td>
     <td>32</td>
     <td>%</td>
     <td>3 % 2 = 1; 4 % 2 = 0</td>
   </tr>
   <tr>
-    <td>Divisão</td>
+    <td>Division</td>
     <td>32</td>
     <td>/</td>
     <td>3 / 2 = 1; 3.0 / 2 = 1.5</td>
   </tr>
   <tr>
-    <td>Multiplicação</td>
+    <td>Multiplication</td>
     <td>32</td>
     <td></td>
     <td>2 3 = 6; 2.5 * 2 = 5.0</td>
   </tr>
   <tr>
-    <td>Subtração</td>
+    <td>Subtraction</td>
     <td>31</td>
     <td>-</td>
     <td>3 - 2 = 1; 2.5 + 1 = 1.5</td>
   </tr>
   <tr>
-    <td>Adição</td>
+    <td>Addition</td>
     <td>31</td>
     <td>+</td>
     <td>3 + 2 = 5 2.5 + 1 = 3.5</td>
   </tr>
 </table>
 
-  <h2>Operadores relacionais</h2>
+  <h2>Relational operators</h2>
   <table>
   <tr>
-    <th>Descrição</th>
-    <th>Prioridade</th>
-	<th>Símbolo</th>
-	<th>Exemplo</th>
+    <th>Description</th>
+    <th>Priority</th>
+	<th>Symbol</th>
+	<th>Exemple</th>
   </tr>
   <tr>
-    <td>Menor ou igual</td>
+    <td>Less or equal</td>
     <td>21</td>
 	<td>&lt=</td>
-	<td>3 &lt= 2 = Falso
-1 &lt= 1 = Verdadeiro</td>
+	<td>3 &lt= 2 = False
+1 &lt= 1 = True</td>
   </tr>
   <tr>
-    <td>Menor</td>
+    <td>less</td>
     <td>21</td>
 	<td>&lt </td>
-	<td>3 &lt= 2 = Falso
-1 &lt= 1 = Verdadeiro</td>
+	<td>3 &lt= 2 = False
+1 &lt= 1 = True</td>
   </tr>
   <tr>
-    <td>Maior ou igual</td>
+    <td>Less or equal</td>
     <td>21</td>
 	<td>&gt=</td>
-	<td>3 &gt= 2 = Verdadeiro
-1 &gt= 1 = Verdadeiro</td>
+	<td>3 &gt= 2 = True
+1 &gt= 1 = True</td>
   </tr>
   <tr>
-    <td>Maior</td>
+    <td>Bigger</td>
     <td>21</td>
 	<td>&gt </td>
-	<td>3 &gt 2 = Verdadeiro
-1 &gt 1 = Falso</td>
+	<td>3 &gt 2 = True
+1 &gt 1 = False</td>
   </tr>
   <tr>
-    <td>Diferente</td>
+    <td>Different</td>
     <td>20</td>
 	<td>!=</td>
-	<td>3 != 2 = Verdadeiro
-1 != 1 = Falso</td>
+	<td>3 != 2 = True
+1 != 1 = False</td>
   </tr>
   <tr>
-    <td>Igual</td>
+    <td>Equal</td>
     <td>20</td>
 	<td>==</td>
-	<td>3 &lt= 2 = Falso
-1 &lt= 1 = Verdadeiro</td>
+	<td>3 &lt= 2 = False
+1 &lt= 1 = True</td>
   </tr>
 </table>
-<h2>Operadores Lógicos</h2>
+<h2>Logical Operators</h2>
 <table>
   <tr>
-    <th>Descrição</th>
-    <th>Prioridade</th>
-	<th>Símbolo e Tabela de Verdade</th>
+    <th>Description</th>
+    <th>Priority</th>
+	<th>Symbol and in Truth Table</th>
   </tr>
   <tr>
-    <td>Disjunção – OU</td>
+    <td>Disjunction – OR</td>
     <td>12</td>
 	<td>
 		<table>
@@ -156,7 +164,7 @@ td, th {
   </tr>
   <tr>
     <td>OR</td>
-    <td>Disjunção – OU</td>
+    <td>Disjunction – OR</td>
     <td>11</td>
 	<td>
 		<table>
@@ -180,7 +188,7 @@ td, th {
   </tr>
   <tr>
     <td>NOT</td>
-    <td>Disjunção – OU</td>
+    <td>Disjunction – OR</td>
     <td>13</td>
 	<td>
 		<table>

@@ -1,7 +1,9 @@
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+</head>
 <style>
-
+/*
 h2{font:bold 30px arial; color:black; text-align: center;}
 h1{font:bold 20px arial; color:black; text-align: center;}
 
@@ -26,22 +28,29 @@ td, th {
   margin-right: auto;
   width: 50%;
 }
+*/
 </style>
-<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
-</head>
+
 <body>
+  <table  style="width:100%" >
+    <tr>
+     <th><H1> Define Variables</H1></th>
+         <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
+    </tr> 
+     <tr>
+  </table>
 
 <div class="quadro">
-  <h2>Expressões computacionais</h2>
-  <p style="font-size:20px">As expressões são um conjunto de variáveis, constantes, operadores e funções. As expressões são avaliadas da esquerda para a direita, respeitando a prioridade dos operadores, e os parêntesis curvos alteram essa prioridade.</p>
-  <h2>Expressões numéricas</h2>
-  <p style="font-size:20px">Ó resultado de uma expressão numérica é sempre um inteiro se todos os operandos forem inteiros e real se pelo menos um deles for real.</p>
+  <h2>Computational expressions</h2>
+  <p style="font-size:20px">Expressions are a set of variables, constants, operators, and functions. Expressions are evaluated from left to right, respecting the priority of operators, and curved parentheses change that priority.</p>
+  <h2>Numerical expressions</h2>
+  <p style="font-size:20px">The result of a numeric expression is always an integer if all operands are integers and real if at least one of them is real.</p>
   <table>
   <tr>
   <tr bgcolor="#92d8ff">
-    <th>Exemplos</th>
-    <th>Computação</th>
-    <th>Tipo</th>
+    <th>Examples</th>
+    <th>Computation</th>
+    <th>Tipe</th>
   </tr>
   <tr>
     <td>(2+3)/4</td>
@@ -58,7 +67,7 @@ td, th {
     <td>a*a + b*b*b
 a^2 + b^3
 pow(a,2)+pow(b,3)</td>
-    <td><a href="real/real.html">real</a> ou <a href="inteiro/inteiro.html">inteiro</a></td>
+    <td><a href="real/real.html">real</a> or <a href="inteiro/inteiro.html">inteiro</a></td>
   </tr>
   <tr>
     <td>πr²</td>
@@ -74,17 +83,17 @@ _PI * pow(r,2)</td>
     <td><a href="real/real.html">real</a></td>
   </tr>
 </table>
-	<h2>Exemplo – Expressões textuais</h2>
-	<p style="font-size:20px">As expressões textuais têm apenas o operador de soma definido que possui o significado de concatenação.</p>
+	<h2>Exemple – Textual expressions</h2>
+	<p style="font-size:20px">Textual expressions have only the sum operator defined which has the concatenation meaning.</p>
 <table>
   <tr>
   <tr bgcolor="#92d8ff">
-    <th>Computação</th>
-    <th><a href="textuais/textuais.html">Resultados</th>
+    <th>Computation</th>
+    <th><a href="textuais/textuais.html">Results</th>
   </tr>
   <tr>
-    <td>“OLA” + “MUNDO”</td>
-    <td>“OLAMUNDO”</td>
+    <td>“HELLO” + “WORLD”</td>
+    <td>“HELLOWORLD”</td>
   </tr>
   <tr>
     <td>“Var = “ + 5</td>
@@ -108,21 +117,21 @@ _PI * pow(r,2)</td>
   </tr>
 </table>
 	
-<h2>Expressões lógicas</h2>
-	<p style="font-size:20px">As expressões lógicas possuem variáveis lógicas, operadores relacionais ou operadores lógicos.</p>
+<h2>Logical expressions</h2>
+	<p style="font-size:20px">Logical expressions have logical variables, relational operators, or logical operators.</p>
 <table>
   <tr>
   <tr bgcolor="#92d8ff">
-    <th>Computação</th>
-    <th><a href="logicos/logicos.html">Resultados</th>
+    <th>Computation</th>
+    <th><a href="logicos/logicos.html">Results</th>
   </tr>
   <tr>
     <td>1 > 2</td>
-    <td>Falso</td>
+    <td>False</td>
   </tr>
   <tr>
     <td>1 < 2 && 2 > 0</td>
-    <td>Verdadeiro</td>
+    <td>True</td>
   </tr>
 </table>
 </div>
