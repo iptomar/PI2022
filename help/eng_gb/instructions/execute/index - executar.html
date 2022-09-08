@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../../style.css">
-        <title> Executar </title>
+        <title> Execute </title>
     </head>
     <body>
 	
 	
         <table  style="width:100%" >
             <tr>
-			<th><H1>Executar</H1></th>
+			<th><H1>Execute</H1></th>
                  <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "32" height="32" ></a></th>
 				
             </tr> 
@@ -23,24 +23,24 @@
 				
            
 <plain>
-    Serve para executar cálculos em expressões computacionais e guardar o seu resultado numa variável definida em memória.
-    Também serve para executar procedimentos, isto é, função que não calculam valores.
-    Este com a multi-instrução permite fazer múltiplos cálculos numa só forma.
+    It serves to perform calculations on computational expressions and store their result in a variable defined in memory.
+    It also serves to execute procedures, that is, functions that do not calculate values.
+    This one with the multi-statement allows you to do multiple calculations in one form.
 
 </plain>
 
-<h2> Sintaxe </h2>
+<h2> Syntax </h2>
 <pre>
-Execute &lt;function&gt; | &lt;var&gt; = &lt;expression&gt;[, &lt;function&gt; | &lt;var&gt; = &lt;expression&gt; …] ]
+run &lt;function&gt; | &lt;var&gt; = &lt;expression&gt;[, &lt;function&gt; | &lt;var&gt; = &lt;expression&gt; …] ]
   </pre> 
 <br>
 			
-<br><strong>	&lt;TYPE&gt; </strong>	 – •	<TYPE> – Tipo de dados (INTEGER | REAL | LOGIC | TEXT)<br><br>
+<br><strong>	&lt;TYPE&gt; </strong>	 – •	<TYPE> – Data type (INTEGER | REAL | LOGIC | TEXT)<br><br>
 
-<strong>	•	&lt;var&gt; </strong>– variável definida em memória</br>
-    •	<strong>&lt;expression&gt; </strong>– expressão computacional</br>
-    •	<strong>&lt;function&gt; </strong>– função definida pelo utilizador</br>
-    O símbolo “|” representa “ou”, isto significa que pode ser <strong>&lt;function&gt;</strong> ou <strong>&lt;var&gt; = &lt;expression&gt;</strong></br>
+<strong>	•	&lt;var&gt; </strong>– variable defined in memory</br>
+    •	<strong>&lt;expression&gt; </strong>– computational expression</br>
+    •	<strong>&lt;function&gt; </strong>– user defined function</br>
+    The symbol “|” represents “or”, that means it can be <strong>&lt;function&gt;</strong> ou <strong>&lt;var&gt; = &lt;expression&gt;</strong></br>
     
 			
 			
@@ -50,47 +50,47 @@ Execute &lt;function&gt; | &lt;var&gt; = &lt;expression&gt;[, &lt;function&gt; |
 <strong>EXEMPLO 1</strong>
 
 <br>
-Ler 2 variáveis(n1,n2), de seguida defenir uma dessas variáveis como a soma de ambas usando a instrução executar e depois escrever esse valor
-<pre>    ler inteiro n1 "1º número : "
-    ler inteiro n2 "2º número : "
-    executar n1 = n1 + n2
-    escrever "Soma = " + n1 </pre>
+Read 2 variables (n1,n2), set one of these variables as the sum of both using the execute statement and write that value
+<pre>    read integer n1 "1st number : "
+    read integer n2 "2nd number : "
+    run n1 = n1 + n2
+    write "Sum = " + n1 </pre>
     
-<strong> EXEMPLO 2</strong>
+<strong> EXAMPLE 2</strong>
 <br>
-Definir duas variáveis inteiras, var1 com o valor 10 e i com o valor de 0,de seguida criar um ciclo enquanto...faz	onde se vai utilizar a instrução executar para mudar o valor da variável i e por último usar uma instrução escrever fora do ciclo para verificar que o valor de i foi alterado
-<pre>   definir inteiro var1 = 10
-    definir inteiro i = 0
-    enquanto i < var1 faz
-        executar i = i + 1
-    fim enquanto
-    escrever i  
+Define two integer variables, var1 with the value 10 and i with the value of 0, then create a cycle while...does where you will use the execute instruction to change the value of the variable i and finally use an instruction write outside the cycle to check that the value of i has changed
+<pre>  define integer var1 = 10
+    define integer i = 0
+    while i < var1 do
+        run i = i + 1
+    end while
+    write i  
 
 </pre>
-<strong>EXEMPLO 3</strong>
+<strong>EXAMPLE 3</strong>
 <br>
-Criar uma função separada do programa principal e de seguida chamar essa função para o programa principal usando a instrução executar  
-<pre>   funcao vazio funcao1()
-        escrever "Olá mundo das funções"
-   fim funcao1 
+Create a separate function from the main program and then call that function to the main program using the execute statement  
+<pre>   empty function function1()
+    write "Hello world of functions"
+    end function1 
 
-   inicio ProgramaPrincipal
-        executar funcao1()
-   fim ProgramaPrincipal
+    start MainProgram
+         run function1()
+    end MainProgram
 </pre>
 
 
-<h2> Programas </h2>
+<h2> Programs </h2>
 
-<a onclick="window.location.href='example_execute/index1.html'"> testar Exemplo 1 </button>	
+<a onclick="window.location.href='example_execute/index1.html'"><img src="../../imgs/alg.png" width = "32"> Example 1 </button>	
 <br>
 
 
-<a onclick="window.location.href='example_execute/index2.html'"> testar Exemplo 2 </button>	
+<a onclick="window.location.href='example_execute/index2.html'"><img src="../../imgs/alg.png" width = "32"> Example 2 </button>	
 <br>
 
 
-<a onclick="window.location.href='example_execute/index3.html'"> testar Exemplo 3 </button>	
+<a onclick="window.location.href='example_execute/index3.html'"><img src="../../imgs/alg.png" width = "32"> Example 3 </button>	
 <br>
 
 
