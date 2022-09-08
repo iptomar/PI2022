@@ -1,0 +1,14 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    inicio 
+        escrever "Nº \t Nome\n"
+        escrever "1 \t Um\n"
+        escrever "10 \t Dez\n"
+        escrever "100 \t Cem\n"
+        escrever "1000 \t Mil\n"
+        escrever "1000000 \t Milhão"
+    fim 
+
+
+//pseudocode  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 set 07 16:43
