@@ -190,6 +190,245 @@ td, th {
   </tr>
 </table>
 
+<h2>Precedecia</h2>
+<table>
+  <tr>
+    <th>Operador</th>
+    <th>Descrição</th>
+    <th>Associatividade</th>
+  </tr>
+  <tr>
+    <td>( … )</td>
+    <td>Agrupamento</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>… . …</td>
+    <td>Acesso a Membro</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… [ … ]</td>
+    <td>Acesso a Membro Computado</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>new … ( … )</td>
+    <td>new (com lista de argumentos)</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>… ( … )</td>
+    <td>Chamada a Função</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>new …</td>
+    <td>new (sem lista de argumentos)</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… ++</td>
+    <td>Incremento Pós-fixado</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>… --</td>
+    <td>Decremento Pós-fixado</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>! …</td>
+    <td>NÃO lógico</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>~ …</td>
+    <td>NÃO bit-a-bit</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>+ …</td>
+    <td>Positivo Unário</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>- …</td>
+    <td>Negativo Unário</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>++ …</td>
+    <td>Incremento Pré-fixado</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>-- …</td>
+    <td>Decremento Pré-fixado</td>
+    <td>direita para esquerda</td>
+  </tr><tr>
+    <td>typeof …</td>
+    <td>typeof</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>void …</td>
+    <td>void</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>delete …</td>
+    <td>delete</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… ** …</td>
+    <td>Exponenciação</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… * …</td>
+    <td>Multiplicação</td>
+    <td>	esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… / …</td>
+    <td>Divisão</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… % …</td>
+    <td>Resto</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… + …</td>
+    <td>Adição</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… - …</td>
+    <td>Subtração</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… << …</td>
+    <td>Deslocamento de bits para esquerda</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… >> …</td>
+    <td>Deslocamento de bits para direita</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… >>> …</td>
+    <td>Deslocamento de bits para direita, sem sinal</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… < …</td>
+    <td>Menor Que</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… <= …</td>
+    <td>Menor ou Igual a</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… > …</td>
+    <td>Maior Que</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… >= …</td>
+    <td>Maior ou Igual a</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… in …</td>
+    <td>in</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… instanceof …</td>
+    <td>instanceof</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… == …</td>
+    <td>Igualdade</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… != …</td>
+    <td>Desigualdade</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… === …</td>
+    <td>Igualdade Estrita</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… !== …</td>
+    <td>Desigualdade Estrita</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… & …</td>
+    <td>E bit-a-bit</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… ^ …</td>
+    <td>OU exclusivo bit-a-bit</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… | …</td>
+    <td>OU bit-a-bit</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… && …</td>
+    <td>E lógico</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… || …</td>
+    <td>OU lógico</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>Condicional</td>
+    <td>… ? … : …</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… = …<br>… += …<br>… -= …<br>… *= …<br>… /= …<br>… %= …<br>… <<= …<br>… >>= …<br>… >>>= …<br>… &= …<br>… ^= …<br>… |= …</td>
+    <td>Atribuição</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>yield …<br>yield* …</td>
+    <td>yield<br>yield*</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>... …</td>
+    <td>Propagação</td>
+    <td>	n/a</td>
+  </tr>
+  <tr>
+    <td>… , …</td>
+    <td>Vírgula / Sequência</td>
+    <td>esquerda para direita</td>
+  </tr>
+</table>
+
+
   
   
   
