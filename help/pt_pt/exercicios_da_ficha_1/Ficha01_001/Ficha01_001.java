@@ -1,4 +1,4 @@
-// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
 public class Ficha01_001 {
 
@@ -11,4 +11,4 @@ public class Ficha01_001 {
 
 }
 //Java  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	quinta, 2022 set 08 10:41
+//(c) Ant0nio M@nso 	Sun, 2022 Sep 18 19:39

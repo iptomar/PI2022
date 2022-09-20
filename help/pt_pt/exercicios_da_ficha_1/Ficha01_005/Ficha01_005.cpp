@@ -1,4 +1,4 @@
-// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
 #include <iostream>
 #include <cstring>
@@ -22,4 +22,4 @@ int main(){
 }
 
 //C++  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	quarta, 2022 set 07 16:43
+//(c) Ant0nio M@nso 	Sun, 2022 Sep 18 19:40

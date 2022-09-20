@@ -1,5 +1,5 @@
 <?php
-// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
 //Main Function
 function main() {
@@ -11,6 +11,6 @@ function main() {
 main();
 
 //PHP 5.3 +  - Automatic translated by Algorithmi 22.05
-//(c) Luís Lopes 	quinta, 2022 set 08 10:41
+//(c) Luís Lopes 	Sun, 2022 Sep 18 19:39
 
 ?>
