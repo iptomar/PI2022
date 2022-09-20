@@ -1,7 +1,10 @@
 <html>
 <head>
-<style>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
 
+</head>
+<style>
+/*
 h2{font:bold 30px arial; color:black; text-align: center;}
 
 body{background-color:#3050a0;}
@@ -19,108 +22,102 @@ td, th {
   text-align: left;
   padding: 8px;
 }
-
+*/
 </style>
-<button class="botao" onclick="window.location.href='../../index.html'">Regressar á Página Principal</button>
-</head>
+
 <body>
+  <table  style="width:100%" >
+    <tr>
+<th><H1> Operadores </H1></th>
+         <th><a href="../../index.html" target="_parent"> <img src="../../imgs/help.png"  width = "20" height="20" ></a></th>
+
+    </tr> 
+<tr>
+
+</table>
 
 <div class="quadro">
 <h2>Operadores aritméticos</h2>
  
   <table>
   <tr>
+    <th>Desfinição</th>
     <th>Descrição</th>
-    <th>Prioridade</th>
-    <th>Símbolo</th>
-    <th>Exemplo</th>
+    <th>Exemplos</th>
   </tr>
   <tr>
     <td>Potência</td>
-    <td>33</td>
     <td>^</td>
-    <td>2 ^ 3 = 8; 2.0 ^ 3 = 8.0</td>
+    <td>2 ^ 3 = 8<br> 2.0 ^ 3 = 8.0</td>
   </tr>
   <tr>
     <td>Resto da divisão</td>
-    <td>32</td>
-    <td>%</td>
-    <td>3 % 2 = 1; 4 % 2 = 0</td>
+    <td>%<br>System.out.println("a % b = " + (a % b));</td>
+    <td>3 % 2 = 1<br> 4 % 2 = 0</td>
   </tr>
   <tr>
     <td>Divisão</td>
-    <td>32</td>
-    <td>/</td>
-    <td>3 / 2 = 1; 3.0 / 2 = 1.5</td>
+    <td>/<br>System.out.println("a / b = " + (a / b));</td>
+    <td>3 / 2 = 1<br> 3.0 / 2 = 1.5</td>
   </tr>
   <tr>
     <td>Multiplicação</td>
-    <td>32</td>
-    <td></td>
-    <td>2 3 = 6; 2.5 * 2 = 5.0</td>
+    <td>×<br>System.out.println("a * b = " + (a * b));</td>
+    <td>2 3 = 6<br> 2.5 * 2 = 5.0</td>
   </tr>
   <tr>
     <td>Subtração</td>
-    <td>31</td>
-    <td>-</td>
-    <td>3 - 2 = 1; 2.5 + 1 = 1.5</td>
+    <td>-<br>System.out.println("a - b = " + (a - b));</td>
+    <td>3 - 2 = 1<br> 2.5 + 1 = 1.5</td>
   </tr>
   <tr>
     <td>Adição</td>
-    <td>31</td>
-    <td>+</td>
-    <td>3 + 2 = 5 2.5 + 1 = 3.5</td>
+    <td>+<br>System.out.println("a + b = " + (a + b));</td>
+    <td>3 + 2 = 5 <br> 2.5 + 1 = 3.5</td>
   </tr>
 </table>
 
   <h2>Operadores relacionais</h2>
   <table>
   <tr>
-    <th>Descrição</th>
-    <th>Prioridade</th>
-	<th>Símbolo</th>
+    <th>Definição</th>
+	<th>Descrição</th>
 	<th>Exemplo</th>
   </tr>
   <tr>
     <td>Menor ou igual</td>
-    <td>21</td>
-	<td>&lt=</td>
-	<td>3 &lt= 2 = Falso
+	<td>&lt=<br>System.out.println(a <= b);  // true</td>
+	<td>3 &lt= 2 = Falso<br>
 1 &lt= 1 = Verdadeiro</td>
   </tr>
   <tr>
     <td>Menor</td>
-    <td>21</td>
-	<td>&lt </td>
-	<td>3 &lt= 2 = Falso
+	<td>&lt <br>System.out.println(a < b);  // true</td>
+	<td>3 &lt= 2 = Falso<br>
 1 &lt= 1 = Verdadeiro</td>
   </tr>
   <tr>
     <td>Maior ou igual</td>
-    <td>21</td>
-	<td>&gt=</td>
-	<td>3 &gt= 2 = Verdadeiro
+	<td>&gt= <br>System.out.println(a >= b);  // false</td>
+	<td>3 &gt= 2 = Verdadeiro<br>
 1 &gt= 1 = Verdadeiro</td>
   </tr>
   <tr>
     <td>Maior</td>
-    <td>21</td>
-	<td>&gt </td>
-	<td>3 &gt 2 = Verdadeiro
+	<td>&gt <br>System.out.println(a > b);  // false</td>
+	<td>3 &gt 2 = Verdadeiro<br>
 1 &gt 1 = Falso</td>
   </tr>
   <tr>
     <td>Diferente</td>
-    <td>20</td>
-	<td>!=</td>
-	<td>3 != 2 = Verdadeiro
+	<td>!=<br>System.out.println(a != b);  // true</td>
+	<td>3 != 2 = Verdadeiro<br>
 1 != 1 = Falso</td>
   </tr>
   <tr>
     <td>Igual</td>
-    <td>20</td>
-	<td>==</td>
-	<td>3 &lt= 2 = Falso
+	<td>==<br>System.out.println(a == b);  // false</td>
+	<td>3 &lt= 2 = Falso<br>
 1 &lt= 1 = Verdadeiro</td>
   </tr>
 </table>
@@ -128,12 +125,10 @@ td, th {
 <table>
   <tr>
     <th>Descrição</th>
-    <th>Prioridade</th>
 	<th>Símbolo e Tabela de Verdade</th>
   </tr>
   <tr>
     <td>Disjunção – OU</td>
-    <td>12</td>
 	<td>
 		<table>
 			<tr>
@@ -156,8 +151,6 @@ td, th {
   </tr>
   <tr>
     <td>OR</td>
-    <td>Disjunção – OU</td>
-    <td>11</td>
 	<td>
 		<table>
 			<tr>
@@ -180,8 +173,6 @@ td, th {
   </tr>
   <tr>
     <td>NOT</td>
-    <td>Disjunção – OU</td>
-    <td>13</td>
 	<td>
 		<table>
 			<tr>
@@ -198,6 +189,246 @@ td, th {
 	</td>
   </tr>
 </table>
+
+<h2>Precedecia</h2>
+<table>
+  <tr>
+    <th>Operador</th>
+    <th>Descrição</th>
+    <th>Associatividade</th>
+  </tr>
+  <tr>
+    <td>( … )</td>
+    <td>Agrupamento</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>… . …</td>
+    <td>Acesso a Membro</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… [ … ]</td>
+    <td>Acesso a Membro Computado</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>new … ( … )</td>
+    <td>new (com lista de argumentos)</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>… ( … )</td>
+    <td>Chamada a Função</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>new …</td>
+    <td>new (sem lista de argumentos)</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… ++</td>
+    <td>Incremento Pós-fixado</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>… --</td>
+    <td>Decremento Pós-fixado</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>! …</td>
+    <td>NÃO lógico</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>~ …</td>
+    <td>NÃO bit-a-bit</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>+ …</td>
+    <td>Positivo Unário</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>- …</td>
+    <td>Negativo Unário</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>++ …</td>
+    <td>Incremento Pré-fixado</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>-- …</td>
+    <td>Decremento Pré-fixado</td>
+    <td>direita para esquerda</td>
+  </tr><tr>
+    <td>typeof …</td>
+    <td>typeof</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>void …</td>
+    <td>void</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>delete …</td>
+    <td>delete</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… ** …</td>
+    <td>Exponenciação</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… * …</td>
+    <td>Multiplicação</td>
+    <td>	esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… / …</td>
+    <td>Divisão</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… % …</td>
+    <td>Resto</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… + …</td>
+    <td>Adição</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… - …</td>
+    <td>Subtração</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… << …</td>
+    <td>Deslocamento de bits para esquerda</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… >> …</td>
+    <td>Deslocamento de bits para direita</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… >>> …</td>
+    <td>Deslocamento de bits para direita, sem sinal</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… < …</td>
+    <td>Menor Que</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… <= …</td>
+    <td>Menor ou Igual a</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… > …</td>
+    <td>Maior Que</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… >= …</td>
+    <td>Maior ou Igual a</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… in …</td>
+    <td>in</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… instanceof …</td>
+    <td>instanceof</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… == …</td>
+    <td>Igualdade</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… != …</td>
+    <td>Desigualdade</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… === …</td>
+    <td>Igualdade Estrita</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… !== …</td>
+    <td>Desigualdade Estrita</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… & …</td>
+    <td>E bit-a-bit</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… ^ …</td>
+    <td>OU exclusivo bit-a-bit</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… | …</td>
+    <td>OU bit-a-bit</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… && …</td>
+    <td>E lógico</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>… || …</td>
+    <td>OU lógico</td>
+    <td>esquerda para direita</td>
+  </tr>
+  <tr>
+    <td>Condicional</td>
+    <td>… ? … : …</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>… = …<br>… += …<br>… -= …<br>… *= …<br>… /= …<br>… %= …<br>… <<= …<br>… >>= …<br>… >>>= …<br>… &= …<br>… ^= …<br>… |= …</td>
+    <td>Atribuição</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>yield …<br>yield* …</td>
+    <td>yield<br>yield*</td>
+    <td>direita para esquerda</td>
+  </tr>
+  <tr>
+    <td>... …</td>
+    <td>Propagação</td>
+    <td>	n/a</td>
+  </tr>
+  <tr>
+    <td>… , …</td>
+    <td>Vírgula / Sequência</td>
+    <td>esquerda para direita</td>
+  </tr>
+</table>
+
+
   
   
   

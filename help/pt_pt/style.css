@@ -22,6 +22,7 @@ input_output {
     padding: 10pt;
 }
 
+
 plain {
     white-space: pre-wrap;
     font-family: monospace;
@@ -31,6 +32,8 @@ table {
     border-collapse: collapse;
     width: 90%;
 }
+
+
 td{
     border: 1px solid #dddddd;
     padding: 8px;

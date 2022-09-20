@@ -23,46 +23,44 @@
 				
              
 <plain>
-    Define uma variável indexada em memória. As variáveis indexadas são conjuntos homogéneos de dados que são acessíveis através de índices.
-    O Algorithmi permite definir o número de dimensões da variável indexada que o utilizador desejar.
-    Na definição de um vetor são definidas o número de dimensões e a quantidade de elementos em cada dimensão. As variáveis indexadas são inicializadas com os valores por defeito:
+    Defines an indexed variable in memory. Indexed variables are homogeneous sets of data that are accessible through indices.
+     Algorithmi allows defining the number of dimensions of the indexed variable that the user wants.
+     When defining a vector, the number of dimensions and the number of elements in each dimension are defined. Indexed variables are initialized with default values:
     
 </plain>
 
-<h2> Sintaxe </h2>
+<h2> Syntax </h2>
 <pre>
-[definir] &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expressão&gt;] …]
+[define] &lt;TYPE&gt; &lt;var&gt; [= &lt;expression&gt;][, &lt;var&gt; [= &lt;expression&gt;] …]
   </pre> 
 <br>
 			
-<br><strong>	&lt;TYPE&gt; </strong>	 – Tipo de dados (inteiro | real | logico | texto)<br><br>
+<br><strong>	&lt;TYPE&gt; </strong>	 – Data type (integer | real | logical | text)<br><br>
 
-<strong>	&lt;var&gt;</strong>	 – Nome da variável sujeita às seguintes regras
-			<br>&emsp;o	Não pode ser uma palavra reservada<br>
-			&emsp;o	Tem de começar por uma letra (a-z; A-Z)<br>
-			&emsp;o	Pode conter dígitos (0-9)<br>
-			&emsp;o	Deve ser significativo daquilo que armazena<br>	
+<strong>	&lt;var&gt;</strong>	 – Variable name subject to the following rules
+			<br>&emsp;o Cannot be a reserved word<br>
+			&emsp;o Must start with a letter (a-z; A-Z)<br>
+			&emsp;o May contain digits (0-9)<br>
+			&emsp;o Must be meaningful from what it stores<br>	
 			
 			
-	<br><strong>[&lt;expression&gt;] 	</strong>- expressão computacional cujo tipo de resultado é compatível com o tipo de dados da variável, esta é opcional pois se não for inserida a variável irá tomar o valor por defeito.<br>
+	<br><strong>[&lt;expression&gt;] 	</strong>- computational expression whose result type is compatible with the data type of the variable, this is optional because if it is not inserted the variable will take the value by default.<br>
 			
-<br><br><h2> Exemplos </h2>
+<br><br><h2> Exeamples </h2>
 
-Exemplo 1 - Definir um vetor/Array inteiro com 10 posições
-<pre> definir inteiro i[10]</pre>
+Example 1 - Define an integer vector/Array with 10 positions
+<pre> define integer i[10]</pre>
 
-Exemplo 2 - definir um vetor de texto com 2 posições	
-<pre>definir texto vetor[2]</pre>
+Example 2 - define a text vector with 2 positions	
+<pre>define vector text[2]</pre>
 
-Exemplo 2 - definir dois vetores interiros ( com o valor zero por defeito)
-<pre>definir inteiro vetor1[], vetor2[]</pre>
+Example 2 - define two integer vectors (with zero value by default)
+<pre>define integer vector1[], vector2[]</pre>
 
-<br><h2> Programas </h2>
-<a onclick="window.location.href='example1/index.html'">Exemplo 1 – Definir variáveis</button><br>
-    
-    <a onclick="window.location.href='example2/index.html'">Exemplo 2 – Calculo e impressão de um vetor bidimensional</button><br>
-
-        <a onclick="window.location.href='example3/index.html'">Exemplo 3 – Passagem de um vetor para uma função</button>
+<br><h2> Programs </h2>
+<a onclick="window.location.href='example1/index.html'"><img src="../../../imgs/alg.png" width = "32">Example 1 - Define variables</button><br>
+<a onclick="window.location.href='example2/index.html'"><img src="../../../imgs/alg.png" width = "32">Example 2 - Calculation and printing of a two-dimensional vector</button><br>
+<a onclick="window.location.href='example3/index.html'"><img src="../../../imgs/alg.png" width = "32">Example 3 - Passing a vector to a function</button>
 
 
 
