@@ -22,6 +22,9 @@ td, th {
   padding: 8px;
 }
 */
+table, th, td {
+            border: 1px solid black;}
+         
 </style>
 
 <body>
@@ -129,6 +132,7 @@ td, th {
     <td>Disjunction – OR</td>
     <td>12</td>
 	<td>
+    <div>
 		<table>
 			<tr>
 				<th>&&</th>
@@ -146,6 +150,7 @@ td, th {
 				<td>F</td>
 			</tr>
 		</table>
+  </div>
 	</td>
   </tr>
   <tr>
@@ -267,20 +272,6 @@ td, th {
     <td>-- …</td>
     <td>Prefixed Decrement</td>
     <td>right to left</td>
-  </tr><tr>
-    <td>typeof …</td>
-    <td>typeof</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>void …</td>
-    <td>void</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>delete …</td>
-    <td>delete</td>
-    <td>right to left</td>
   </tr>
   <tr>
     <td>… ** …</td>
@@ -350,11 +341,6 @@ td, th {
   <tr>
     <td>… in …</td>
     <td>in</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>… instanceof …</td>
-    <td>instanceof</td>
     <td>left to right</td>
   </tr>
   <tr>
