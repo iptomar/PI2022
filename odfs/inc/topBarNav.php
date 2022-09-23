@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-navy">
             <div class="container px-4 px-lg-5 ">
                 <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <a class="navbar-brand" href="./">
+                <a class="navbar-brand" href="http://ram.ipt.pt/">
                 <img src="<?php echo validate_image($_settings->info('logo')) ?>" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                 <?php echo $_settings->info('short_name') ?>
                 </a>
@@ -23,8 +23,6 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=categories">Tópicos e Categorias</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="http://ram.ipt.pt">Algorithmi</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="http://ram.ipt.pt/#about">Sobre</a></li>
                         <?php if($_settings->userdata('id') != '' && $_settings->userdata('type') == 2): ?>
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts">Os meus posts</a></li>
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts/manage_post"><i class="far fa-plus-square"></i> Novo Post</a></li>
