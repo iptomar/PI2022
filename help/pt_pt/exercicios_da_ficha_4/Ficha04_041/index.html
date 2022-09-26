@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_041.prog </title>
+    </head>
+    <body>
+
+        <table  style="width:100%" > <tbody> 
+                <tr valign=top>
+                    <td> 
+                        <h1>Índice de Massa Corporal</h1>
+            <plain>O IMC (índice de massa corporal) é dado pela razão entre o peso (kilogramas) e o quadrado  altura ao quadrado, de uma pessoa.
+
+Contrua um programa que solicite ao utilizador o se peso e a sua altura e de seguida imprima a sua classificação:
+
+ IMC		Classificação
+ < 18.5  	Magro
+[18.5 , 25.0[	Normal
+[25.0 , 30.0[	Gordo
+[30.0 - 35.0[	Obeso 
+ > 35.0		Extremamente Obeso</plain><br><img src="folder.jpg">
+        </td><td>
+        
+          <iframe width="560" height="315" 
+	   src="https://youtu.be/xtVEoFf21ZQ" 
+	   title="Algorithmi Help" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	   </iframe>
+     
+     </td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<hr>
+<table  style="width:100%" >
+    <tr>
+        <th>Fluxograma</th>		  
+        <th>Algorithmi</th>		  
+    </tr>
+    <tr bgcolor = #dddddd>
+        <td valign=top> </td>
+        <td valign=top><pre>    begin MainProgram
+        read real peso "Peso (kg) \t: "
+        read real alt "Altura (m) \t: "
+        define real imc = peso / (alt ^ 2)
+        write "IMC \t\t= " + imc
+        write "\nClassificação \t= "
+        if imc < 18.5 then
+            write "Magro"
+        else
+            if imc < 25 then
+                write "Normal"
+            else
+                if imc < 30 then
+                    write "Gordo"
+                else
+                    if imc < 35 then
+                        write "Obeso"
+                    else
+                        write "Extremamente obeso"
+                    end if
+                end if
+            end if
+        end if
+    end MainProgram
+
+</pre></td>                    
+    </tr>
+</tbody>
+</table>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>40.0
+1.70</input_output></td>
+<td><input_output>Peso (kg) 	: 40.0
+Altura (m) 	: 1.7
+IMC 		= 13.84083044982699
+Classificação 	= Magro</input_output></td>
+
+</tr><tr>
+<td><input_output>70.0
+1.70</input_output></td>
+<td><input_output>Peso (kg) 	: 70.0
+Altura (m) 	: 1.7
+IMC 		= 24.221453287197235
+Classificação 	= Normal</input_output></td>
+
+</tr><tr>
+<td><input_output>75.0
+1.70</input_output></td>
+<td><input_output>Peso (kg) 	: 75.0
+Altura (m) 	: 1.7
+IMC 		= 25.95155709342561
+Classificação 	= Gordo</input_output></td>
+
+</tr><tr>
+<td><input_output>95.0
+1.70</input_output></td>
+<td><input_output>Peso (kg) 	: 95.0
+Altura (m) 	: 1.7
+IMC 		= 32.871972318339104
+Classificação 	= Obeso</input_output></td>
+
+</tr><tr>
+<td><input_output>125.0
+1.70</input_output></td>
+<td><input_output>Peso (kg) 	: 125.0
+Altura (m) 	: 1.7
+IMC 		= 43.25259515570935
+Classificação 	= Extremamente obeso</input_output></td>
+
+</tr>
+    </tbody>
+</table>       
+
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

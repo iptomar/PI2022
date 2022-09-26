@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha03_018</title>
+    </head>
+    <body>
+        <h1 style="color:green">Número de Dígitos</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Construa um algoritmo que imprima o número de dígitos de um número inteiro positivo introduzido pelo utilizador. 
+                        <br>   
+                        <a  href="Ficha03_018.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("Número positivo\t: " );// print text
+        num = parseInt(prompt("Número positivo\t: " ,"0") );
+        
+        document.write(num + "\n");// print input 
+        document.write("Número de dígitos \t= " + ( num + "" ).length);
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

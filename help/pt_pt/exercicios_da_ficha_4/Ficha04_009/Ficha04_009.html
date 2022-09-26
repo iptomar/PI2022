@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha04_009</title>
+    </head>
+    <body>
+        <h1 style="color:green">Comparar varáveis reais - ERRADO</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Construa um algoritmo que verifique se a soma de dois números reais é igual a um terceiro. 
+                        <br>   
+                        <a  href="Ficha04_009.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("Verificar se a soma de dois valores reais" );
+        document.write("\né igual a um terceiro\n" );
+        document.write("Real 1 \t: " );// print text
+        r1 = parseFloat(prompt("Real 1 \t: " ,"0.0") );
+        
+        document.write(r1 + "\n");// print input 
+        document.write("Real 2 \t: " );// print text
+        r2 = parseFloat(prompt("Real 2 \t: " ,"0.0") );
+        
+        document.write(r2 + "\n");// print input 
+        document.write("Real 3 \t: " );// print text
+        r3 = parseFloat(prompt("Real 3 \t: " ,"0.0") );
+        
+        document.write(r3 + "\n");// print input 
+        document.write(r1 + " + " + r2 + " == " + r3 + " => " );
+        if(r1 + r2 == r3 ){
+            document.write("Verdadeiro" );
+        }else{
+            document.write("Falso" );
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

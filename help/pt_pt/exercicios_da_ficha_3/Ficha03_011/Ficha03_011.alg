@@ -1,0 +1,13 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin 
+        read integer n1 "Número inteiro\t: "
+        read real n2 "Número real \t: "
+        write "Números Ordenados"
+        write "\n" + min(n1 , n2)
+        write "\n" + max(n1 , n2)
+    end 
+
+
+//pseudocode  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 14:30

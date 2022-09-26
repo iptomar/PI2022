@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_010.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha04_010.prog" download> Ficha04_010 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2020</td>
+            </tr>   
+        </table>
+        <h1>Comparar números reais - Precisão</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Construa um algoritmo que verifique se a soma de dois números reais é igual a um terceiro com precisão de 5 casas decimais.
+
+r1 + r2 == r3
+::::::::::::::::::
+A L G O R I T M O
+::::::::::::::::::
+1 - ler os valores 
+     (r1, r2, r3)
+2 - calcular a soma dos dois primeiros (+)
+     (soma = r1 + r2) 
+3 - calcular a distancia da soma ao terceiro (abs)
+     ( distancia = abs(soma -r3)
+4 - compara a distância com a precisão (1.0E-5)
+     ( distancia < precisão) 
+5 - Escrever a informação de acordo com a comparção
+     ( "Verdadeiro" ou "Falso" )</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        read real r1 "Número real \t: "
+        read real r2 "Número real \t: "
+        read real r3 "Soma real \t: "
+        define real soma = r1 + r2
+        define real distancia = abs(soma - r3)
+        define real precisao = 1.0E-5
+        write r1 + " + " + r2 + " \t= " + r3 + " => "
+        if distancia < precisao then
+            write "Verdadeiro"
+        else
+            write "Falso"
+        end if
+        write "\n\n" + r1 + " + " + r2 + " \t= " + (r1 + r2)
+        write "\nDistância \t: " + distancia
+        write "\nPrecisão \t: " + precisao
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha04_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha04_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>0.1
+0.2
+0.3</input_output></td>
+<td><input_output>Número real 	: 0.1
+Número real 	: 0.2
+Soma real 	: 0.3
+0.1 + 0.2 	= 0.3 => Verdadeiro
+
+0.1 + 0.2 	= 0.30000000000000004
+Distância 	: 5.551115123125783E-17
+Precisão 	: 1.0E-5</input_output></td>
+
+</tr><tr>
+<td><input_output>0.2
+0.3
+0.5</input_output></td>
+<td><input_output>Número real 	: 0.2
+Número real 	: 0.3
+Soma real 	: 0.5
+0.2 + 0.3 	= 0.5 => Verdadeiro
+
+0.2 + 0.3 	= 0.5
+Distância 	: 0.0
+Precisão 	: 1.0E-5</input_output></td>
+
+</tr><tr>
+<td><input_output>0.0
+0.0
+0.0</input_output></td>
+<td><input_output>Número real 	: 0.0
+Número real 	: 0.0
+Soma real 	: 0.0
+0.0 + 0.0 	= 0.0 => Verdadeiro
+
+0.0 + 0.0 	= 0.0
+Distância 	: 0.0
+Precisão 	: 1.0E-5</input_output></td>
+
+</tr><tr>
+<td><input_output>1.0e-20
+2.0e-20
+3.0e-20</input_output></td>
+<td><input_output>Número real 	: 1.0E-20
+Número real 	: 2.0E-20
+Soma real 	: 3.0E-20
+1.0E-20 + 2.0E-20 	= 3.0E-20 => Verdadeiro
+
+1.0E-20 + 2.0E-20 	= 2.9999999999999997E-20
+Distância 	: 6.018531076210112E-36
+Precisão 	: 1.0E-5</input_output></td>
+
+</tr><tr>
+<td><input_output>1.0E-30
+2.0E-30
+3.0E-30</input_output></td>
+<td><input_output>Número real 	: 1.0E-30
+Número real 	: 2.0E-30
+Soma real 	: 3.0E-30
+1.0E-30 + 2.0E-30 	= 3.0E-30 => Verdadeiro
+
+1.0E-30 + 2.0E-30 	= 3.0000000000000003E-30
+Distância 	: 3.5032461608120427E-46
+Precisão 	: 1.0E-5</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

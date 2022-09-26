@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_037.prog </title>
+    </head>
+    <body>
+
+        <table  style="width:100%" > <tbody> 
+                <tr valign=top>
+                    <td> 
+                        <h1>Ano Bisexto</h1>
+            <plain>Construa um algoritmo que determine se um ano, introduzido pelo utilizador, é bissexto.
+
+Regras dos anos bisexto:
+a) Todos os anos que são múltiplos de 400.
+b) Todos os anos que são múltiplos de 4 e não são múltiplos de 100.</plain><br><img src="folder.jpg">
+        </td><td>
+        
+          <iframe width="560" height="315" 
+	   src="https://youtu.be/chQI46mcrAI" 
+	   title="Algorithmi Help" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	   </iframe>
+     
+     </td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<hr>
+<table  style="width:100%" >
+    <tr>
+        <th>Fluxograma</th>		  
+        <th>Algorithmi</th>		  
+    </tr>
+    <tr bgcolor = #dddddd>
+        <td valign=top> </td>
+        <td valign=top><pre>    begin MainProgram
+        read integer ano "Ano \t: "
+        if ano % 400 == 0 then
+            write "Bisexto"
+        else
+            if ano % 4 == 0 && ano % 100 != 0 then
+                write "Bisexto"
+            else
+                write "Comum"
+            end if
+        end if
+    end MainProgram
+
+</pre></td>                    
+    </tr>
+</tbody>
+</table>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>2020</input_output></td>
+<td><input_output>Ano 	: 2020
+Bisexto</input_output></td>
+
+</tr><tr>
+<td><input_output>2024</input_output></td>
+<td><input_output>Ano 	: 2024
+Bisexto</input_output></td>
+
+</tr><tr>
+<td><input_output>2016</input_output></td>
+<td><input_output>Ano 	: 2016
+Bisexto</input_output></td>
+
+</tr><tr>
+<td><input_output>2079</input_output></td>
+<td><input_output>Ano 	: 2079
+Comum</input_output></td>
+
+</tr><tr>
+<td><input_output>2088</input_output></td>
+<td><input_output>Ano 	: 2088
+Bisexto</input_output></td>
+
+</tr><tr>
+<td><input_output>2007</input_output></td>
+<td><input_output>Ano 	: 2007
+Comum</input_output></td>
+
+</tr><tr>
+<td><input_output>1915</input_output></td>
+<td><input_output>Ano 	: 1915
+Comum</input_output></td>
+
+</tr><tr>
+<td><input_output>1993</input_output></td>
+<td><input_output>Ano 	: 1993
+Comum</input_output></td>
+
+</tr><tr>
+<td><input_output>1999</input_output></td>
+<td><input_output>Ano 	: 1999
+Comum</input_output></td>
+
+</tr><tr>
+<td><input_output>1906</input_output></td>
+<td><input_output>Ano 	: 1906
+Comum</input_output></td>
+
+</tr>
+    </tbody>
+</table>       
+
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

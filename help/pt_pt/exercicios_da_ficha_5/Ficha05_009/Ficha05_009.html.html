@@ -1,0 +1,140 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Javascript - HTML - CSS</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha05_009</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Pares num intervalo - Calcular</h2>
+            <plain>Escreva um algoritmo que solicite ao utilizador os limites de um intervalo.
+De seguida imprima todos os números pares desse intervalo incluindo os limites.</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha05_009.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha05_009.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha05_009.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Javascript - HTML - CSS</h1>
+<pre  class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;style&gt;
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        &lt;/style&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;title&gt;Ficha05_009&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;color:green&quot;&gt;Pares num intervalo - Calcular&lt;/h1&gt;
+        &lt;table&gt; 
+            &lt;tr&gt;
+                &lt;td valign=&quot;top&quot;&gt;
+                    &lt;plain&gt; Escreva um algoritmo que solicite ao utilizador os limites de um intervalo.
+De seguida imprima todos os n&uacute;meros pares desse intervalo incluindo os limites. 
+                        &lt;br&gt;   
+                        &lt;a  href=&quot;Ficha05_009.html&quot;&gt;Execute &lt;img style=&quot;vertical-align:middle&quot; src=&quot;http://algorithmi.ipt.pt/img/langs/run.png&quot; height=&quot;32&quot; width=&quot;32&quot; &gt;&lt;/a&gt; 
+                    &lt;/plain&gt;
+                &lt;/td&gt; 
+                &lt;td&gt;
+                    &lt;img src=&quot;data:image/jpg;base64,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&quot;&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;pre&gt;
+        &lt;script&gt;
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write(&quot;\n&quot;);
+        document.write(&quot;Minimo : &quot; );// print text
+        imin = parseInt(prompt(&quot;Minimo : &quot; ,&quot;0&quot;) );
+        
+        document.write(imin + &quot;\n&quot;);// print input 
+        document.write(&quot;Maximo : &quot; );// print text
+        imax = parseInt(prompt(&quot;Maximo : &quot; ,&quot;0&quot;) );
+        
+        document.write(imax + &quot;\n&quot;);// print input 
+        if(imin % 2 != 0 ){
+            imin++;
+        }
+        for( var i = imin; i &lt; imax + 1; i = i + 2 ) {
+            document.write(i + &quot; &quot; );
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        &lt;/script&gt;
+        &lt;p style=&quot;color:gray;text-align:right;font-size: small &quot;&gt;Algorithmi 22.05&lt;br&gt;Ant0nio M@nso
+        &lt;/pre&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>    
+<a href="Ficha05_009.html" download>  <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="48" width="48"> Download Ficha05_009.html </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

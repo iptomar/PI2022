@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_048.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha04_048.prog" download> Ficha04_048 </a> 
+</td>
+                <td align="center">Avaluation test</td>
+                <td align="center">6.0</td>
+                <td align="center">26/09/2022 15:29:00</td>
+                <td align="center">(c)M@nso 2020</td>
+            </tr>  
+        </table>
+
+        <h1>Circunferências e Retas </h1>
+    <pre>Contrua um programa que solicite ao utilizador:
+- A equação de uma reta:
+   aX + bY + c = 0
+- A posição da circunferência
+   - As coordenadadas do centro C(x0, y0)
+   - O valor do raio (r) 
+
+e de seguida diga se a reta é tangente, secante ou externa
+
+Considere erros de arredondamento  de 1.0E-6</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>1
+-1
+0
+-1
+1
+1.414213</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: -1.0
+Centro y0 	: 1.0
+Raio r 		: 1.414213
+
+Distância  ao centro (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 5.623730949810835E-7
+Reta Tangente</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+-1
+1
+5.5</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: -1.0
+Centro y0 	: 1.0
+Raio r 		: 5.5
+
+Distância  ao centro (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 4.085786437626905
+Reta Secante</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+-1
+1
+1.4142135</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: -1.0
+Centro y0 	: 1.0
+Raio r 		: 1.4142135
+
+Distância  ao centro (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 6.237309491119447E-8
+Reta Tangente</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+-1
+1
+1.2</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: -1.0
+Centro y0 	: 1.0
+Raio r 		: 1.2
+
+Distância  ao centro (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 0.21421356237309497
+Reta Externa</input_output></td>
+
+</tr><tr>
+<td><input_output>1.812
+-1.993
+0
+0.075
+-0.510
+0.565</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.812
+B 	: -1.993
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: 0.075
+Centro y0 	: -0.51
+Raio r 		: 0.565
+
+Distância  ao centro (C) 	= 0.4278055335072354
+Distância da reta ao círculo 	= 0.13719446649276457
+Reta Secante</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.244
+1.579
+0
+-0.023
+-0.881
+0.554</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: -0.244
+B 	: 1.579
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: -0.023
+Centro y0 	: -0.881
+Raio r 		: 0.554
+
+Distância  ao centro (C) 	= 0.8671535692443639
+Distância da reta ao círculo 	= 0.3131535692443639
+Reta Externa</input_output></td>
+
+</tr><tr>
+<td><input_output>0.795
+1.458
+0
+0.427
+0.492
+0.658</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.795
+B 	: 1.458
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: 0.427
+Centro y0 	: 0.492
+Raio r 		: 0.658
+
+Distância  ao centro (C) 	= 0.6363743963174925
+Distância da reta ao círculo 	= 0.021625603682507544
+Reta Secante</input_output></td>
+
+</tr><tr>
+<td><input_output>0.536
+-0.093
+0
+0.255
+-0.360
+0.615</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.536
+B 	: -0.093
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: 0.255
+Centro y0 	: -0.36
+Raio r 		: 0.615
+
+Distância  ao centro (C) 	= 0.3127893614111669
+Distância da reta ao círculo 	= 0.30221063858883307
+Reta Secante</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.486
+-1.111
+0
+0.204
+0.049
+0.697</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: -0.486
+B 	: -1.111
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: 0.204
+Centro y0 	: 0.049
+Raio r 		: 0.697
+
+Distância  ao centro (C) 	= 0.12665085378067412
+Distância da reta ao círculo 	= 0.5703491462193259
+Reta Secante</input_output></td>
+
+</tr><tr>
+<td><input_output>1.464
+0.063
+0
+0.551
+0.971
+0.834</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.464
+B 	: 0.063
+C 	: 0.0
+
+Circunferência (Centro, Raio)
+Centro x0 	: 0.551
+Centro y0 	: 0.971
+Raio r 		: 0.834
+
+Distância  ao centro (C) 	= 0.5922367315626765
+Distância da reta ao círculo 	= 0.24176326843732343
+Reta Secante</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>/html>

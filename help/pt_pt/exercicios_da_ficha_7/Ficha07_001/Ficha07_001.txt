@@ -1,0 +1,16 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        write "Somatório\n"
+        define integer soma = 0
+        for integer i from 1 to 6  step 1
+            write soma + " + " + i
+            execute soma = soma + i
+            write " \t = " + soma + "\n"
+        end for
+        write "\nTotal = " + soma
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 16:13
