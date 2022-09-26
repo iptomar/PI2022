@@ -139,14 +139,14 @@ table, th, td {
 				<th>F</th>
 			</tr>
 			<tr>
-				<td>V</td>
-				<td>V</td>
-				<td>F</td>
+				<td><center>V</center></td>
+				<td><center>V</center></td>
+				<td><center>F</center></td>
 			</tr>
 			<tr>
-				<td>V</td>
-				<td>F</td>
-				<td>F</td>
+				<td><center>V</center></td>
+				<td><center>F</center></td>
+				<td><center>F</center></td>
 			</tr>
 		</table>
 	</td>
@@ -158,18 +158,18 @@ table, th, td {
 		<table>
 			<tr>
 				<th>||</th>
-				<th>V</th>
-				<th>F</th>
+				<th><center>V</center></th>
+				<th><center>F</center></th>
 			</tr>
 			<tr>
-				<td><center>V</center>V</td>
-				<td><center>V</center>V</td>
-				<td><center>V</center>V</td>
+				<td><center>V</center></td>
+				<td><center>V</center></td>
+				<td><center>V</center></td>
 			</tr>
 			<tr>
-				<td><center>V</center>V</td>
-				<td>V</td>
-				<td>F</td>
+				<td><center>V</center></td>
+				<td><center>V</center></td>
+				<td><center>F</center></td>
 			</tr>
 		</table>
 	</td>
@@ -186,8 +186,8 @@ table, th, td {
 			</tr>
 			<tr>
 				<td></td>
-				<td>F</td>
-				<td>V</td>
+				<td><center>F</center></td>
+				<td><center>V</center></td>
 			</tr>
 		</table>
 	</td>
@@ -205,71 +205,6 @@ table, th, td {
     <td>( … )</td>
     <td>Grouping</td>
     <td>n/a</td>
-  </tr>
-  <tr>
-    <td>… . …</td>
-    <td>Member Access</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>… [ … ]</td>
-    <td>Computer Member Access</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>new … ( … )</td>
-    <td>new (with argument list)</td>
-    <td>n/a</td>
-  </tr>
-  <tr>
-    <td>… ( … )</td>
-    <td>Function Call</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>new …</td>
-    <td>new (no argument list)</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>… ++</td>
-    <td>Postfix Increment</td>
-    <td>n/a</td>
-  </tr>
-  <tr>
-    <td>… --</td>
-    <td>Postfix Decrement</td>
-    <td>n/a</td>
-  </tr>
-  <tr>
-    <td>! …</td>
-    <td>NOT logical</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>~ …</td>
-    <td>NOT bitwise</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>+ …</td>
-    <td>Positive Unary</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>- …</td>
-    <td>Unary Negative</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>++ …</td>
-    <td>Preset Increment</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>-- …</td>
-    <td>Prefixed Decrement</td>
-    <td>right to left</td>
   </tr>
   <tr>
     <td>… ** …</td>
@@ -302,21 +237,6 @@ table, th, td {
     <td>left to right</td>
   </tr>
   <tr>
-    <td>… << …</td>
-    <td>Bit shift left</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>… >> …</td>
-    <td>Bit shift right</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>… >>> …</td>
-    <td>Right, unsigned bit shift</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
     <td>… < …</td>
     <td>Less Than</td>
     <td>left to right</td>
@@ -337,28 +257,13 @@ table, th, td {
     <td>left to right</td>
   </tr>
   <tr>
-    <td>… in …</td>
-    <td>in</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
     <td>… == …</td>
     <td>Equality</td>
     <td>left to right</td>
   </tr>
   <tr>
-    <td>… != …</td>
-    <td>Inequality</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
     <td>… === …</td>
     <td>Strict Equality</td>
-    <td>left to right</td>
-  </tr>
-  <tr>
-    <td>… !== …</td>
-    <td>Strict Inequality</td>
     <td>left to right</td>
   </tr>
   <tr>
@@ -395,21 +300,6 @@ table, th, td {
     <td>… = …<br>… += …<br>… -= …<br>… *= …<br>… /= …<br>… %= …<br>… <<= …< br>… >>= …<br>… >>>= …<br>… &= …<br>… ^= …<br>… |= …</td>
     <td>Assignment</td>
     <td>right to left</td>
-  </tr>
-  <tr>
-    <td>yield …<br>yield* …</td>
-    <td>yield<br>yield*</td>
-    <td>right to left</td>
-  </tr>
-  <tr>
-    <td>... …</td>
-    <td>Propagation</td>
-    <td>n/a</td>
-  </tr>
-  <tr>
-    <td>… , …</td>
-    <td>Comma / String</td>
-    <td>left to right</td>
   </tr>
 </table>
   
