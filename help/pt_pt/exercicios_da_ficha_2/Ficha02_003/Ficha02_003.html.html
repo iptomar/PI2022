@@ -1,0 +1,131 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Javascript - HTML - CSS</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha02_003</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Ler com legenda</h2>
+            <plain>Construa um algoritmo que solicite ao utilizador o seu nome de se seguida imprima uma saudação com o seu nome.
+A leitura do nome deve ser precedida de uma mensagem na consola.</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha02_003.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha02_003.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha02_003.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Javascript - HTML - CSS</h1>
+<pre  class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;style&gt;
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        &lt;/style&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;title&gt;Ficha02_003&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;color:green&quot;&gt;Ler com legenda&lt;/h1&gt;
+        &lt;table&gt; 
+            &lt;tr&gt;
+                &lt;td valign=&quot;top&quot;&gt;
+                    &lt;plain&gt; Construa um algoritmo que solicite ao utilizador o seu nome de se seguida imprima uma sauda&ccedil;&atilde;o com o seu nome.
+A leitura do nome deve ser precedida de uma mensagem na consola. 
+                        &lt;br&gt;   
+                        &lt;a  href=&quot;Ficha02_003.html&quot;&gt;Execute &lt;img style=&quot;vertical-align:middle&quot; src=&quot;http://algorithmi.ipt.pt/img/langs/run.png&quot; height=&quot;32&quot; width=&quot;32&quot; &gt;&lt;/a&gt; 
+                    &lt;/plain&gt;
+                &lt;/td&gt; 
+                &lt;td&gt;
+                    &lt;img src=&quot;data:image/jpg;base64,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&quot;&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;pre&gt;
+        &lt;script&gt;
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write(&quot;\n&quot;);
+        document.write(&quot;Qual o seu nome : &quot; );// print text
+        nome = prompt(&quot;Qual o seu nome : &quot; ,&quot;&quot;);
+        
+        document.write(nome + &quot;\n&quot;);// print input 
+        document.write(&quot;Ol&aacute; &quot; + nome );
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        &lt;/script&gt;
+        &lt;p style=&quot;color:gray;text-align:right;font-size: small &quot;&gt;Algorithmi 22.05&lt;br&gt;Ant0nio M@nso
+        &lt;/pre&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>    
+<a href="Ficha02_003.html" download>  <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="48" width="48"> Download Ficha02_003.html </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>
