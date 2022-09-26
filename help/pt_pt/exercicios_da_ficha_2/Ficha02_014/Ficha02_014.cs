@@ -1,4 +1,4 @@
-// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
 using System.IO;
 using System;
@@ -11,4 +11,4 @@ public class Ficha02_014 {
 
 }
 //C#  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	quarta, 2022 set 07 16:11
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 16:43
