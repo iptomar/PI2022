@@ -1,0 +1,13 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin 
+        read real n1 "Número real    : "
+        read integer n2 "Número inteiro : "
+        real r1 = 0,r2 = 0,r3 = 0,r4 = 0
+        r1 = n1 + n2, r2 = n1 - n2, r3 = n1 * n2, r4 = n1 / n2
+        write n1 + " + " + n2 + " = " + r1 , "\n" + n1 + " - " + n2 + " = " + r2 , "\n" + n1 + " * " + n2 + " = " + r3 , "\n" + n1 + " / " + n2 + " = " + r4
+    end 
+
+
+//pseudocode  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 16:44

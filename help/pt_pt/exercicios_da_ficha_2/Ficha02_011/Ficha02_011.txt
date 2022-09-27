@@ -1,0 +1,13 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        define integer n1 = 0,n2 = 0
+        read n1 "1º número : "
+        read n2 "2º número : "
+        define integer soma = n1 + n2
+        write n1 + " + " + n2 + " = " + soma
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 16:43

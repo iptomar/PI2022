@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha04_013</title>
+    </head>
+    <body>
+        <h1 style="color:green">Operadores Lógicos - Negação - !</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Inverso de um valor lógico
+ !verdadeiro = falso
+ !falso = verdadeiro
+
+NOTA:
+Podem-se ser valores lógicos da consola:
+
+0 - representa falso
+1 - representa verdadeiro 
+                        <br>   
+                        <a  href="Ficha04_013.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("\n! " + true + " \t= " + ! true );
+        document.write("\n! " + false + " \t= " + ! false );
+        var var = 1 ;
+        if(var ){
+            document.write("\nMuito Bem !" );
+        }else{
+            document.write("\nErrado :-( " );
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

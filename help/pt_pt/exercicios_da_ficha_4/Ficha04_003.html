@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha04_003</title>
+    </head>
+    <body>
+        <h1 style="color:green">Aprovado ou Reprovado</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Construa um algoritmo que verifique se um aluno está aprovado ou reprovado dada a sua nota final.
+Um aluno está aprovado se a sua nota for maior ou igual a 10 valores. 
+                        <br>   
+                        <a  href="Ficha04_003.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("Nota\t: " );// print text
+        nota = parseInt(prompt("Nota\t: " ,"0") );
+        
+        document.write(nota + "\n");// print input 
+        if(nota >= 10 ){
+            document.write("Aprovado" );
+        }else{
+            document.write("Reprovado" );
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

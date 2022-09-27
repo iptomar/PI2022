@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_049.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha04_049.prog" download> Ficha04_049 </a> 
+</td>
+                <td align="center">Avaluation test</td>
+                <td align="center">6.0</td>
+                <td align="center">26/09/2022 15:29:00</td>
+                <td align="center">(c)M@nso 2020</td>
+            </tr>  
+        </table>
+
+        <h1>Círculo e Coroa </h1>
+    <pre>Construa um programa que solcite ao utilizador uma coroa circular e um cículo e de seguida verifique se o círculo está dentro ou fora da coroa.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>0
+0
+1
+2
+0
+1.5
+0.25</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: 0.0
+Centro y 	: 0.0
+Raio menor 	: 1.0
+Raio maior 	: 2.0
+
+Círculo
+Centro x 	: 0.0
+Centro y 	: 1.5
+Raio 		: 0.25
+
+Distância entre os centos : 1.5
+Dentro da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>0
+0
+1
+2
+0
+1.5
+0.75</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: 0.0
+Centro y 	: 0.0
+Raio menor 	: 1.0
+Raio maior 	: 2.0
+
+Círculo
+Centro x 	: 0.0
+Centro y 	: 1.5
+Raio 		: 0.75
+
+Distância entre os centos : 1.5
+Fora da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.042
+-0.361
+1.246
+4.157
+2.774
+2.878
+1.915</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: -0.042
+Centro y 	: -0.361
+Raio menor 	: 1.246
+Raio maior 	: 4.157
+
+Círculo
+Centro x 	: 2.774
+Centro y 	: 2.878
+Raio 		: 1.915
+
+Distância entre os centos : 4.291966565573409
+Fora da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>0.103
+0.223
+1.104
+6.177
+2.467
+2.267
+1.915</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: 0.103
+Centro y 	: 0.223
+Raio menor 	: 1.104
+Raio maior 	: 6.177
+
+Círculo
+Centro x 	: 2.467
+Centro y 	: 2.267
+Raio 		: 1.915
+
+Distância entre os centos : 3.125129117332594
+Dentro da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>0.244
+-0.465
+1.431
+5.145
+2.271
+2.082
+1.280</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: 0.244
+Centro y 	: -0.465
+Raio menor 	: 1.431
+Raio maior 	: 5.145
+
+Círculo
+Centro x 	: 2.271
+Centro y 	: 2.082
+Raio 		: 1.28
+
+Distância entre os centos : 3.2551402427545266
+Dentro da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.355
+-0.478
+1.792
+3.935
+2.974
+2.678
+1.026</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: -0.355
+Centro y 	: -0.478
+Raio menor 	: 1.792
+Raio maior 	: 3.935
+
+Círculo
+Centro x 	: 2.974
+Centro y 	: 2.678
+Raio 		: 1.026
+
+Distância entre os centos : 4.587218874219978
+Fora da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>0.095
+0.495
+1.783
+4.772
+2.659
+2.194
+1.643</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: 0.095
+Centro y 	: 0.495
+Raio menor 	: 1.783
+Raio maior 	: 4.772
+
+Círculo
+Centro x 	: 2.659
+Centro y 	: 2.194
+Raio 		: 1.643
+
+Distância entre os centos : 3.075824604882404
+Fora da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.009
+-0.330
+1.172
+5.110
+2.019
+2.680
+1.953</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: -0.009
+Centro y 	: -0.33
+Raio menor 	: 1.172
+Raio maior 	: 5.11
+
+Círculo
+Centro x 	: 2.019
+Centro y 	: 2.68
+Raio 		: 1.953
+
+Distância entre os centos : 3.6294467898014435
+Fora da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>0.355
+-0.423
+1.170
+4.144
+2.205
+2.037
+1.813</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: 0.355
+Centro y 	: -0.423
+Raio menor 	: 1.17
+Raio maior 	: 4.144
+
+Círculo
+Centro x 	: 2.205
+Centro y 	: 2.037
+Raio 		: 1.813
+
+Distância entre os centos : 3.078002599089221
+Fora da Coroa</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.431
+0.253
+1.411
+6.347
+2.500
+2.219
+1.335</input_output></td>
+<td><input_output>Coroa Circular
+Centro x 	: -0.431
+Centro y 	: 0.253
+Raio menor 	: 1.411
+Raio maior 	: 6.347
+
+Círculo
+Centro x 	: 2.5
+Centro y 	: 2.219
+Raio 		: 1.335
+
+Distância entre os centos : 3.5292941220589706
+Dentro da Coroa</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

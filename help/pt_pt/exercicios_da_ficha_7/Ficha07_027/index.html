@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha07_027.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha07_027.prog" download> Ficha07_027 </a> 
+</td>
+                <td align="center">Challenger</td>
+                <td align="center">5.0</td>
+                <td align="center">26/09/2022 16:12:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Soma e Média dos ímpares </h1>
+    <pre>Construa um algoritmo que some os valores ímpares de uma sequência de números inteiros introduzidos pelo utilizador.
+O programa deve apresentar a soma e a média dos valores ímpares ou a mensagem "Não foram introduzidos valores ímpares" caso não tenha sido introduzido qualquer valor ímpar.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>4
+-1
+2
+-5
+4</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 4
+1º valor : -1
+2º valor : 2
+3º valor : -5
+4º valor : 4
+
+Soma dos positivos  = -6
+Média dos positivos = -3.0</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+10
+2
+2</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 3
+1º valor : 10
+2º valor : 2
+3º valor : 2
+
+Não foram introduzidos valores ímpares</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+9
+10
+0</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 3
+1º valor : 9
+2º valor : 10
+3º valor : 0
+
+Soma dos positivos  = 9
+Média dos positivos = 9.0</input_output></td>
+
+</tr><tr>
+<td><input_output>10
+2
+4
+-10
+5
+-4
+-8
+4
+7
+1
+-1</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 10
+1º valor : 2
+2º valor : 4
+3º valor : -10
+4º valor : 5
+5º valor : -4
+6º valor : -8
+7º valor : 4
+8º valor : 7
+9º valor : 1
+10º valor : -1
+
+Soma dos positivos  = 12
+Média dos positivos = 3.0</input_output></td>
+
+</tr><tr>
+<td><input_output>7
+9
+1
+-6
+5
+7
+6
+2</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 7
+1º valor : 9
+2º valor : 1
+3º valor : -6
+4º valor : 5
+5º valor : 7
+6º valor : 6
+7º valor : 2
+
+Soma dos positivos  = 22
+Média dos positivos = 5.5</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+7
+4
+9</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 3
+1º valor : 7
+2º valor : 4
+3º valor : 9
+
+Soma dos positivos  = 16
+Média dos positivos = 8.0</input_output></td>
+
+</tr><tr>
+<td><input_output>10
+-5
+-5
+6
+8
+-4
+-3
+-8
+-3
+-8
+3</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 10
+1º valor : -5
+2º valor : -5
+3º valor : 6
+4º valor : 8
+5º valor : -4
+6º valor : -3
+7º valor : -8
+8º valor : -3
+9º valor : -8
+10º valor : 3
+
+Soma dos positivos  = -13
+Média dos positivos = -2.6</input_output></td>
+
+</tr><tr>
+<td><input_output>7
+9
+0
+-6
+-1
+-3
+-7
+2</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 7
+1º valor : 9
+2º valor : 0
+3º valor : -6
+4º valor : -1
+5º valor : -3
+6º valor : -7
+7º valor : 2
+
+Soma dos positivos  = -2
+Média dos positivos = -0.5</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+4
+2
+-9</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 3
+1º valor : 4
+2º valor : 2
+3º valor : -9
+
+Soma dos positivos  = -9
+Média dos positivos = -9.0</input_output></td>
+
+</tr><tr>
+<td><input_output>10
+6
+-4
+10
+-9
+1
+-3
+-6
+5
+2
+-6</input_output></td>
+<td><input_output>Soma e Média dos ímpares
+Quantos valores : 10
+1º valor : 6
+2º valor : -4
+3º valor : 10
+4º valor : -9
+5º valor : 1
+6º valor : -3
+7º valor : -6
+8º valor : 5
+9º valor : 2
+10º valor : -6
+
+Soma dos positivos  = -6
+Média dos positivos = -1.5</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

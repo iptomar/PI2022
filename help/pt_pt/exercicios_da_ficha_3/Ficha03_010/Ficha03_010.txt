@@ -1,0 +1,13 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        read real x "Valor de X\t\t: "
+        define real logX = log(x)
+        write "Log10(X) \t\t= " + logX
+        define real pow10 = 10 ^ logX
+        write "\nPow10(Log10(X)) \t= " + pow10
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 14:30

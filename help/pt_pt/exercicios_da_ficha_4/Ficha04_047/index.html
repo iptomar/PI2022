@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_047.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha04_047.prog" download> Ficha04_047 </a> 
+</td>
+                <td align="center">Avaluation test</td>
+                <td align="center">6.0</td>
+                <td align="center">26/09/2022 15:29:00</td>
+                <td align="center">(c)M@nso 2020</td>
+            </tr>  
+        </table>
+
+        <h1>Pontos e Retas </h1>
+    <pre>Contrua um programa que solicite ao utilizador:
+- A equação de uma reta:
+   aX + bY + c = 0
+- As coordenadadas de um ponto
+   x0, y0
+
+e de seguida diga se o ponto éstá sobre a reta ou não.
+
+Considere que um ponto está sobre a reta se a distância entre o ponto e a reta for inferior a 1.0E-6</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>1
+-1
+0
+0.123
+0.1234560</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Ponto (x0 , y0)
+x0 	: 0.123
+y0 	: 0.123456
+
+Distancia da reta ao ponto = 3.224406922210643E-4
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+0.1234567
+0.1234560</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Ponto (x0 , y0)
+x0 	: 0.1234567
+y0 	: 0.123456
+
+Distancia da reta ao ponto = 4.949747468350035E-7
+Ponto sobre a reta</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+0.12345675
+0.12345674</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Ponto (x0 , y0)
+x0 	: 0.12345675
+y0 	: 0.12345674
+
+Distancia da reta ao ponto = 7.0710678179566545E-9
+Ponto sobre a reta</input_output></td>
+
+</tr><tr>
+<td><input_output>0.041
+0.606
+-0.967
+-7.549
+0.234</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.041
+B 	: 0.606
+C 	: -0.967
+
+Ponto (x0 , y0)
+x0 	: -7.549
+y0 	: 0.234
+
+Distancia da reta ao ponto = 1.8681796386842062
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.268
+-0.202
+-0.262
+-2.861
+7.103</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: -0.268
+B 	: -0.202
+C 	: -0.262
+
+Ponto (x0 , y0)
+x0 	: -2.861
+y0 	: 7.103
+
+Distancia da reta ao ponto = 2.7713210891075777
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>0.799
+0.547
+-0.333
+9.829
+-3.738</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.799
+B 	: 0.547
+C 	: -0.333
+
+Ponto (x0 , y0)
+x0 	: 9.829
+y0 	: -3.738
+
+Distancia da reta ao ponto = 5.6549314041759615
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.480
+-0.110
+-0.073
+3.463
+8.455</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: -0.48
+B 	: -0.11
+C 	: -0.073
+
+Ponto (x0 , y0)
+x0 	: 3.463
+y0 	: 8.455
+
+Distancia da reta ao ponto = 5.412383960937968
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>0.289
+0.569
+-0.611
+-8.471
+2.436</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.289
+B 	: 0.569
+C 	: -0.611
+
+Ponto (x0 , y0)
+x0 	: -8.471
+y0 	: 2.436
+
+Distancia da reta ao ponto = 2.621545610942702
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>0.582
+-0.662
+0.735
+-6.925
+-4.908</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.582
+B 	: -0.662
+C 	: 0.735
+
+Ponto (x0 , y0)
+x0 	: -6.925
+y0 	: -4.908
+
+Distancia da reta ao ponto = 0.052474430006545156
+Ponto fora da reta</input_output></td>
+
+</tr><tr>
+<td><input_output>0.070
+-0.043
+-0.378
+2.270
+-0.944</input_output></td>
+<td><input_output>Equação da reta  (Ax + By + C = 0)
+A 	: 0.07
+B 	: -0.043
+C 	: -0.378
+
+Ponto (x0 , y0)
+x0 	: 2.27
+y0 	: -0.944
+
+Distancia da reta ao ponto = 2.1728911451976494
+Ponto fora da reta</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

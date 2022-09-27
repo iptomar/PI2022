@@ -14,4 +14,4 @@ public class Ficha01_003 {
 
 }
 //Java  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	Sun, 2022 Sep 18 19:40
+//(c) Ant0nio M@nso 	Sun, 2022 Sep 25 17:05

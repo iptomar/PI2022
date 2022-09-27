@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha02_049.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha02_049.prog" download> Ficha02_049 </a> 
+</td>
+                <td align="center">Difícil</td>
+                <td align="center">5.0</td>
+                <td align="center">07/09/2022 16:08:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Baricentro de um Triângulo </h1>
+    <pre>Construa um algoritmo que solicite ao utilizador as coordenadas dos pontos A,B e C, que representam os vértices de um triângulo, e de seguida imprima as coordenadas baricentro G.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>-1.284
+-6.134
+4.003
+-1.786
+8.642
+-3.463</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: -1.284
+Coordenada Y 	: -6.134
+Ponto B
+Coordenada X 	: 4.003
+Coordenada Y 	: -1.786
+Ponto C
+Coordenada X 	: 8.642
+Coordenada Y 	: -3.463
+
+Baricentro
+Coordenada X 	: 3.7870000000000004
+Coordenada Y 	: -3.794333333333333</input_output></td>
+
+</tr><tr>
+<td><input_output>3.562
+-7.795
+0.655
+6.609
+6.816
+-4.676</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: 3.562
+Coordenada Y 	: -7.795
+Ponto B
+Coordenada X 	: 0.655
+Coordenada Y 	: 6.609
+Ponto C
+Coordenada X 	: 6.816
+Coordenada Y 	: -4.676
+
+Baricentro
+Coordenada X 	: 3.6776666666666666
+Coordenada Y 	: -1.954</input_output></td>
+
+</tr><tr>
+<td><input_output>-2.617
+2.279
+1.378
+5.635
+5.147
+-9.078</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: -2.617
+Coordenada Y 	: 2.279
+Ponto B
+Coordenada X 	: 1.378
+Coordenada Y 	: 5.635
+Ponto C
+Coordenada X 	: 5.147
+Coordenada Y 	: -9.078
+
+Baricentro
+Coordenada X 	: 1.3026666666666669
+Coordenada Y 	: -0.3879999999999999</input_output></td>
+
+</tr><tr>
+<td><input_output>3.091
+-5.088
+9.218
+8.238
+-1.305
+1.895</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: 3.091
+Coordenada Y 	: -5.088
+Ponto B
+Coordenada X 	: 9.218
+Coordenada Y 	: 8.238
+Ponto C
+Coordenada X 	: -1.305
+Coordenada Y 	: 1.895
+
+Baricentro
+Coordenada X 	: 3.6680000000000006
+Coordenada Y 	: 1.6816666666666666</input_output></td>
+
+</tr><tr>
+<td><input_output>0.147
+-1.216
+-4.795
+7.894
+-1.888
+-2.456</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: 0.147
+Coordenada Y 	: -1.216
+Ponto B
+Coordenada X 	: -4.795
+Coordenada Y 	: 7.894
+Ponto C
+Coordenada X 	: -1.888
+Coordenada Y 	: -2.456
+
+Baricentro
+Coordenada X 	: -2.1786666666666665
+Coordenada Y 	: 1.407333333333333</input_output></td>
+
+</tr><tr>
+<td><input_output>-6.276
+-7.567
+-6.052
+-5.298
+-0.033
+4.498</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: -6.276
+Coordenada Y 	: -7.567
+Ponto B
+Coordenada X 	: -6.052
+Coordenada Y 	: -5.298
+Ponto C
+Coordenada X 	: -0.033
+Coordenada Y 	: 4.498
+
+Baricentro
+Coordenada X 	: -4.120333333333333
+Coordenada Y 	: -2.789</input_output></td>
+
+</tr><tr>
+<td><input_output>7.889
+3.958
+-1.050
+8.371
+0.067
+8.447</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: 7.889
+Coordenada Y 	: 3.958
+Ponto B
+Coordenada X 	: -1.05
+Coordenada Y 	: 8.371
+Ponto C
+Coordenada X 	: 0.067
+Coordenada Y 	: 8.447
+
+Baricentro
+Coordenada X 	: 2.302
+Coordenada Y 	: 6.925333333333334</input_output></td>
+
+</tr><tr>
+<td><input_output>-2.908
+-7.853
+-9.617
+7.765
+-8.589
+1.707</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: -2.908
+Coordenada Y 	: -7.853
+Ponto B
+Coordenada X 	: -9.617
+Coordenada Y 	: 7.765
+Ponto C
+Coordenada X 	: -8.589
+Coordenada Y 	: 1.707
+
+Baricentro
+Coordenada X 	: -7.038
+Coordenada Y 	: 0.5396666666666666</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.363
+-5.413
+2.546
+3.280
+8.656
+-9.959</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: -0.363
+Coordenada Y 	: -5.413
+Ponto B
+Coordenada X 	: 2.546
+Coordenada Y 	: 3.28
+Ponto C
+Coordenada X 	: 8.656
+Coordenada Y 	: -9.959
+
+Baricentro
+Coordenada X 	: 3.613
+Coordenada Y 	: -4.030666666666667</input_output></td>
+
+</tr><tr>
+<td><input_output>6.003
+3.667
+7.641
+3.236
+-5.658
+8.787</input_output></td>
+<td><input_output>Baricentro de um triângulo
+Ponto A
+Coordenada X 	: 6.003
+Coordenada Y 	: 3.667
+Ponto B
+Coordenada X 	: 7.641
+Coordenada Y 	: 3.236
+Ponto C
+Coordenada X 	: -5.658
+Coordenada Y 	: 8.787
+
+Baricentro
+Coordenada X 	: 2.662
+Coordenada Y 	: 5.23</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>
