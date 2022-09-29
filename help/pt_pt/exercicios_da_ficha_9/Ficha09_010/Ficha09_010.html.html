@@ -1,0 +1,133 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Javascript - HTML - CSS</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha09_010</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Dígitos de um numero</h2>
+            <plain>Contrua um algoritmo para imprimir na consola os dígitos de um numero inteiro.</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha09_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha09_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha09_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Javascript - HTML - CSS</h1>
+<pre  class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;style&gt;
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        &lt;/style&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;title&gt;Ficha09_010&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;color:green&quot;&gt;D&iacute;gitos de um numero&lt;/h1&gt;
+        &lt;table&gt; 
+            &lt;tr&gt;
+                &lt;td valign=&quot;top&quot;&gt;
+                    &lt;plain&gt; Contrua um algoritmo para imprimir na consola os d&iacute;gitos de um numero inteiro. 
+                        &lt;br&gt;   
+                        &lt;a  href=&quot;Ficha09_010.html&quot;&gt;Execute &lt;img style=&quot;vertical-align:middle&quot; src=&quot;http://algorithmi.ipt.pt/img/langs/run.png&quot; height=&quot;32&quot; width=&quot;32&quot; &gt;&lt;/a&gt; 
+                    &lt;/plain&gt;
+                &lt;/td&gt; 
+                &lt;td&gt;
+                    &lt;img src=&quot;data:image/jpg;base64,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&quot;&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;pre&gt;
+        &lt;script&gt;
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write(&quot;\n&quot;);
+        document.write(&quot;Numero : &quot; );// print text
+        num = parseInt(prompt(&quot;Numero : &quot; ,&quot;0&quot;) );
+        
+        document.write(num + &quot;\n&quot;);// print input 
+        document.write(&quot;Digitos = &quot; );
+        while(num &gt; 0 ){
+            document.write(num % 10 + &quot; &quot; );
+            num /=10;
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        &lt;/script&gt;
+        &lt;p style=&quot;color:gray;text-align:right;font-size: small &quot;&gt;Algorithmi 22.05&lt;br&gt;Ant0nio M@nso
+        &lt;/pre&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>    
+<a href="Ficha09_010.html" download>  <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="48" width="48"> Download Ficha09_010.html </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

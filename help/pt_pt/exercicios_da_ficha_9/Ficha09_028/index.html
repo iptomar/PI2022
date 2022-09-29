@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha09_028.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha09_028.prog" download> Ficha09_028 </a> 
+</td>
+                <td align="center">Avaluation test</td>
+                <td align="center">6.0</td>
+                <td align="center">29/09/2022 12:23:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Audiência de canais </h1>
+    <pre>Foi realizada uma pesquisa sobre a audiência dos canais da RTP  (RTP1, RTP2 e RTP3). 
+As casas que não estavam a ver televisão ou que estavam a ver outros canais não entram na pesquisa.
+
+Para cada casa válida consultada foi fornecido o número do canal que estava ligado na televisão.
+
+Construa um algoritmo que:
+a) leia os valores do canal (1,2,3) que as pessoas estavam a ver
+b) a sequência dos canais termina com o valor zero
+c) Calcule e apresente o número de espectadores para cada canal
+d) Calcule e apresente a percentagem de audiência para cada canal</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>3
+3
+3
+2
+2
+3
+1
+2
+1
+1
+3
+1
+2
+3
+1
+1
+1
+1
+2
+2
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 3
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 2
+Canal : 3
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 3
+Canal : 1
+Canal : 2
+Canal : 3
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 2
+Canal : 2
+Canal : 0
+
+RTP1 = 8	 40.0 %
+RTP2 = 6	 30.0 %
+RTP3 = 6	 30.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+3
+3
+2
+2
+2
+2
+2
+1
+1
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 2
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 2
+Canal : 2
+Canal : 2
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 0
+
+RTP1 = 2	 20.0 %
+RTP2 = 6	 60.0 %
+RTP3 = 2	 20.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+1
+1
+1
+3
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 3
+Canal : 0
+
+RTP1 = 3	 60.0 %
+RTP2 = 1	 20.0 %
+RTP3 = 1	 20.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+3
+1
+2
+3
+1
+1
+2
+1
+2
+2
+3
+1
+1
+1
+3
+3
+3
+3
+2
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 2
+Canal : 3
+Canal : 1
+Canal : 2
+Canal : 3
+Canal : 1
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 2
+Canal : 2
+Canal : 3
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 3
+Canal : 3
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 0
+
+RTP1 = 7	 35.0 %
+RTP2 = 6	 30.0 %
+RTP3 = 7	 35.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+2
+3
+2
+2
+1
+2
+1
+2
+1
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 2
+Canal : 2
+Canal : 3
+Canal : 2
+Canal : 2
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 0
+
+RTP1 = 3	 30.0 %
+RTP2 = 6	 60.0 %
+RTP3 = 1	 10.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+1
+1
+2
+3
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 2
+Canal : 3
+Canal : 0
+
+RTP1 = 2	 40.0 %
+RTP2 = 2	 40.0 %
+RTP3 = 1	 20.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+3
+1
+3
+3
+2
+2
+1
+3
+2
+3
+2
+1
+1
+1
+3
+3
+2
+1
+2
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 3
+Canal : 3
+Canal : 1
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 2
+Canal : 1
+Canal : 3
+Canal : 2
+Canal : 3
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 1
+Canal : 2
+Canal : 0
+
+RTP1 = 6	 30.0 %
+RTP2 = 6	 30.0 %
+RTP3 = 8	 40.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+3
+1
+2
+1
+1
+1
+2
+1
+1
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 1
+Canal : 3
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 1
+Canal : 0
+
+RTP1 = 7	 70.0 %
+RTP2 = 2	 20.0 %
+RTP3 = 1	 10.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+3
+1
+3
+1
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 3
+Canal : 3
+Canal : 1
+Canal : 3
+Canal : 1
+Canal : 0
+
+RTP1 = 2	 40.0 %
+RTP2 = 0	 0.0 %
+RTP3 = 3	 60.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+1
+2
+3
+3
+2
+3
+1
+1
+1
+2
+1
+3
+3
+3
+2
+3
+3
+1
+2
+0</input_output></td>
+<td><input_output>Audiência da RTP
+Canal : 1
+Canal : 1
+Canal : 2
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 3
+Canal : 1
+Canal : 1
+Canal : 1
+Canal : 2
+Canal : 1
+Canal : 3
+Canal : 3
+Canal : 3
+Canal : 2
+Canal : 3
+Canal : 3
+Canal : 1
+Canal : 2
+Canal : 0
+
+RTP1 = 7	 35.0 %
+RTP2 = 5	 25.0 %
+RTP3 = 8	 40.0 %</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

@@ -1,13 +1,13 @@
-// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
-    inicio 
-        escrever "Qual o seu nome \t: "
-        ler texto nome
-        escrever "Qual a sua idade \t: "
-        ler inteiro idade
-        escrever "Olá " + nome + " de " + idade + " anos"
-    fim 
+    begin 
+        write "Qual o seu nome \t: "
+        read string nome
+        write "Qual a sua idade \t: "
+        read integer idade
+        write "Olá " + nome + " de " + idade + " anos"
+    end 
 
 
 //pseudocode  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	quarta, 2022 set 07 16:09
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 16:59

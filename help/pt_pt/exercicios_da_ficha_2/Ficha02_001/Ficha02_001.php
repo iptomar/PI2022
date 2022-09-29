@@ -11,6 +11,6 @@ function main() {
 main();
 
 //PHP 5.3 +  - Automatic translated by Algorithmi 22.05
-//(c) Luís Lopes 	Sun, 2022 Sep 25 17:25
+//(c) Luís Lopes 	Mon, 2022 Sep 26 16:58
 
 ?>

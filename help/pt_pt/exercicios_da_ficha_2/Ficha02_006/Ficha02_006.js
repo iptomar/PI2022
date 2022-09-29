@@ -1,4 +1,4 @@
-// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
 //Main Function
 function main() {
@@ -15,4 +15,4 @@ function main() {
 }
 
 //JavaScript  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	quarta, 2022 set 07 16:09
+//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 16:42
