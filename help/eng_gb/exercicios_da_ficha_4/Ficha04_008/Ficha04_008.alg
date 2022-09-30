@@ -1,0 +1,16 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    inicio 
+        real r1 = 0.1
+        real r2 = 0.2
+        se r1 + r2 == 0.3 então
+            escrever "Correct Sum"
+        senão
+            escrever "Wrong Sum"
+            escrever r1 + r2
+        fim
+    fim 
+
+
+//pseudocode  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	domingo, 2022 set 18 23:28

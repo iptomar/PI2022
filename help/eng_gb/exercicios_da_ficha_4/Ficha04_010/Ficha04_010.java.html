@@ -1,0 +1,106 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Java</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha04_010</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Comparing Real Numbers - Accuracy</h2>
+            <plain>Build an algorithm that checks whether the sum of two real numbers equals a third with an accuracy of 5 decimal places.
+
+r1 + r2 == r3
+::::::::::::::::::
+A L G O R I T M O
+::::::::::::::::::
+1 - read the values 
+     (r1, r2, r3)
+2 - calculate the sum of the first two (+)
+     (sum = r1 + r2) 
+3 - calculate the distance from the sum to the third (abs)
+     ( distance = abs(sum -r3)
+4 - compare the distance to the precision (1.0E-5)
+     ( distance < precision) 
+5 - write the information according to the comparison
+     ( "True" or "False" )</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha04_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha04_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha04_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Java</h1>
+<pre  class="prettyprint">
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+import java.util.Scanner;
+
+public class Ficha04_010 {
+
+    static Scanner keyb = new Scanner(System.in);//keyboard
+
+    //Main Function
+    public static void main( String[] args) {
+        System.out.print(&quot;Actual number \t: &quot; );
+        double r1 = Double.valueOf(keyb.nextLine());
+        System.out.print(&quot;Actual number \t: &quot; );
+        double r2 = Double.valueOf(keyb.nextLine());
+        System.out.print(&quot;Actual Sum \t: &quot; );
+        double r3 = Double.valueOf(keyb.nextLine());
+        double sum = r1 + r2 ;
+        double distance = Math.abs( sum - r3 ) ;
+        double precision = 1.0E-5 ;
+        System.out.print(r1 + &quot; + &quot; + r2 + &quot; \t= &quot; + r3 + &quot; =&gt; &quot; );
+        if(distance &lt; precision ){
+            System.out.print(&quot;True&quot; );
+        }else{
+            System.out.print(&quot;False&quot; );
+        }
+        System.out.print(&quot;\n\n&quot; + r1 + &quot; + &quot; + r2 + &quot; \t= &quot; + ( r1 + r2 ) );
+        System.out.print(&quot;\nDistance \t: &quot; + distance );
+        System.out.print(&quot;\nPrecision \t: &quot; + precision );
+    }
+
+}
+//Java  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	domingo, 2022 set 18 23:28
+
+</pre>    
+<a href="Ficha04_010.java" download>  <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="48" width="48"> Download Ficha04_010.java </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

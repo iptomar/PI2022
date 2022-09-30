@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha02_012</title>
+    </head>
+    <body>
+        <h1 style="color:green">Perform calculations</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Build an algorithm that sums two integers entered by the user 
+                        <br>   
+                        <a  href="Ficha02_012.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("1st number : " );// print text
+        n1 = parseInt(prompt("1st number : " ,"0") );
+        
+        document.write(n1 + "\n");// print input 
+        document.write("2nd number : " );// print text
+        n2 = parseInt(prompt("2nd number : " ,"0") );
+        
+        document.write(n2 + "\n");// print input 
+        n1 +=n2;
+        document.write("Sum = " + n1 );
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

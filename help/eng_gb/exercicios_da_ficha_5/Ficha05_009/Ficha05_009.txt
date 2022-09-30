@@ -1,0 +1,16 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        read integer imin "Minimo : "
+        read integer imax "Maximo : "
+        if imin % 2 != 0 then
+            execute imin = imin + 1
+        end if
+        for integer i from imin to imax + 1  step 2
+            write i + " "
+        end for
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Sat, 2022 Sep 24 22:05

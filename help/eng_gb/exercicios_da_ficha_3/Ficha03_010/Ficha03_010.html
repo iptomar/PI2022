@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha03_010</title>
+    </head>
+    <body>
+        <h1 style="color:green">Potency <=> Logarithm</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Build a program that:
+1 - prompts the user for a real number
+2 - calculates the base 10 logarithm of the number
+3 - Calculates the base 10 power of the logarithm
+4 - Make a critical comment about the algorithm's result 
+                        <br>   
+                        <a  href="Ficha03_010.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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RTV0Fc/47/5J54l/7BV1/wCimoAPAn/JPPDX/YKtf/RS10Fc/wCBP+SeeGv+wVa/+ilroKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAjnnhtbeW4uJY4YIkLySSMFVFAySSeAAO9SVh+NIJrrwL4ht7eKSaeXTLlI441LM7GJgAAOSSeMVzcNv4luftiaLcarBGPILtqc6xSG4/ffaADJBMu3/UcRKIs58sgbgQDvBPC1w9ussZnRFd4ww3KrEhSR1AJVsHvtPpWH4J8Mf8Id4QsdA+2fbPsvmfv/ACvL3bpGf7uTjG7HXtXF6hZeI7bUr6S4/tmTVG0eFLO4s38yB70S3RiErxxRAgBlyGQRAH95n5CbEh8TR+M2khOsmOW4uoriOKFmEUXlSmAo8sn2YlikRUrENpwkr7i3mAHplFeVmPWzoJitLvWVtBeoLu6ktr9i0XlyHKQvILxT5nkqwSQpgBgcGZR3nhZLyPw5aLfTzzzDfiSeExOyb22ZVmZh8m377F/7+G3CgDYooooAKKKKACiiigAqvf2NvqenXNheR+Za3UTQzJuK7kYEMMjkZBPSuD1/xRq+neNYbeC7jFut7aWpsnIVnilaNWm8sRM7IDIVEvmxoHUJtJX94Xmu+OLXSb6e7so7YKkYWaS1igWLdNGjuXW6uNoSNpHy0ZVdu45A2sAd5YWNvpmnW1hZx+Xa2sSwwpuLbUUAKMnk4AHWrFed2HiLWho0c6araaldfaJI4VtUN4s8G2MvMWjii8wwsWP7tQrcQ8ysGEcHia9OvXFvb+Ivtoi1CygsrXyIz9ugkitjNLvVR5m1ZHl/dbdn3myjKoAPSKK8rXxRrFzZ2K2+vSPd3qWv9pJHHAzaRPJdW0ZgC7PkJWacbZt7fuuuVbMms+ItesL6bShrcFva2l3LC+q39xDaM5ENtKkbSGCSLcfPlwojUlYgc/K24A9QorzePVfEVxa3uoT61PbzRahp9gbSC2jWFPtEVoJHAli80MrXDsoc8EKGUgFT0Hw4dJPhr4cMd59rX+z4QZMqdpCgFPlAHyEFPX5eSTk0AdRRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVXt7G3tJ7uaCPZJdyiac7id7hFjB56fKijj09c1YooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("Value of X\t\t: " );// print text
+        x = parseFloat(prompt("Value of X\t\t: " ,"0.0") );
+        
+        document.write(x + "\n");// print input 
+        var logX = 1/Math.log(10)*Math.log( x ) ;
+        document.write("Log10(X) \t\t= " + logX );
+        var pow10 = Math.pow( 10 , logX ) ;
+        document.write("\nPow10(Log10(X)) \t= " + pow10 );
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

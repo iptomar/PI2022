@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha03_010.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha03_010.prog" download> Ficha03_010 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Potency <=> Logarithm</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Build a program that:
+1 - prompts the user for a real number
+2 - calculates the base 10 logarithm of the number
+3 - Calculates the base 10 power of the logarithm
+4 - Make a critical comment about the algorithm's result</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        read real x "Value of X\t\t: "
+        define real logX = log(x)
+        write "Log10(X) \t\t= " + logX
+        define real pow10 = 10 ^ logX
+        write "\nPow10(Log10(X)) \t= " + pow10
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha03_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha03_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha03_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>1</input_output></td>
+<td><input_output>Value of X		: 1.0
+Log10(X) 		= 0.0
+Pow10(Log10(X)) 	= 1.0</input_output></td>
+
+</tr><tr>
+<td><input_output>10</input_output></td>
+<td><input_output>Value of X		: 10.0
+Log10(X) 		= 1.0
+Pow10(Log10(X)) 	= 10.0</input_output></td>
+
+</tr><tr>
+<td><input_output>6.406</input_output></td>
+<td><input_output>Value of X		: 6.406
+Log10(X) 		= 0.8065869343278029
+Pow10(Log10(X)) 	= 6.406</input_output></td>
+
+</tr><tr>
+<td><input_output>3.416</input_output></td>
+<td><input_output>Value of X		: 3.416
+Log10(X) 		= 0.5335178620169675
+Pow10(Log10(X)) 	= 3.4160000000000004</input_output></td>
+
+</tr><tr>
+<td><input_output>6.178</input_output></td>
+<td><input_output>Value of X		: 6.178
+Log10(X) 		= 0.7908479039654318
+Pow10(Log10(X)) 	= 6.178</input_output></td>
+
+</tr><tr>
+<td><input_output>7.913</input_output></td>
+<td><input_output>Value of X		: 7.913
+Log10(X) 		= 0.8983411657275092
+Pow10(Log10(X)) 	= 7.912999999999999</input_output></td>
+
+</tr><tr>
+<td><input_output>1.980</input_output></td>
+<td><input_output>Value of X		: 1.98
+Log10(X) 		= 0.2966651902615311
+Pow10(Log10(X)) 	= 1.98</input_output></td>
+
+</tr><tr>
+<td><input_output>1.299</input_output></td>
+<td><input_output>Value of X		: 1.299
+Log10(X) 		= 0.11360915107302785
+Pow10(Log10(X)) 	= 1.299</input_output></td>
+
+</tr><tr>
+<td><input_output>6.625</input_output></td>
+<td><input_output>Value of X		: 6.625
+Log10(X) 		= 0.8211858826088455
+Pow10(Log10(X)) 	= 6.625000000000001</input_output></td>
+
+</tr><tr>
+<td><input_output>4.652</input_output></td>
+<td><input_output>Value of X		: 4.652
+Log10(X) 		= 0.6676397060564108
+Pow10(Log10(X)) 	= 4.651999999999999</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

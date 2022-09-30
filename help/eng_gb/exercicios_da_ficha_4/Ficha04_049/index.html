@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_049.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha04_049.prog" download> Ficha04_049 </a> 
+</td>
+                <td align="center">Teste de Avaliação</td>
+                <td align="center">6.0</td>
+                <td align="center">23/09/2022 00:00:00</td>
+                <td align="center">(c)M@nso 2020</td>
+            </tr>  
+        </table>
+
+        <h1>Circle and Crown </h1>
+    <pre>Build a program that prompts the user with a circular crown and a circle and then checks whether the circle is inside or outside the crown.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>0
+0
+1
+2
+0
+1.5
+0.25</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.0
+Center y 	: 0.0
+Smallest radius 	: 1.0
+Bigger radius 	: 2.0
+
+Circle
+Center x 	: 0.0
+Center y 	: 1.5
+Ray 		: 0.25
+
+Distance between centers : 1.5
+Inside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0
+0
+1
+2
+0
+1.5
+0.75</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.0
+Center y 	: 0.0
+Smallest radius 	: 1.0
+Bigger radius 	: 2.0
+
+Circle
+Center x 	: 0.0
+Center y 	: 1.5
+Ray 		: 0.75
+
+Distance between centers : 1.5
+Outside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0.394
+0.479
+1.696
+6.636
+2.502
+2.877
+1.408</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.394
+Center y 	: 0.479
+Smallest radius 	: 1.696
+Bigger radius 	: 6.636
+
+Circle
+Center x 	: 2.502
+Center y 	: 2.877
+Ray 		: 1.408
+
+Distance between centers : 3.1928150588469726
+Inside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0.331
+-0.465
+1.411
+3.908
+2.950
+2.228
+1.034</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.331
+Center y 	: -0.465
+Smallest radius 	: 1.411
+Bigger radius 	: 3.908
+
+Circle
+Center x 	: 2.95
+Center y 	: 2.228
+Ray 		: 1.034
+
+Distance between centers : 3.75651567280106
+Outside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0.441
+-0.110
+1.950
+5.080
+2.757
+2.298
+0.836</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.441
+Center y 	: -0.11
+Smallest radius 	: 1.95
+Bigger radius 	: 5.08
+
+Circle
+Center x 	: 2.757
+Center y 	: 2.298
+Ray 		: 0.836
+
+Distance between centers : 3.3410058365707775
+Inside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.411
+0.469
+1.306
+4.093
+2.983
+2.119
+0.556</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: -0.411
+Center y 	: 0.469
+Smallest radius 	: 1.306
+Bigger radius 	: 4.093
+
+Circle
+Center x 	: 2.983
+Center y 	: 2.119
+Ray 		: 0.556
+
+Distance between centers : 3.7738224653526036
+Outside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0.204
+0.233
+1.543
+4.299
+2.023
+2.308
+1.300</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.204
+Center y 	: 0.233
+Smallest radius 	: 1.543
+Bigger radius 	: 4.299
+
+Circle
+Center x 	: 2.023
+Center y 	: 2.308
+Ray 		: 1.3
+
+Distance between centers : 2.759417692195221
+Outside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.479
+-0.158
+1.002
+6.717
+2.686
+2.327
+1.928</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: -0.479
+Center y 	: -0.158
+Smallest radius 	: 1.002
+Bigger radius 	: 6.717
+
+Circle
+Center x 	: 2.686
+Center y 	: 2.327
+Ray 		: 1.928
+
+Distance between centers : 4.0239843439059255
+Inside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0.273
+-0.287
+1.115
+3.521
+2.536
+2.453
+0.825</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.273
+Center y 	: -0.287
+Smallest radius 	: 1.115
+Bigger radius 	: 3.521
+
+Circle
+Center x 	: 2.536
+Center y 	: 2.453
+Ray 		: 0.825
+
+Distance between centers : 3.553697933139506
+Outside the Crown</input_output></td>
+
+</tr><tr>
+<td><input_output>0.170
+-0.218
+1.193
+3.611
+2.199
+2.060
+1.146</input_output></td>
+<td><input_output>Circular Crown
+Center x 	: 0.17
+Center y 	: -0.218
+Smallest radius 	: 1.193
+Bigger radius 	: 3.611
+
+Circle
+Center x 	: 2.199
+Center y 	: 2.06
+Ray 		: 1.146
+
+Distance between centers : 3.0505942044132976
+Outside the Crown</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

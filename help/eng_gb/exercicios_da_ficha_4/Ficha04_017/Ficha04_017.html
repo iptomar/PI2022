@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha04_017</title>
+    </head>
+    <body>
+        <h1 style="color:green">Open Interval</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Build an algorithm that checks whether the staff note entered by the user is valid or invalid.
+Use the || (OR , OR) operator.
+
+NOTE 1:
+For open intervals the OR operator is used.
+
+NOTE 2:
+When the range is open we use the operators > and < 
+                        <br>   
+                        <a  href="Ficha04_017.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        document.write("Grade \t: " );// print text
+        grade = parseInt(prompt("Grade \t: " ,"0") );
+        
+        document.write(grade + "\n");// print input 
+        if(grade < 0 || grade > 20 ){
+            document.write("Invalid Grade" );
+        }else{
+            document.write("Valid Grade" );
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

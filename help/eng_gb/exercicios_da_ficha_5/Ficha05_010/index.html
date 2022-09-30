@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha05_010.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha05_010.prog" download> Ficha05_010 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Minimum Grade</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Build an algorithm that asks the user for the staff grade of 5 students.
+Then print out the minimum score.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        define integer minimum = 999
+        for integer i from 1 to 6  step 1
+            read integer grade i + "º grade : "
+            if grade < minimum then
+                execute minimum = grade
+            end if
+        end for
+        write "Nota mínima = " + minimum
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha05_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha05_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha05_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>11
+9
+18
+0
+5</input_output></td>
+<td><input_output>1º grade : 11
+2º grade : 9
+3º grade : 18
+4º grade : 0
+5º grade : 5
+Nota mínima = 0</input_output></td>
+
+</tr><tr>
+<td><input_output>0
+11
+6
+15
+6</input_output></td>
+<td><input_output>1º grade : 0
+2º grade : 11
+3º grade : 6
+4º grade : 15
+5º grade : 6
+Nota mínima = 0</input_output></td>
+
+</tr><tr>
+<td><input_output>14
+8
+4
+0
+14</input_output></td>
+<td><input_output>1º grade : 14
+2º grade : 8
+3º grade : 4
+4º grade : 0
+5º grade : 14
+Nota mínima = 0</input_output></td>
+
+</tr><tr>
+<td><input_output>19
+10
+12
+8
+17</input_output></td>
+<td><input_output>1º grade : 19
+2º grade : 10
+3º grade : 12
+4º grade : 8
+5º grade : 17
+Nota mínima = 8</input_output></td>
+
+</tr><tr>
+<td><input_output>11
+3
+1
+10
+16</input_output></td>
+<td><input_output>1º grade : 11
+2º grade : 3
+3º grade : 1
+4º grade : 10
+5º grade : 16
+Nota mínima = 1</input_output></td>
+
+</tr><tr>
+<td><input_output>17
+5
+19
+5
+15</input_output></td>
+<td><input_output>1º grade : 17
+2º grade : 5
+3º grade : 19
+4º grade : 5
+5º grade : 15
+Nota mínima = 5</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+16
+5
+9
+16</input_output></td>
+<td><input_output>1º grade : 3
+2º grade : 16
+3º grade : 5
+4º grade : 9
+5º grade : 16
+Nota mínima = 3</input_output></td>
+
+</tr><tr>
+<td><input_output>12
+12
+3
+4
+2</input_output></td>
+<td><input_output>1º grade : 12
+2º grade : 12
+3º grade : 3
+4º grade : 4
+5º grade : 2
+Nota mínima = 2</input_output></td>
+
+</tr><tr>
+<td><input_output>12
+11
+16
+8
+9</input_output></td>
+<td><input_output>1º grade : 12
+2º grade : 11
+3º grade : 16
+4º grade : 8
+5º grade : 9
+Nota mínima = 8</input_output></td>
+
+</tr><tr>
+<td><input_output>20
+9
+20
+8
+12</input_output></td>
+<td><input_output>1º grade : 20
+2º grade : 9
+3º grade : 20
+4º grade : 8
+5º grade : 12
+Nota mínima = 8</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>tml>

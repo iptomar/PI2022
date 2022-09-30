@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha06_005.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha06_005.prog" download> Ficha06_005 </a> 
+</td>
+                <td align="center">Easy</td>
+                <td align="center">3.0</td>
+                <td align="center">28/11/2021 00:00:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Number rectangle </h1>
+    <pre>Write an algorithm that prints the following figure.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>6
+4</input_output></td>
+<td><input_output>Height : 6
+Width : 4
+1 1 1 1 1 
+2 2 2 2 2 
+3 3 3 3 3 
+4 4 4 4 4 
+5 5 5 5 5 
+6 6 6 6 6</input_output></td>
+
+</tr><tr>
+<td><input_output>18
+7</input_output></td>
+<td><input_output>Height : 18
+Width : 7
+1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 
+3 3 3 3 3 3 3 3 
+4 4 4 4 4 4 4 4 
+5 5 5 5 5 5 5 5 
+6 6 6 6 6 6 6 6 
+7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 
+9 9 9 9 9 9 9 9 
+10 10 10 10 10 10 10 10 
+11 11 11 11 11 11 11 11 
+12 12 12 12 12 12 12 12 
+13 13 13 13 13 13 13 13 
+14 14 14 14 14 14 14 14 
+15 15 15 15 15 15 15 15 
+16 16 16 16 16 16 16 16 
+17 17 17 17 17 17 17 17 
+18 18 18 18 18 18 18 18</input_output></td>
+
+</tr><tr>
+<td><input_output>18
+17</input_output></td>
+<td><input_output>Height : 18
+Width : 17
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 
+15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 
+16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 
+17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 
+18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18</input_output></td>
+
+</tr><tr>
+<td><input_output>16
+2</input_output></td>
+<td><input_output>Height : 16
+Width : 2
+1 1 1 
+2 2 2 
+3 3 3 
+4 4 4 
+5 5 5 
+6 6 6 
+7 7 7 
+8 8 8 
+9 9 9 
+10 10 10 
+11 11 11 
+12 12 12 
+13 13 13 
+14 14 14 
+15 15 15 
+16 16 16</input_output></td>
+
+</tr><tr>
+<td><input_output>16
+18</input_output></td>
+<td><input_output>Height : 16
+Width : 18
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 
+15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 
+16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+19</input_output></td>
+<td><input_output>Height : 3
+Width : 19
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</input_output></td>
+
+</tr><tr>
+<td><input_output>12
+17</input_output></td>
+<td><input_output>Height : 12
+Width : 17
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12</input_output></td>
+
+</tr><tr>
+<td><input_output>12
+3</input_output></td>
+<td><input_output>Height : 12
+Width : 3
+1 1 1 1 
+2 2 2 2 
+3 3 3 3 
+4 4 4 4 
+5 5 5 5 
+6 6 6 6 
+7 7 7 7 
+8 8 8 8 
+9 9 9 9 
+10 10 10 10 
+11 11 11 11 
+12 12 12 12</input_output></td>
+
+</tr><tr>
+<td><input_output>12
+8</input_output></td>
+<td><input_output>Height : 12
+Width : 8
+1 1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 2 
+3 3 3 3 3 3 3 3 3 
+4 4 4 4 4 4 4 4 4 
+5 5 5 5 5 5 5 5 5 
+6 6 6 6 6 6 6 6 6 
+7 7 7 7 7 7 7 7 7 
+8 8 8 8 8 8 8 8 8 
+9 9 9 9 9 9 9 9 9 
+10 10 10 10 10 10 10 10 10 
+11 11 11 11 11 11 11 11 11 
+12 12 12 12 12 12 12 12 12</input_output></td>
+
+</tr><tr>
+<td><input_output>13
+2</input_output></td>
+<td><input_output>Height : 13
+Width : 2
+1 1 1 
+2 2 2 
+3 3 3 
+4 4 4 
+5 5 5 
+6 6 6 
+7 7 7 
+8 8 8 
+9 9 9 
+10 10 10 
+11 11 11 
+12 12 12 
+13 13 13</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

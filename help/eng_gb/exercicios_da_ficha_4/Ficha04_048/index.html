@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_048.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha04_048.prog" download> Ficha04_048 </a> 
+</td>
+                <td align="center">Teste de Avaliação</td>
+                <td align="center">6.0</td>
+                <td align="center">23/09/2022 00:00:00</td>
+                <td align="center">(c)M@nso 2020</td>
+            </tr>  
+        </table>
+
+        <h1>Circumferences and Lines </h1>
+    <pre>Build a program that prompts the user:
+- The equation of a line:
+   aX + bY + c = 0
+- The position of the circle
+   - The coordinates of the center C(x0, y0)
+   - The value of the radius (r) 
+
+and then state whether the line is tangent, secant, or exterior
+
+Consider rounding errors of 1.0E-6</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>1
+-1
+0
+-1
+1
+1.414213</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -1.0
+Center y0 	: 1.0
+Ray r 		: 1.414213
+
+Distance to center (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 5.623730949810835E-7
+Tangent Line</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+-1
+1
+5.5</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -1.0
+Center y0 	: 1.0
+Ray r 		: 5.5
+
+Distance to center (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 4.085786437626905
+Secant Line</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+-1
+1
+1.4142135</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -1.0
+Center y0 	: 1.0
+Ray r 		: 1.4142135
+
+Distance to center (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 6.237309491119447E-8
+Tangent Line</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+-1
+0
+-1
+1
+1.2</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 1.0
+B 	: -1.0
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -1.0
+Center y0 	: 1.0
+Ray r 		: 1.2
+
+Distance to center (C) 	= 1.414213562373095
+Distância da reta ao círculo 	= 0.21421356237309497
+ Outer Straight</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.134
+-0.022
+0
+0.140
+0.568
+0.672</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: -0.134
+B 	: -0.022
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: 0.14
+Center y0 	: 0.568
+Ray r 		: 0.672
+
+Distance to center (C) 	= 0.23017223768771333
+Distância da reta ao círculo 	= 0.4418277623122867
+Secant Line</input_output></td>
+
+</tr><tr>
+<td><input_output>-0.471
+-0.018
+0
+-0.827
+-0.188
+0.750</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: -0.471
+B 	: -0.018
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -0.827
+Center y0 	: -0.188
+Ray r 		: 0.75
+
+Distance to center (C) 	= 0.833576214152303
+Distância da reta ao círculo 	= 0.08357621415230299
+ Outer Straight</input_output></td>
+
+</tr><tr>
+<td><input_output>1.955
+-0.428
+0
+-0.586
+-0.811
+0.529</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 1.955
+B 	: -0.428
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -0.586
+Center y0 	: -0.811
+Ray r 		: 0.529
+
+Distance to center (C) 	= 0.3990012848144407
+Distância da reta ao círculo 	= 0.12999871518555933
+Secant Line</input_output></td>
+
+</tr><tr>
+<td><input_output>1.769
+-0.912
+0
+-0.199
+0.996
+0.598</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 1.769
+B 	: -0.912
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -0.199
+Center y0 	: 0.996
+Ray r 		: 0.598
+
+Distance to center (C) 	= 0.6332779394516771
+Distância da reta ao círculo 	= 0.03527793945167712
+ Outer Straight</input_output></td>
+
+</tr><tr>
+<td><input_output>0.597
+-0.127
+0
+-0.148
+-0.227
+0.555</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: 0.597
+B 	: -0.127
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -0.148
+Center y0 	: -0.227
+Ray r 		: 0.555
+
+Distance to center (C) 	= 0.09752786261679287
+Distância da reta ao círculo 	= 0.4574721373832072
+Secant Line</input_output></td>
+
+</tr><tr>
+<td><input_output>-1.859
+-1.450
+0
+-0.501
+0.735
+0.933</input_output></td>
+<td><input_output>Equation of the line (Ax + By + C = 0)
+A 	: -1.859
+B 	: -1.45
+C 	: 0.0
+
+Circumference (Center, Radius)
+Center x0 	: -0.501
+Center y0 	: 0.735
+Ray r 		: 0.933
+
+Distance to center (C) 	= 0.05700277906410491
+Distância da reta ao círculo 	= 0.8759972209358952
+Secant Line</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

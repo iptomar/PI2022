@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha02_049.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha02_049.prog" download> Ficha02_049 </a> 
+</td>
+                <td align="center">Difícil</td>
+                <td align="center">5.0</td>
+                <td align="center">21/09/2022 22:49:00</td>
+                <td align="center">help</td>
+            </tr>  
+        </table>
+
+        <h1>Baricenter of a Triangle </h1>
+    <pre>Build an algorithm that prompts the user for the coordinates of points A,B, and C, which represent the vertices of a triangle, and then prints out the barycenter G coordinates.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>6.545
+0.232
+-6.118
+-9.864
+-2.868
+-9.350</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 6.545
+Coordinate Y 	: 0.232
+Point B
+Coordinate X 	: -6.118
+Coordinate Y 	: -9.864
+Ponto C
+Coordinate X 	: -2.868
+Coordinate Y 	: -9.35
+
+Baricentro
+Coordinate X 	: -0.8136666666666668
+Coordinate Y 	: -6.327333333333333</input_output></td>
+
+</tr><tr>
+<td><input_output>1.030
+1.696
+-6.893
+3.888
+0.787
+5.024</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 1.03
+Coordinate Y 	: 1.696
+Point B
+Coordinate X 	: -6.893
+Coordinate Y 	: 3.888
+Ponto C
+Coordinate X 	: 0.787
+Coordinate Y 	: 5.024
+
+Baricentro
+Coordinate X 	: -1.692
+Coordinate Y 	: 3.536</input_output></td>
+
+</tr><tr>
+<td><input_output>2.159
+-7.158
+0.732
+8.498
+-9.233
+-5.708</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 2.159
+Coordinate Y 	: -7.158
+Point B
+Coordinate X 	: 0.732
+Coordinate Y 	: 8.498
+Ponto C
+Coordinate X 	: -9.233
+Coordinate Y 	: -5.708
+
+Baricentro
+Coordinate X 	: -2.1140000000000003
+Coordinate Y 	: -1.4560000000000004</input_output></td>
+
+</tr><tr>
+<td><input_output>8.526
+2.666
+-4.484
+2.675
+-8.680
+-2.595</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 8.526
+Coordinate Y 	: 2.666
+Point B
+Coordinate X 	: -4.484
+Coordinate Y 	: 2.675
+Ponto C
+Coordinate X 	: -8.68
+Coordinate Y 	: -2.595
+
+Baricentro
+Coordinate X 	: -1.546
+Coordinate Y 	: 0.915333333333333</input_output></td>
+
+</tr><tr>
+<td><input_output>-1.390
+0.462
+-6.771
+2.313
+3.732
+5.311</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: -1.39
+Coordinate Y 	: 0.462
+Point B
+Coordinate X 	: -6.771
+Coordinate Y 	: 2.313
+Ponto C
+Coordinate X 	: 3.732
+Coordinate Y 	: 5.311
+
+Baricentro
+Coordinate X 	: -1.476333333333333
+Coordinate Y 	: 2.6953333333333336</input_output></td>
+
+</tr><tr>
+<td><input_output>2.390
+8.430
+-7.576
+4.529
+2.187
+1.357</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 2.39
+Coordinate Y 	: 8.43
+Point B
+Coordinate X 	: -7.576
+Coordinate Y 	: 4.529
+Ponto C
+Coordinate X 	: 2.187
+Coordinate Y 	: 1.357
+
+Baricentro
+Coordinate X 	: -0.9996666666666667
+Coordinate Y 	: 4.771999999999999</input_output></td>
+
+</tr><tr>
+<td><input_output>8.286
+5.971
+-2.546
+5.927
+6.549
+1.124</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 8.286
+Coordinate Y 	: 5.971
+Point B
+Coordinate X 	: -2.546
+Coordinate Y 	: 5.927
+Ponto C
+Coordinate X 	: 6.549
+Coordinate Y 	: 1.124
+
+Baricentro
+Coordinate X 	: 4.096333333333334
+Coordinate Y 	: 4.3406666666666665</input_output></td>
+
+</tr><tr>
+<td><input_output>-4.276
+-9.167
+-0.055
+-9.087
+6.091
+7.925</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: -4.276
+Coordinate Y 	: -9.167
+Point B
+Coordinate X 	: -0.055
+Coordinate Y 	: -9.087
+Ponto C
+Coordinate X 	: 6.091
+Coordinate Y 	: 7.925
+
+Baricentro
+Coordinate X 	: 0.5866666666666669
+Coordinate Y 	: -3.442999999999999</input_output></td>
+
+</tr><tr>
+<td><input_output>8.311
+7.708
+-6.221
+5.403
+-0.998
+-2.010</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: 8.311
+Coordinate Y 	: 7.708
+Point B
+Coordinate X 	: -6.221
+Coordinate Y 	: 5.403
+Ponto C
+Coordinate X 	: -0.998
+Coordinate Y 	: -2.01
+
+Baricentro
+Coordinate X 	: 0.36399999999999993
+Coordinate Y 	: 3.7003333333333335</input_output></td>
+
+</tr><tr>
+<td><input_output>-2.767
+-3.302
+7.909
+9.359
+-3.674
+7.577</input_output></td>
+<td><input_output>Barycenter of a Triangle
+Point A
+Coordinate X 	: -2.767
+Coordinate Y 	: -3.302
+Point B
+Coordinate X 	: 7.909
+Coordinate Y 	: 9.359
+Ponto C
+Coordinate X 	: -3.674
+Coordinate Y 	: 7.577
+
+Baricentro
+Coordinate X 	: 0.4893333333333332
+Coordinate Y 	: 4.544666666666667</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>dy>
+</html>tml>

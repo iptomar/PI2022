@@ -1,0 +1,12 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin 
+        read real ang "Angle (rad) \t: "
+        write "Sin \t\t= " + sin(ang) + "\n"
+        write "Cosine \t\t= " + cos(ang) + "\n"
+        write "Tangent \t= " + tan(ang)
+    end 
+
+
+//pseudocode  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Tue, 2022 Sep 13 21:58

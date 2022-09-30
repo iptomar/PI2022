@@ -1,0 +1,12 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    inicio ProgramaPrincipal
+        escrever "Values \t: "
+        escrever verdadeiro + " " + falso
+        escrever "\nConstants \t: "
+        escrever _T + " " + _F
+    fim ProgramaPrincipal
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	domingo, 2022 set 18 23:26

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha04_041.prog </title>
+    </head>
+    <body>
+
+        <table  style="width:100%" > <tbody> 
+                <tr valign=top>
+                    <td> 
+                        <h1>Body Mass Index</h1>
+            <plain>BMI (body mass index) is given by the ratio between a person's weight (kilograms) and height squared.
+
+Build a program that asks the user for his weight and height, and then print out his BMI score:
+
+ BMI Rating
+ < 18.5 Low
+[18.5 , 25.0[ Normal
+[25.0 , 30.0[ Fat
+[30.0 - 35.0[ Obese 
+ > 35.0 Extremely obese</plain><br><img src="folder.jpg">
+        </td><td>
+        
+          <iframe width="560" height="315" 
+	   src="https://youtu.be/xtVEoFf21ZQ" 
+	   title="Algorithmi Help" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	   </iframe>
+     
+     </td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<hr>
+<table  style="width:100%" >
+    <tr>
+        <th>Fluxograma</th>		  
+        <th>Algorithmi</th>		  
+    </tr>
+    <tr bgcolor = #dddddd>
+        <td valign=top> </td>
+        <td valign=top><pre>    inicio ProgramaPrincipal
+        ler real x "Weight (kg) \t: "
+        ler real y "Height (m) \t: "
+        definir real imc = x / (y ^ 2)
+        escrever "IMC \t\t= " + imc
+        escrever "\nClassification \t= "
+        se imc < 18.5 então
+            escrever "Thin"
+        senão
+            se imc < 25 então
+                escrever "Normal"
+            senão
+                se imc < 30 então
+                    escrever "Fat"
+                senão
+                    se imc < 35 então
+                        escrever "obese"
+                    senão
+                        escrever "Extremely obese"
+                    fim se
+                fim se
+            fim se
+        fim se
+    fim ProgramaPrincipal
+
+</pre></td>                    
+    </tr>
+</tbody>
+</table>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>40.0
+1.70</input_output></td>
+<td><input_output>Weight (kg) 	: 40.0
+Height (m) 	: 1.7
+IMC 		= 13.84083044982699
+Classification 	= Thin</input_output></td>
+
+</tr><tr>
+<td><input_output>70.0
+1.70</input_output></td>
+<td><input_output>Weight (kg) 	: 70.0
+Height (m) 	: 1.7
+IMC 		= 24.221453287197235
+Classification 	= Normal</input_output></td>
+
+</tr><tr>
+<td><input_output>75.0
+1.70</input_output></td>
+<td><input_output>Weight (kg) 	: 75.0
+Height (m) 	: 1.7
+IMC 		= 25.95155709342561
+Classification 	= Fat</input_output></td>
+
+</tr><tr>
+<td><input_output>95.0
+1.70</input_output></td>
+<td><input_output>Weight (kg) 	: 95.0
+Height (m) 	: 1.7
+IMC 		= 32.871972318339104
+Classification 	= obese</input_output></td>
+
+</tr><tr>
+<td><input_output>125.0
+1.70</input_output></td>
+<td><input_output>Weight (kg) 	: 125.0
+Height (m) 	: 1.7
+IMC 		= 43.25259515570935
+Classification 	= Extremely obese</input_output></td>
+
+</tr>
+    </tbody>
+</table>       
+
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

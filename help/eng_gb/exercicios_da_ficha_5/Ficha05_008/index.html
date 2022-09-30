@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha05_008.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha05_008.prog" download> Ficha05_008 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Pairs on a break - Decide</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Write an algorithm that asks the user for the limits of an interval.
+Then print out all the even numbers in that range including the limits.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        read integer imin "Minimum : "
+        read integer imax "Maximum : "
+        for integer i from imin to imax + 1  step 1
+            if i % 2 == 0 then
+                write i + " "
+            end if
+        end for
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha05_008.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha05_008.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha05_008.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>5
+11</input_output></td>
+<td><input_output>Minimum : 5
+Maximum : 11
+6 8 10</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+14</input_output></td>
+<td><input_output>Minimum : 1
+Maximum : 14
+2 4 6 8 10 12 14</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+19</input_output></td>
+<td><input_output>Minimum : -1
+Maximum : 19
+0 2 4 6 8 10 12 14 16 18</input_output></td>
+
+</tr><tr>
+<td><input_output>-4
+13</input_output></td>
+<td><input_output>Minimum : -4
+Maximum : 13
+-4 -2 0 2 4 6 8 10 12</input_output></td>
+
+</tr><tr>
+<td><input_output>-2
+19</input_output></td>
+<td><input_output>Minimum : -2
+Maximum : 19
+-2 0 2 4 6 8 10 12 14 16 18</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+20</input_output></td>
+<td><input_output>Minimum : 1
+Maximum : 20
+2 4 6 8 10 12 14 16 18 20</input_output></td>
+
+</tr><tr>
+<td><input_output>-2
+17</input_output></td>
+<td><input_output>Minimum : -2
+Maximum : 17
+-2 0 2 4 6 8 10 12 14 16</input_output></td>
+
+</tr><tr>
+<td><input_output>-5
+14</input_output></td>
+<td><input_output>Minimum : -5
+Maximum : 14
+-4 -2 0 2 4 6 8 10 12 14</input_output></td>
+
+</tr><tr>
+<td><input_output>-5
+18</input_output></td>
+<td><input_output>Minimum : -5
+Maximum : 18
+-4 -2 0 2 4 6 8 10 12 14 16 18</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+14</input_output></td>
+<td><input_output>Minimum : 2
+Maximum : 14
+2 4 6 8 10 12 14</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

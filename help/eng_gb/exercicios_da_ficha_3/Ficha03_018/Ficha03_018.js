@@ -1,0 +1,13 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+//Main Function
+function main() {
+    document.write("Positive number\t: " );// print text
+    num = parseInt(prompt("Positive number\t: " ,"0") );
+    
+    document.write(num + "\n");// print input 
+    document.write("Number of digits \t= " + ( num + "" ).length);
+}
+
+//JavaScript  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Tue, 2022 Sep 13 21:58
