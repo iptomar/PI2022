@@ -1,0 +1,17 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        write "Summing Pairs [0,10]\n"
+        define integer sum = 0
+        for integer i from 1 to 6  step 1
+            define integer f = 2 * i
+            write sum + " + " + f
+            execute sum = sum + f
+            write " = " + sum + "\n"
+        end for
+        write "\nSum = " + sum
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Fri, 2022 Sep 30 22:36

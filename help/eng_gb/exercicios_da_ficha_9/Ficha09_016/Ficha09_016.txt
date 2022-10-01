@@ -1,0 +1,17 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        read integer num "Numero : "
+        define integer i = 1
+        write "Divisors : "
+        while i < num do
+            if num % i == 0 then
+                write i + " "
+            end if
+            execute i = i + 1
+        end while
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Sat, 2022 Oct 01 00:13

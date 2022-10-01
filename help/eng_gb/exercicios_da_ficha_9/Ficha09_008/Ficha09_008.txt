@@ -1,0 +1,21 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        write "Fibonaci sequence sum\n "
+        define integer f0 = 1
+        define integer f1 = 1
+        write f0 + " " + f1
+        define integer sum = 2
+        while f0 + f1 < 100 do
+            define integer fn = f0 + f1
+            execute sum = sum + fn
+            write " " + fn
+            execute f1 = f0
+            execute f0 = fn
+        end while
+        write "\nSum = " + sum
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Sat, 2022 Oct 01 00:11

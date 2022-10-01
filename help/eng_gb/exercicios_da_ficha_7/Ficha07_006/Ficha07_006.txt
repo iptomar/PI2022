@@ -1,0 +1,15 @@
+// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    begin MainProgram
+        read integer n "Number of terms : "
+        define integer product = 1
+        for integer i from 1 to n + 1  step 1
+            define integer f = 2 * i - 1
+            execute product = product * f
+        end for
+        write "Result = " + product
+    end MainProgram
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	Fri, 2022 Sep 30 22:37

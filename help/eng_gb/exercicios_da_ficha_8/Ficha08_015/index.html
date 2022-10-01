@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha08_015.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha08_015.prog" download> Ficha08_015 </a> 
+</td>
+                <td align="center">Difficult</td>
+                <td align="center">5.0</td>
+                <td align="center">28/11/2021 00:00:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Average and Staff Note </h1>
+    <pre>The Algorithms course has three evaluation tests with grades in the range [0.0, 100.0].
+The final grade is calculated by the average of the two best graded tests.
+Contruct an algorithm that:
+- prompts all three for the score of the tests 
+- Print the final score
+- Print the staff grade - an integer in the range [0, 20]
+
+NOTE:
+The program must request the grades until a valid value is entered</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>-10
+150
+50
+200
+-20
+250
+70
+80</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: -10.0
+1st Grade [0.0,100.0]	: 150.0
+1st Grade [0.0,100.0]	: 50.0
+
+2nd Grade [0.0,100.0]	: 200.0
+2nd Grade [0.0,100.0]	: -20.0
+2nd Grade [0.0,100.0]	: 250.0
+2nd Grade [0.0,100.0]	: 70.0
+
+3rd Grade [0.0,100.0]	: 80.0
+
+Final Grade 	= 75.0
+Agenda Note 	= 15</input_output></td>
+
+</tr><tr>
+<td><input_output>53.206
+-8.359
+-7.330
+98.457
+-1.188
+-5.703
+5.885</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 53.206
+
+2nd Grade [0.0,100.0]	: -8.359
+2nd Grade [0.0,100.0]	: -7.33
+2nd Grade [0.0,100.0]	: 98.457
+
+3rd Grade [0.0,100.0]	: -1.188
+3rd Grade [0.0,100.0]	: -5.703
+3rd Grade [0.0,100.0]	: 5.885
+
+Final Grade 	= 75.8315
+Agenda Note 	= 15</input_output></td>
+
+</tr><tr>
+<td><input_output>60.861
+-3.686
+-6.672
+18.823
+-1.690
+-8.556
+136.930
+183.668
+8.249</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 60.861
+
+2nd Grade [0.0,100.0]	: -3.686
+2nd Grade [0.0,100.0]	: -6.672
+2nd Grade [0.0,100.0]	: 18.823
+
+3rd Grade [0.0,100.0]	: -1.69
+3rd Grade [0.0,100.0]	: -8.556
+3rd Grade [0.0,100.0]	: 136.93
+3rd Grade [0.0,100.0]	: 183.668
+3rd Grade [0.0,100.0]	: 8.249
+
+Final Grade 	= 39.842
+Agenda Note 	= 8</input_output></td>
+
+</tr><tr>
+<td><input_output>139.177
+172.611
+72.381
+-4.124
+-2.161
+15.694
+-1.555
+-1.817
+192.657
+155.926
+98.248</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 139.177
+1st Grade [0.0,100.0]	: 172.611
+1st Grade [0.0,100.0]	: 72.381
+
+2nd Grade [0.0,100.0]	: -4.124
+2nd Grade [0.0,100.0]	: -2.161
+2nd Grade [0.0,100.0]	: 15.694
+
+3rd Grade [0.0,100.0]	: -1.555
+3rd Grade [0.0,100.0]	: -1.817
+3rd Grade [0.0,100.0]	: 192.657
+3rd Grade [0.0,100.0]	: 155.926
+3rd Grade [0.0,100.0]	: 98.248
+
+Final Grade 	= 85.31450000000001
+Agenda Note 	= 17</input_output></td>
+
+</tr><tr>
+<td><input_output>-4.904
+-5.580
+158.145
+186.433
+78.579
+-9.430
+-5.283
+190.741
+159.330
+76.842
+-9.680
+-5.953
+182.483
+155.796
+23.324</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: -4.904
+1st Grade [0.0,100.0]	: -5.58
+1st Grade [0.0,100.0]	: 158.145
+1st Grade [0.0,100.0]	: 186.433
+1st Grade [0.0,100.0]	: 78.579
+
+2nd Grade [0.0,100.0]	: -9.43
+2nd Grade [0.0,100.0]	: -5.283
+2nd Grade [0.0,100.0]	: 190.741
+2nd Grade [0.0,100.0]	: 159.33
+2nd Grade [0.0,100.0]	: 76.842
+
+3rd Grade [0.0,100.0]	: -9.68
+3rd Grade [0.0,100.0]	: -5.953
+3rd Grade [0.0,100.0]	: 182.483
+3rd Grade [0.0,100.0]	: 155.796
+3rd Grade [0.0,100.0]	: 23.324
+
+Final Grade 	= 77.7105
+Agenda Note 	= 16</input_output></td>
+
+</tr><tr>
+<td><input_output>80.092
+-3.006
+-9.390
+6.408
+-9.425
+-9.330
+44.940</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 80.092
+
+2nd Grade [0.0,100.0]	: -3.006
+2nd Grade [0.0,100.0]	: -9.39
+2nd Grade [0.0,100.0]	: 6.408
+
+3rd Grade [0.0,100.0]	: -9.425
+3rd Grade [0.0,100.0]	: -9.33
+3rd Grade [0.0,100.0]	: 44.94
+
+Final Grade 	= 62.516
+Agenda Note 	= 13</input_output></td>
+
+</tr><tr>
+<td><input_output>83.705
+-8.352
+-2.649
+10.964
+-3.382
+-5.918
+140.764
+130.260
+99.903</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 83.705
+
+2nd Grade [0.0,100.0]	: -8.352
+2nd Grade [0.0,100.0]	: -2.649
+2nd Grade [0.0,100.0]	: 10.964
+
+3rd Grade [0.0,100.0]	: -3.382
+3rd Grade [0.0,100.0]	: -5.918
+3rd Grade [0.0,100.0]	: 140.764
+3rd Grade [0.0,100.0]	: 130.26
+3rd Grade [0.0,100.0]	: 99.903
+
+Final Grade 	= 91.804
+Agenda Note 	= 18</input_output></td>
+
+</tr><tr>
+<td><input_output>161.493
+108.647
+20.015
+-3.575
+-3.572
+33.392
+-1.189
+-4.055
+196.827
+151.649
+20.676</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 161.493
+1st Grade [0.0,100.0]	: 108.647
+1st Grade [0.0,100.0]	: 20.015
+
+2nd Grade [0.0,100.0]	: -3.575
+2nd Grade [0.0,100.0]	: -3.572
+2nd Grade [0.0,100.0]	: 33.392
+
+3rd Grade [0.0,100.0]	: -1.189
+3rd Grade [0.0,100.0]	: -4.055
+3rd Grade [0.0,100.0]	: 196.827
+3rd Grade [0.0,100.0]	: 151.649
+3rd Grade [0.0,100.0]	: 20.676
+
+Final Grade 	= 27.034
+Agenda Note 	= 5</input_output></td>
+
+</tr><tr>
+<td><input_output>-5.737
+-5.609
+152.720
+194.355
+44.105
+-5.385
+-4.465
+179.354
+164.374
+2.319
+-1.801
+-9.131
+170.805
+145.244
+15.761</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: -5.737
+1st Grade [0.0,100.0]	: -5.609
+1st Grade [0.0,100.0]	: 152.72
+1st Grade [0.0,100.0]	: 194.355
+1st Grade [0.0,100.0]	: 44.105
+
+2nd Grade [0.0,100.0]	: -5.385
+2nd Grade [0.0,100.0]	: -4.465
+2nd Grade [0.0,100.0]	: 179.354
+2nd Grade [0.0,100.0]	: 164.374
+2nd Grade [0.0,100.0]	: 2.319
+
+3rd Grade [0.0,100.0]	: -1.801
+3rd Grade [0.0,100.0]	: -9.131
+3rd Grade [0.0,100.0]	: 170.805
+3rd Grade [0.0,100.0]	: 145.244
+3rd Grade [0.0,100.0]	: 15.761
+
+Final Grade 	= 29.933
+Agenda Note 	= 6</input_output></td>
+
+</tr><tr>
+<td><input_output>59.991
+-4.919
+-1.871
+65.431
+-4.237
+-5.203
+77.232</input_output></td>
+<td><input_output>1st Grade [0.0,100.0]	: 59.991
+
+2nd Grade [0.0,100.0]	: -4.919
+2nd Grade [0.0,100.0]	: -1.871
+2nd Grade [0.0,100.0]	: 65.431
+
+3rd Grade [0.0,100.0]	: -4.237
+3rd Grade [0.0,100.0]	: -5.203
+3rd Grade [0.0,100.0]	: 77.232
+
+Final Grade 	= 71.3315
+Agenda Note 	= 14</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

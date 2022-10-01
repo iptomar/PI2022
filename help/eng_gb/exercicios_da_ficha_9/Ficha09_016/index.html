@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha09_016.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha09_016.prog" download> Ficha09_016 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Divisors of a number</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Build an algorithm that prints on the console the divisors of a number.
+The number must be entered by the user.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        read integer num "Numero : "
+        define integer i = 1
+        write "Divisors : "
+        while i < num do
+            if num % i == 0 then
+                write i + " "
+            end if
+            execute i = i + 1
+        end while
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha09_016.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha09_016.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha09_016.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>12</input_output></td>
+<td><input_output>Numero : 12
+Divisors : 1 2 3 4 6</input_output></td>
+
+</tr><tr>
+<td><input_output>5865</input_output></td>
+<td><input_output>Numero : 5865
+Divisors : 1 3 5 15 17 23 51 69 85 115 255 345 391 1173 1955</input_output></td>
+
+</tr><tr>
+<td><input_output>116</input_output></td>
+<td><input_output>Numero : 116
+Divisors : 1 2 4 29 58</input_output></td>
+
+</tr><tr>
+<td><input_output>5022</input_output></td>
+<td><input_output>Numero : 5022
+Divisors : 1 2 3 6 9 18 27 31 54 62 81 93 162 186 279 558 837 1674 2511</input_output></td>
+
+</tr><tr>
+<td><input_output>5025</input_output></td>
+<td><input_output>Numero : 5025
+Divisors : 1 3 5 15 25 67 75 201 335 1005 1675</input_output></td>
+
+</tr><tr>
+<td><input_output>8999</input_output></td>
+<td><input_output>Numero : 8999
+Divisors : 1</input_output></td>
+
+</tr><tr>
+<td><input_output>17</input_output></td>
+<td><input_output>Numero : 17
+Divisors : 1</input_output></td>
+
+</tr><tr>
+<td><input_output>5534</input_output></td>
+<td><input_output>Numero : 5534
+Divisors : 1 2 2767</input_output></td>
+
+</tr><tr>
+<td><input_output>840</input_output></td>
+<td><input_output>Numero : 840
+Divisors : 1 2 3 4 5 6 7 8 10 12 14 15 20 21 24 28 30 35 40 42 56 60 70 84 105 120 140 168 210 280 420</input_output></td>
+
+</tr><tr>
+<td><input_output>4004</input_output></td>
+<td><input_output>Numero : 4004
+Divisors : 1 2 4 7 11 13 14 22 26 28 44 52 77 91 143 154 182 286 308 364 572 1001 2002</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha09_026.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha09_026.prog" download> Ficha09_026 </a> 
+</td>
+                <td align="center">Avaluation test</td>
+                <td align="center">10.0</td>
+                <td align="center">28/11/2021 00:00:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Channel Audience </h1>
+    <pre>A survey was conducted about the audience of RTP channels (RTP1, RTP2 and RTP3). 
+Households that were not watching television or that were watching other channels are not included in the survey.
+
+For each valid household surveyed, the number of the channel that was on the television was given.
+
+Build an algorithm that:
+a) reads the values of the channel (1,2,3) that people were watching
+b) the sequence of channels ends with the value zero
+c) calculate and display the number of viewers for each channel
+d) Calculate and display the audience percentage for each channel</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>1
+3
+3
+1
+2
+1
+2
+1
+2
+3
+3
+1
+1
+1
+1
+2
+1
+2
+3
+1
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 1
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 2
+chanel : 1
+chanel : 2
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 1
+chanel : 1
+chanel : 2
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 1
+chanel : 0
+
+RTP1 = 10	 50.0 %
+RTP2 = 5	 25.0 %
+RTP3 = 5	 25.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+2
+3
+2
+1
+1
+2
+3
+3
+1
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 3
+chanel : 2
+chanel : 3
+chanel : 2
+chanel : 1
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 0
+
+RTP1 = 3	 30.0 %
+RTP2 = 3	 30.0 %
+RTP3 = 4	 40.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+3
+2
+1
+2
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 2
+chanel : 3
+chanel : 2
+chanel : 1
+chanel : 2
+chanel : 0
+
+RTP1 = 1	 20.0 %
+RTP2 = 3	 60.0 %
+RTP3 = 1	 20.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+2
+3
+1
+1
+1
+1
+3
+3
+1
+3
+2
+2
+3
+3
+3
+1
+2
+3
+3
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 1
+chanel : 1
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 3
+chanel : 2
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 0
+
+RTP1 = 7	 35.0 %
+RTP2 = 4	 20.0 %
+RTP3 = 9	 45.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+1
+3
+1
+1
+1
+3
+2
+3
+3
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 3
+chanel : 1
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 1
+chanel : 3
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 0
+
+RTP1 = 4	 40.0 %
+RTP2 = 1	 10.0 %
+RTP3 = 5	 50.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+1
+3
+1
+2
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 3
+chanel : 1
+chanel : 3
+chanel : 1
+chanel : 2
+chanel : 0
+
+RTP1 = 2	 40.0 %
+RTP2 = 1	 20.0 %
+RTP3 = 2	 40.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+3
+1
+1
+1
+2
+3
+3
+3
+1
+2
+1
+2
+3
+3
+3
+2
+3
+1
+1
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 2
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 2
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 3
+chanel : 2
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 0
+
+RTP1 = 7	 35.0 %
+RTP2 = 5	 25.0 %
+RTP3 = 8	 40.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+2
+1
+3
+2
+1
+3
+2
+2
+1
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 2
+chanel : 2
+chanel : 1
+chanel : 3
+chanel : 2
+chanel : 1
+chanel : 3
+chanel : 2
+chanel : 2
+chanel : 1
+chanel : 0
+
+RTP1 = 3	 30.0 %
+RTP2 = 5	 50.0 %
+RTP3 = 2	 20.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+3
+1
+1
+2
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 2
+chanel : 0
+
+RTP1 = 2	 40.0 %
+RTP2 = 1	 20.0 %
+RTP3 = 2	 40.0 %</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+2
+2
+1
+3
+3
+2
+1
+2
+3
+3
+1
+2
+2
+1
+3
+3
+1
+1
+2
+0</input_output></td>
+<td><input_output>RTP Audience
+chanel : 3
+chanel : 2
+chanel : 2
+chanel : 1
+chanel : 3
+chanel : 3
+chanel : 2
+chanel : 1
+chanel : 2
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 2
+chanel : 2
+chanel : 1
+chanel : 3
+chanel : 3
+chanel : 1
+chanel : 1
+chanel : 2
+chanel : 0
+
+RTP1 = 6	 30.0 %
+RTP2 = 7	 35.0 %
+RTP3 = 7	 35.0 %</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

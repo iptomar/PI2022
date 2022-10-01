@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha09_011.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha09_011.prog" download> Ficha09_011 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Bits of a number</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Build an algorithm to print the bits of an integer on the console.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        read integer num "Number : "
+        write "Bits = "
+        while num > 0 do
+            write num % 2 + " "
+            execute num = num / 2
+        end while
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha09_011.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha09_011.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha09_011.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>100</input_output></td>
+<td><input_output>Number : 100
+Bits = 0 0 1 0 0 1 1</input_output></td>
+
+</tr><tr>
+<td><input_output>251458079</input_output></td>
+<td><input_output>Number : 251458079
+Bits = 1 1 1 1 1 0 0 0 0 1 0 0 1 1 1 1 0 0 1 1 1 1 1 1 0 1 1 1</input_output></td>
+
+</tr><tr>
+<td><input_output>771105702</input_output></td>
+<td><input_output>Number : 771105702
+Bits = 0 1 1 0 0 1 0 1 1 1 0 0 0 1 0 0 0 1 1 0 1 1 1 1 1 0 1 1 0 1</input_output></td>
+
+</tr><tr>
+<td><input_output>143404157</input_output></td>
+<td><input_output>Number : 143404157
+Bits = 1 0 1 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 1 0 0 0 1 0 0 0 1</input_output></td>
+
+</tr><tr>
+<td><input_output>385297128</input_output></td>
+<td><input_output>Number : 385297128
+Bits = 0 0 0 1 0 1 1 1 0 1 0 1 0 1 0 0 1 1 1 0 1 1 1 1 0 1 1 0 1</input_output></td>
+
+</tr><tr>
+<td><input_output>671681607</input_output></td>
+<td><input_output>Number : 671681607
+Bits = 1 1 1 0 0 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 1</input_output></td>
+
+</tr><tr>
+<td><input_output>374781287</input_output></td>
+<td><input_output>Number : 374781287
+Bits = 1 1 1 0 0 1 1 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 0 1 1 0 1</input_output></td>
+
+</tr><tr>
+<td><input_output>59732440</input_output></td>
+<td><input_output>Number : 59732440
+Bits = 0 0 0 1 1 0 1 1 1 0 0 0 1 1 1 0 1 1 1 1 0 0 0 1 1 1</input_output></td>
+
+</tr><tr>
+<td><input_output>194464153</input_output></td>
+<td><input_output>Number : 194464153
+Bits = 1 0 0 1 1 0 0 1 1 0 0 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 0 1</input_output></td>
+
+</tr><tr>
+<td><input_output>33267862</input_output></td>
+<td><input_output>Number : 33267862
+Bits = 0 1 1 0 1 0 0 1 0 0 0 0 0 1 0 1 1 1 0 1 1 1 1 1 1</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha08_014.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha08_014.prog" download> Ficha08_014 </a> 
+</td>
+                <td align="center">Normal</td>
+                <td align="center">4.0</td>
+                <td align="center">28/11/2021 00:00:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Valid Time </h1>
+    <pre>Build an algorithm that asks the user for a valid time and then prints it in the "h:m:s" format.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>-1
+30
+23
+-1
+70
+60
+59
+-4
+0</input_output></td>
+<td><input_output>Hours : -1
+Hours : 30
+Hours : 23
+Minuts : -1
+Minuts : 70
+Minuts : 60
+Minuts : 59
+Seconds : -4
+Seconds : 0
+Time  = 23:59:0</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+-13
+147
+132
+1
+-20
+-10
+144
+84
+41
+-7
+-2
+79
+83
+22</input_output></td>
+<td><input_output>Hours : -1
+Hours : -13
+Hours : 147
+Hours : 132
+Hours : 1
+Minuts : -20
+Minuts : -10
+Minuts : 144
+Minuts : 84
+Minuts : 41
+Seconds : -7
+Seconds : -2
+Seconds : 79
+Seconds : 83
+Seconds : 22
+Time  = 1:41:22</input_output></td>
+
+</tr><tr>
+<td><input_output>-7
+-5
+68
+53
+20
+-12
+-10
+106
+89
+28
+-9
+-9
+127
+136
+42</input_output></td>
+<td><input_output>Hours : -7
+Hours : -5
+Hours : 68
+Hours : 53
+Hours : 20
+Minuts : -12
+Minuts : -10
+Minuts : 106
+Minuts : 89
+Minuts : 28
+Seconds : -9
+Seconds : -9
+Seconds : 127
+Seconds : 136
+Seconds : 42
+Time  = 20:28:42</input_output></td>
+
+</tr><tr>
+<td><input_output>-9
+-12
+49
+79
+22
+-8
+-15
+60
+71
+38
+-15
+-19
+143
+77
+35</input_output></td>
+<td><input_output>Hours : -9
+Hours : -12
+Hours : 49
+Hours : 79
+Hours : 22
+Minuts : -8
+Minuts : -15
+Minuts : 60
+Minuts : 71
+Minuts : 38
+Seconds : -15
+Seconds : -19
+Seconds : 143
+Seconds : 77
+Seconds : 35
+Time  = 22:38:35</input_output></td>
+
+</tr><tr>
+<td><input_output>-12
+-14
+146
+108
+2
+-12
+-7
+105
+120
+57
+-1
+-10
+62
+123
+52</input_output></td>
+<td><input_output>Hours : -12
+Hours : -14
+Hours : 146
+Hours : 108
+Hours : 2
+Minuts : -12
+Minuts : -7
+Minuts : 105
+Minuts : 120
+Minuts : 57
+Seconds : -1
+Seconds : -10
+Seconds : 62
+Seconds : 123
+Seconds : 52
+Time  = 2:57:52</input_output></td>
+
+</tr><tr>
+<td><input_output>-7
+-9
+133
+34
+12
+-11
+-8
+139
+64
+9
+-7
+-18
+85
+136
+40</input_output></td>
+<td><input_output>Hours : -7
+Hours : -9
+Hours : 133
+Hours : 34
+Hours : 12
+Minuts : -11
+Minuts : -8
+Minuts : 139
+Minuts : 64
+Minuts : 9
+Seconds : -7
+Seconds : -18
+Seconds : 85
+Seconds : 136
+Seconds : 40
+Time  = 12:9:40</input_output></td>
+
+</tr><tr>
+<td><input_output>-14
+-6
+94
+68
+9
+-18
+-10
+125
+96
+21
+-1
+-9
+79
+91
+50</input_output></td>
+<td><input_output>Hours : -14
+Hours : -6
+Hours : 94
+Hours : 68
+Hours : 9
+Minuts : -18
+Minuts : -10
+Minuts : 125
+Minuts : 96
+Minuts : 21
+Seconds : -1
+Seconds : -9
+Seconds : 79
+Seconds : 91
+Seconds : 50
+Time  = 9:21:50</input_output></td>
+
+</tr><tr>
+<td><input_output>-18
+-2
+72
+86
+10
+-8
+-10
+104
+118
+53
+-7
+-11
+83
+130
+1</input_output></td>
+<td><input_output>Hours : -18
+Hours : -2
+Hours : 72
+Hours : 86
+Hours : 10
+Minuts : -8
+Minuts : -10
+Minuts : 104
+Minuts : 118
+Minuts : 53
+Seconds : -7
+Seconds : -11
+Seconds : 83
+Seconds : 130
+Seconds : 1
+Time  = 10:53:1</input_output></td>
+
+</tr><tr>
+<td><input_output>-10
+-15
+30
+148
+13
+-11
+-14
+149
+125
+14
+-7
+-4
+100
+89
+11</input_output></td>
+<td><input_output>Hours : -10
+Hours : -15
+Hours : 30
+Hours : 148
+Hours : 13
+Minuts : -11
+Minuts : -14
+Minuts : 149
+Minuts : 125
+Minuts : 14
+Seconds : -7
+Seconds : -4
+Seconds : 100
+Seconds : 89
+Seconds : 11
+Time  = 13:14:11</input_output></td>
+
+</tr><tr>
+<td><input_output>-2
+-13
+114
+131
+14
+-7
+-12
+148
+103
+55
+-18
+-14
+115
+66
+25</input_output></td>
+<td><input_output>Hours : -2
+Hours : -13
+Hours : 114
+Hours : 131
+Hours : 14
+Minuts : -7
+Minuts : -12
+Minuts : 148
+Minuts : 103
+Minuts : 55
+Seconds : -18
+Seconds : -14
+Seconds : 115
+Seconds : 66
+Seconds : 25
+Time  = 14:55:25</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

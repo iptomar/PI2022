@@ -1,0 +1,145 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Javascript - HTML - CSS</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha09_008</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Fibonaci sequence sum</h2>
+            <plain>Build an algorithm that prints the Fibonacci sequence numbers that are less than 100 on the console.
+Then print your sum.
+
+
+https://en.wikipedia.org/wiki/Fibonacci_number</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha09_008.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha09_008.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha09_008.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Javascript - HTML - CSS</h1>
+<pre  class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;style&gt;
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        &lt;/style&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;title&gt;Ficha09_008&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;color:green&quot;&gt;Fibonaci sequence sum&lt;/h1&gt;
+        &lt;table&gt; 
+            &lt;tr&gt;
+                &lt;td valign=&quot;top&quot;&gt;
+                    &lt;plain&gt; Build an algorithm that prints the Fibonacci sequence numbers that are less than 100 on the console.
+Then print your sum.
+
+
+https://en.wikipedia.org/wiki/Fibonacci_number 
+                        &lt;br&gt;   
+                        &lt;a  href=&quot;Ficha09_008.html&quot;&gt;Execute &lt;img style=&quot;vertical-align:middle&quot; src=&quot;http://algorithmi.ipt.pt/img/langs/run.png&quot; height=&quot;32&quot; width=&quot;32&quot; &gt;&lt;/a&gt; 
+                    &lt;/plain&gt;
+                &lt;/td&gt; 
+                &lt;td&gt;
+                    &lt;img src=&quot;data:image/jpg;base64,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&quot;&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;pre&gt;
+        &lt;script&gt;
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write(&quot;\n&quot;);
+        document.write(&quot;Fibonaci sequence sum\n &quot; );
+        var f0 = 1 ;
+        var f1 = 1 ;
+        document.write(f0 + &quot; &quot; + f1 );
+        var sum = 2 ;
+        while(f0 + f1 &lt; 100 ){
+            var fn = f0 + f1 ;
+            sum +=fn;
+            document.write(&quot; &quot; + fn );
+            f1 = f0 ;
+            f0 = fn ;
+        }
+        document.write(&quot;\nSum = &quot; + sum );
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        &lt;/script&gt;
+        &lt;p style=&quot;color:gray;text-align:right;font-size: small &quot;&gt;Algorithmi 22.05&lt;br&gt;Ant0nio M@nso
+        &lt;/pre&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>    
+<a href="Ficha09_008.html" download>  <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="48" width="48"> Download Ficha09_008.html </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha09_006.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha09_006.prog" download> Ficha09_006 </a> 
+</td>
+                <td align="center">Demonstration</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Odd numbers in a range - optimized</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Build an algorithm that asks the user for the height of a person in meters.
+The height of a person varies between 20 cm and 3 meters.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    begin MainProgram
+        read integer inf "Inferior limit : "
+        if inf % 2 == 0 then
+            execute inf = inf + 1
+        end if
+        read integer sup "Upper limit : "
+        while inf <= sup do
+            write inf + " "
+            execute inf = inf + 2
+        end while
+    end MainProgram
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha09_006.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha09_006.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha09_006.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>1
+17</input_output></td>
+<td><input_output>Inferior limit : 1
+Upper limit : 17
+1 3 5 7 9 11 13 15 17</input_output></td>
+
+</tr><tr>
+<td><input_output>4
+16</input_output></td>
+<td><input_output>Inferior limit : 4
+Upper limit : 16
+5 7 9 11 13 15</input_output></td>
+
+</tr><tr>
+<td><input_output>8
+16</input_output></td>
+<td><input_output>Inferior limit : 8
+Upper limit : 16
+9 11 13 15</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+17</input_output></td>
+<td><input_output>Inferior limit : 2
+Upper limit : 17
+3 5 7 9 11 13 15 17</input_output></td>
+
+</tr><tr>
+<td><input_output>9
+15</input_output></td>
+<td><input_output>Inferior limit : 9
+Upper limit : 15
+9 11 13 15</input_output></td>
+
+</tr><tr>
+<td><input_output>10
+20</input_output></td>
+<td><input_output>Inferior limit : 10
+Upper limit : 20
+11 13 15 17 19</input_output></td>
+
+</tr><tr>
+<td><input_output>8
+19</input_output></td>
+<td><input_output>Inferior limit : 8
+Upper limit : 19
+9 11 13 15 17 19</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+18</input_output></td>
+<td><input_output>Inferior limit : 2
+Upper limit : 18
+3 5 7 9 11 13 15 17</input_output></td>
+
+</tr><tr>
+<td><input_output>9
+20</input_output></td>
+<td><input_output>Inferior limit : 9
+Upper limit : 20
+9 11 13 15 17 19</input_output></td>
+
+</tr><tr>
+<td><input_output>9
+18</input_output></td>
+<td><input_output>Inferior limit : 9
+Upper limit : 18
+9 11 13 15 17</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>
