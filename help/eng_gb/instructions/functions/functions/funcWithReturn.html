@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/style.css">
+        <title> Functions with Return</title>
+    </head>
+    <body>
+	
+	
+        <table  style="width:100%" >
+            <tr>
+			<th><H1>Functions with Return</H1></th>
+                 <th><a href="" target="_parent"> <img src="../../../../../imgs/help.png"  width = "32" height="32" ></a></th>
+				
+            </tr> 
+			<tr>
+			
+		</table>	
+			
+			
+		 <img src="../../../../../imgs/funcoes-arrays/Funcoes.png">
+				
+           
+<plain>
+    Functions with empty return, usually called procedures, serve to execute a set of instructions. These functions can only be invoked from an EXECUTE command
+</plain>
+
+<h2>Syntax </h2>
+<pre>
+Function
+function &lt;Type&gt; &lt;name&gt; ([= &lt;parameter&gt;,...,&lt;parameter&gt;]) <br> &lt;instructions&gt; <br>end &lt;name&gt;
+  </pre> 
+<br>
+			
+<br><strong>	&lt;TYPE&gt; </strong>	 – Tipo de dados (intenger| float | string | void)<br><br>
+&emsp;o empty means it does not calculate anything
+<strong>	&lt;name&gt;</strong>	 – Variable name subject to the following rules
+			<br>&emsp;o	Cannot be a reserved word or other function<br>
+			&emsp;o	Must start with a letter (a-z ; A-Z)<br>
+			&emsp;o	May contain digits (0-9)<br>
+			&emsp;o	Must be significant of what stores<br>	
+			
+			
+	<br><strong>[&lt;parameters&gt;] 	</strong> - Function parameters(<strong>Optional</strong>)<br>
+    &emsp;o &lt;Type&gt; Parameter data type<br>
+    &emsp;o	&lt;Var&gt;Parameter name<br>
+
+    
+<h2> Examples </h2>
+EXAMPLE 1 - Function void sayHello()	
+<pre>begin MainProgram
+    execute sayHello()
+end MainProgram
+
+function void sayHello()
+    write "Hello World"
+end sayHello
+  </pre>EXAMPLE 2 - Function void function01()	
+<pre>begin MainProgram
+    execute function01()
+end MainProgram
+
+function void function01()
+    write "Hello World of functions"
+end function01
+</pre>EXAMPLE 3 - Function integer summation(integer n)	
+<pre>begin MainProgram
+    define integer stop = 5
+    write "\n" + summation(stop)
+end MainProgram
+
+function integer summation(integer n)
+    define integer sum = 0
+    for integer i from 0 to n  step 1
+        write i + " "
+        execute sum = sum + i
+    end for
+    return sum
+end summation
+</pre>
+<h2> Programs </h2>
+    <a onclick="window.location.href='examples/funcEmpReturn.html'"><img src="../../../imgs/alg.png" width = "32">Example 1 – Define Function with return</button></a>	
+<br>
+</body>
+</html>
