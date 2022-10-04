@@ -33,13 +33,13 @@
             } 
         </style>
         <!------------- CSS - Cascading Style Sheets code --------------------->
-        <title> Global Memory</title>
+        <title>Function with empty return</title>
     </head>
     <body>
-        <h1 style="color:green"> Global Memory</h1>
+        <h1 style="color:green">Function with parameters empty return</h1>
         <plain> 
         <br>   
-        <a  href="Example4.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+        <a  href="Example5.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
         <br> 
         </plain>
         <pre>
@@ -48,21 +48,14 @@
 //Main Function
         function main() {
 	document.write("\n");
-        var prog = " Algorithmi " ;
-        for( var i = 1; i < 10; i = i + 1 ) {
-            document.write(dizOla(i + prog ) );
-        }
+        dizOla() ;
     }
-//Global memory
-        var ver = 1.0 ;
-
 
     //::::::::::::::::::::::::::::::::::::::::::::::::::
     //User Defined Functions Code
     //::::::::::::::::::::::::::::::::::::::::::::::::::
-    function dizOla(nome) {
-        var msg = "Hello " + nome ;
-        return msg + ver + "\n" ;
+    function dizOla() {
+        document.write("Hello World");
     }
 
 main()
