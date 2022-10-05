@@ -73,9 +73,7 @@
          
          </div>
 
-         <div class="col-8 text-center">
-        <a class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</a>
-        </div>
+         
         <!-- /.col -->
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
