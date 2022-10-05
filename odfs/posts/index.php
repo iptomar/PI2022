@@ -45,9 +45,9 @@
                         <div class="mb-2 text-right">
                             <small class="badge badge-light border text-dark rounded-pill px-3"><i class="far fa-circle"></i> <?= $row['category'] ?></small>
                             <?php if($row['status'] == 1): ?>
-                                <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-primary"></i> Published</small>
+                                <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-primary"></i> Publicado</small>
                             <?php else: ?>
-                                <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-secondary"></i> Unpublished</small>
+                                <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-secondary"></i> Não Publicado</small>
                             <?php endif; ?>
                         </div>
                         <h3 class="card-title w-100 font-weight-bold"><?= $row['title'] ?></h3>

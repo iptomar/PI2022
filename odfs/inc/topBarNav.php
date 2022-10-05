@@ -21,11 +21,11 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home Page</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=categories">Topics and Categories</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=categories">Tópicos e Categorias</a></li>
                         <?php if($_settings->userdata('id') != '' && $_settings->userdata('type') == 2): ?>
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts">My Posts</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts/manage_post"><i class="far fa-plus-square"></i> New Post</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts">Os meus posts</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts/manage_post"><i class="far fa-plus-square"></i> Novo Post</a></li>
                         <?php endif; ?>
                     </ul>
                     <div class="d-flex align-items-center">
@@ -37,8 +37,7 @@
                               <span class="ml-3"><?php echo ucwords($_settings->userdata('firstname').' '.$_settings->userdata('lastname')) ?></span>
                               <span class="sr-only">Toggle Dropdown</span>
                             </button>
-                            <a href="./" target="_parent"> <img src="bandeiras/eng.png" width="40" height="18" style="float:right"></a>
-                          <a href="./" target="_parent"> <img src="bandeiras/pt.png" width="40" height="18" style="float:right"></a>
+                            
                             <div class="dropdown-menu" role="menu">
                               <a class="dropdown-item" href="<?php echo base_url.'./?p=user' ?>"><span class="fa fa-user"></span> A minha conta</a>
                               <div class="dropdown-divider"></div>
@@ -50,8 +49,8 @@
                         <a class="font-weight-bolder text-light pr-3 mx-2 text-decoration-none border-right" href="./login.php">Login</a>
                         <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./register.php">Registar</a>
 
-                        <a href="./" target="_parent"> <img src="bandeiras/eng.png" width="40" height="18" style="float:right"></a>
-                          <a href="./" target="_parent"> <img src="bandeiras/pt.png" width="40" height="18" style="float:right"></a>
+                        <a href="../odfsenglish" target="_parent"> <img src="bandeiras/eng.png" width="40" height="18" style="float:right"></a>
+                          <a href="../odfs" target="_parent"> <img src="bandeiras/pt.png" width="40" height="18" style="float:right"></a>
                         <?php endif; ?>
                     </div>
                 </div>

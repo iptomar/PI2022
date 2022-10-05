@@ -42,7 +42,7 @@
         <span class="info-box-icon bg-gradient-primary elevation-1"><i class="fas fa-blog"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Published Post</span>
+          <span class="info-box-text"> Post Publicado</span>
           <span class="info-box-number">
             <?php 
               $posts = $conn->query("SELECT * FROM post_list where `status` = 1 and delete_flag = 0 ")->num_rows;
@@ -61,7 +61,7 @@
         <span class="info-box-icon bg-gradient-secondary elevation-1"><i class="fas fa-blog"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Unpublished Post</span>
+          <span class="info-box-text"> Post Não Publicado</span>
           <span class="info-box-number">
             <?php 
               $posts = $conn->query("SELECT * FROM post_list where `status` = 0 and delete_flag = 0 ")->num_rows;

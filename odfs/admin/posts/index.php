@@ -44,9 +44,9 @@
 							<td><p class="truncate-1 mb-0"><?php echo $row['title'] ?></p></td>
 							<td class="text-center">
                                 <?php if($row['status'] == 1): ?>
-                                    <span class="badge badge-success px-3 rounded-pill">Published</span>
+                                    <span class="badge badge-success px-3 rounded-pill">Publicado</span>
                                 <?php else: ?>
-                                    <span class="badge badge-danger px-3 rounded-pill">Unpublished</span>
+                                    <span class="badge badge-danger px-3 rounded-pill">Não Publicado</span>
                                 <?php endif; ?>
                             </td>
 							<td align="center">
