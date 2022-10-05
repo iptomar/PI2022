@@ -52,7 +52,7 @@ if(isset($_GET['id'])){
                                 <label for="status">
                                 </label>
                             </div>
-                            <label for="status" class="control-label">Published</label>
+                            <label for="status" class="control-label">Publicado</label>
                         </div>
                     </form>
                 </div>
@@ -73,7 +73,7 @@ if(isset($_GET['id'])){
         })
         $('#content').summernote({
             height:"20em",
-            placeholder:"Write your content here",
+            placeholder:"Escreve o conteúdo aqui ",
             toolbar: [
                 [ 'style', [ 'style' ] ],
                 [ 'font', [ 'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear'] ],

@@ -37,7 +37,7 @@
     <!-- /.login-logo -->
     <div class="card card-navy my-2 rounded-0">
       <div class="card-header rounded-0">
-          <h4 class="card-title">Registration</h4>
+          <h4 class="card-title">Registo</h4>
       </div>
       <div class="card-body rounded-0">
         <form id="register-form" action="" method="post">
@@ -45,16 +45,20 @@
             <input type="hidden" name="type" value="2">
           <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="form-group">
+                      <label for="fill" class="control-label">Email</label>
+                      <input type="text" class="form-control form-control-sm rounded-0" reqiured="fill" name="fill" id="fill">
+                  </div>
                   <div class="form-group">
-                      <label for="firstname" class="control-label">First Name</label>
+                      <label for="firstname" class="control-label">Primeiro Nome</label>
                       <input type="text" class="form-control form-control-sm rounded-0" reqiured="" name="firstname" id="firstname">
                   </div>
                   <div class="form-group">
-                      <label for="middlename" class="control-label">Middle Name</label>
+                      <label for="middlename" class="control-label">Nome do Meio</label>
                       <input type="text" class="form-control form-control-sm rounded-0" name="middlename" id="middlename">
                   </div>
                   <div class="form-group">
-                      <label for="lastname" class="control-label">Last Name</label>
+                      <label for="lastname" class="control-label">Último Nome</label>
                       <input type="text" class="form-control form-control-sm rounded-0" reqiured="" name="lastname" id="lastname">
                   </div>
               </div>
@@ -71,7 +75,7 @@
                       </div>
                   </div>
                   <div class="form-group">
-                      <label for="cpassword" class="control-label">Confirm Password</label>
+                      <label for="cpassword" class="control-label">Confirmar Password</label>
                       <div class="input-group input-group-sm">
                           <input type="password" class="form-control form-control-sm rounded-0" reqiured="" id="cpassword">
                           <button tabindex="-1" class="btn btn-outline-secondary btn-sm rounded-0 pass_view" type="button"><i class="fa fa-eye-slash"></i></button>
@@ -95,11 +99,11 @@
           </div>
           <div class="row">
             <div class="col-8">
-              <a href="./login.php">Already hava an Account</a>
+              <a href="./login.php">Já tenho conta</a>
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+              <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
             </div>
             <!-- /.col -->
           </div>

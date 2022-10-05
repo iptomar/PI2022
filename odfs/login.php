@@ -1,5 +1,10 @@
 <?php require_once('./config.php') ?>
  <?php require_once('inc/sess_auth.php') ?>
+
+ <!-- adicionado depois******************************-->
+ <?php require_once('connectforpassword.php')?>
+ <!-- ***********************************************-->
+
 <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
  <?php require_once('inc/header.php') ?>
@@ -67,7 +72,11 @@
           <a href="<?php echo base_url ?>register.php">Nova conta</a> 
          
          </div>
-          <!-- /.col -->
+
+         <div class="col-8 text-center">
+        <a class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</a>
+        </div>
+        <!-- /.col -->
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
           </div>
@@ -97,6 +106,21 @@
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 
+<!--  adicionado depois-->
+<?php
+if(isset($_POST) & !empty($_POST)){
+	$username = mysqli_real_escape_string($connection, $_POST['username']);
+	$sql = "SELECT * FROM `login` WHERE username = '$username'";
+	$res = mysqli_query($connection, $sql);
+	$count = mysqli_num_rows($res);
+	if($count == 1){
+		echo "Send email to user with password";
+	}else{
+		echo "User name does not exist in database";
+	}
+}
+?>
+<!-- *****************************************************************-->
 <script>
   $(document).ready(function(){
     end_loader();

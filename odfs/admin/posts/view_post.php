@@ -25,10 +25,10 @@ if(isset($_GET['id'])){
 </style>
 <div class="card card-outline card-navy rounded-0 shadow">
     <div class="card-header">
-        <h4 class="card-title">Post Details</h4>
+        <h4 class="card-title">Detalhes do post</h4>
         <div class="card-tools">
-            <a href="./?page=posts/manage_post&id=<?= $id ?>" class="btn btn-sm btn-flat bg-gradient-primary btn-primary"><i class="fa fa-edit"></i> Edit Post</a>
-            <button type="button" id="delete_post" class="btn btn-sm btn-flat bg-gradient-danger btn-danger"><i class="fa fa-trash"></i> Delete</button>
+            <a href="./?page=posts/manage_post&id=<?= $id ?>" class="btn btn-sm btn-flat bg-gradient-primary btn-primary"><i class="fa fa-edit"></i> Editar Post</a>
+            <button type="button" id="delete_post" class="btn btn-sm btn-flat bg-gradient-danger btn-danger"><i class="fa fa-trash"></i> apagar</button>
         </div>
     </div>
     <div class="card-body">
@@ -36,9 +36,9 @@ if(isset($_GET['id'])){
             <?php if($_settings->userdata('id') == $user_id): ?>
             <div class="mb-2 text-right">
                 <?php if($status == 1): ?>
-                    <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-primary"></i> Published</small>
+                    <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-primary"></i> Publicado</small>
                 <?php else: ?>
-                    <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-secondary"></i> Unpublished</small>
+                    <small class="badge badge-light border text-dark rounded-pill px-3"><i class="fa fa-circle text-secondary"></i> Não publicado</small>
                 <?php endif; ?>
             </div>
             <?php endif; ?>
@@ -54,7 +54,7 @@ if(isset($_GET['id'])){
                 <?= $content ?>
             </div>
             <hr class="mx-n3">
-            <h4 class="font-weight-bolder">Comments:</h4>
+            <h4 class="font-weight-bolder">Comentários:</h4>
             <div class="list-group comment-list mb-3 rounded-0">
                 <?php 
                 $comments = $conn->query("SELECT c.*, u.username, u.avatar FROM `comment_list` c inner join `users` u on c.user_id = u.id where c.post_id ='{$id}' order by abs(unix_timestamp(c.date_created)) asc ");
@@ -86,7 +86,7 @@ if(isset($_GET['id'])){
                     <div class="container-fluid">
                         <form action="" id="comment-form">
                             <input type="hidden" name="post_id" value="<?= $id ?>">
-                            <textarea class="form-control form-control-sm rouned-0" name="comment" id="comment" rows="4" placeholder="Write your comment here"></textarea>
+                            <textarea class="form-control form-control-sm rouned-0" name="comment" id="comment" rows="4" placeholder="Escreve o teu comentário aqui"></textarea>
                         </form>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ if(isset($_GET['id'])){
         })
         $('#comment').summernote({
             height:"15em",
-            placeholder:"Write your comment here",
+            placeholder:"Escreve o teu comentário aqui",
             toolbar: [
                 [ 'style', [ 'style' ] ],
                 [ 'font', [ 'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear'] ],
