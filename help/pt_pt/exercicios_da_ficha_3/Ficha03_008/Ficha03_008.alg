@@ -1,11 +1,11 @@
-// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
-    begin 
-        read real x "Valor de X\t: "
+    inicio 
+        ler real x "Valor de X\t: "
         real logX = log(x)
-        write "\nLogaritmo 10 \t= " + logX
-    end 
+        escrever "\nLogaritmo 10 \t= " + logX
+    fim 
 
 
 //pseudocode  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 14:30
+//(c) Ant0nio M@nso 	quarta, 2022 out 05 20:27

@@ -1,4 +1,4 @@
-// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
 #include <stdio.h>
 #include <string.h>
@@ -16,4 +16,4 @@ int main() {
 
 
 //C Language c11  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 14:28
+//(c) Ant0nio M@nso 	quarta, 2022 out 05 20:26

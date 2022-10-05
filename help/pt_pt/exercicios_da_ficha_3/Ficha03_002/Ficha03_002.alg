@@ -1,12 +1,12 @@
-// Programmer           Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
 
-    begin 
-        read real x "Valor de X\t: "
-        write "\nRaiz \t\t= " + sqrt(x)
-        write "\nPotência \t= " + pow(x , 0.5)
-        write "\nOperador \t= " + x ^ 0.5
-    end 
+    inicio 
+        ler real x "Valor de X\t: "
+        escrever "\nRaiz \t\t= " + sqrt(x)
+        escrever "\nPotência \t= " + pow(x , 0.5)
+        escrever "\nOperador \t= " + x ^ 0.5
+    fim 
 
 
 //pseudocode  - Automatic translated by Algorithmi 22.05
-//(c) Ant0nio M@nso 	Mon, 2022 Sep 26 14:28
+//(c) Ant0nio M@nso 	quarta, 2022 out 05 20:25
