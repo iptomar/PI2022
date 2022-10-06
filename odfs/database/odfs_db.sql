@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Set-2022 às 16:10
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 8.1.1
+-- Generation Time: Oct 06, 2022 at 03:24 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `odfs_db`
+-- Database: `odfs_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `category_list`
+-- Table structure for table `category_list`
 --
 
 CREATE TABLE `category_list` (
@@ -38,7 +38,7 @@ CREATE TABLE `category_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `category_list`
+-- Dumping data for table `category_list`
 --
 
 INSERT INTO `category_list` (`id`, `name`, `description`, `status`, `delete_flag`, `date_created`, `date_updated`) VALUES
@@ -47,18 +47,18 @@ INSERT INTO `category_list` (`id`, `name`, `description`, `status`, `delete_flag
 (3, 'Python', 'Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected.', 1, 1, '2022-05-16 10:03:48', '2022-09-26 10:33:29'),
 (4, 'JavaScript', 'JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.', 1, 1, '2022-05-16 10:04:11', '2022-09-26 10:33:19'),
 (5, 'test', 'test', 1, 1, '2022-05-16 10:04:54', '2022-05-16 10:04:59'),
-(6, 'Geral', '', 1, 0, '2022-09-26 10:20:21', '2022-09-26 10:20:21'),
+(6, 'Geral', 'Use esta categoria ao fazer perguntas gerais sobre algorithmi', 1, 0, '2022-09-26 10:20:21', '2022-10-06 02:14:48'),
 (7, 'Editor', '', 1, 0, '2022-09-26 10:20:59', '2022-09-26 10:20:59'),
-(8, 'Linguagem', '', 1, 0, '2022-09-26 10:22:08', '2022-09-26 10:22:08'),
-(9, 'Cálculo computacional', '', 1, 0, '2022-09-26 10:22:44', '2022-09-26 10:22:44'),
-(10, 'Desisões', '', 1, 0, '2022-09-26 10:23:38', '2022-09-26 10:23:38'),
-(11, 'Repetições', '', 1, 0, '2022-09-26 10:23:53', '2022-09-26 10:23:53'),
-(12, 'Módulos', '', 1, 0, '2022-09-26 10:24:16', '2022-09-26 10:24:16');
+(8, 'Linguagem', 'Uma linguagem de programação é uma maneira de programadores comunicarem com computadores.', 1, 0, '2022-09-26 10:22:08', '2022-10-06 02:16:13'),
+(9, 'Cálculo computacional', 'Adição, subtração, multiplicação e divisão. De um modo geral, os cálculos envolvem encontrar uma resposta para um problema via matemática ou lógica.', 1, 0, '2022-09-26 10:22:44', '2022-10-06 02:17:02'),
+(10, 'Decisões', 'As declarações condicionais permitem tomar uma decisão com base no resultado de uma condição', 1, 0, '2022-09-26 10:23:38', '2022-10-06 02:19:42'),
+(11, 'Repetições', 'Repetição é o processo de loop ou repetição de secções de um programa de computador. Existem diferentes tipos de loop. O mais básico é aquele em que um conjunto de instruções é repetido um determinado número de vezes. Outro tipo de loop repete-se continuamente até que uma determinada condição seja atendida.', 1, 0, '2022-09-26 10:23:53', '2022-10-06 02:23:10'),
+(12, 'Módulos', 'Um módulo é uma extensão de um programa principal dedicado a uma função específica.', 1, 0, '2022-09-26 10:24:16', '2022-10-06 02:24:25');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `comment_list`
+-- Table structure for table `comment_list`
 --
 
 CREATE TABLE `comment_list` (
@@ -70,18 +70,19 @@ CREATE TABLE `comment_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `comment_list`
+-- Dumping data for table `comment_list`
 --
 
 INSERT INTO `comment_list` (`id`, `user_id`, `post_id`, `comment`, `date_created`) VALUES
 (1, 4, 2, 'Test Comment 123', '2022-05-16 12:05:21'),
 (2, 4, 2, '<p>This is a sample comment only</p>', '2022-05-16 13:00:42'),
-(4, 4, 3, '<p>test 123</p>', '2022-05-16 13:54:01');
+(4, 4, 3, '<p>test 123</p>', '2022-05-16 13:54:01'),
+(6, 10, 7, '<p>srysruyrye</p>', '2022-10-04 12:59:32');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `post_list`
+-- Table structure for table `post_list`
 --
 
 CREATE TABLE `post_list` (
@@ -97,7 +98,7 @@ CREATE TABLE `post_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `post_list`
+-- Dumping data for table `post_list`
 --
 
 INSERT INTO `post_list` (`id`, `user_id`, `category_id`, `title`, `content`, `status`, `delete_flag`, `date_created`, `date_updated`) VALUES
@@ -106,12 +107,15 @@ INSERT INTO `post_list` (`id`, `user_id`, `category_id`, `title`, `content`, `st
 (3, 4, 2, 'test', '<p>Data to delete</p>', 1, 1, '2022-05-16 13:52:36', '2022-05-16 13:54:05'),
 (4, 1, 1, 'test', '<p>test</p>', 1, 1, '2022-05-16 14:11:24', '2022-05-16 14:12:10'),
 (5, 6, 4, 'if statment', '<p>as9duiojoaisjdoasmdad</p>', 1, 0, '2022-09-14 14:22:27', '2022-09-14 14:22:27'),
-(6, 6, 7, 'ioahsdoiahjs', '<p>asdaoisduoasjdkpaskd</p>', 1, 0, '2022-09-28 14:06:26', '2022-09-28 14:06:57');
+(6, 6, 7, 'ioahsdoiahjs', '<p>asdaoisduoasjdkpaskd</p>', 1, 0, '2022-09-28 14:06:26', '2022-09-28 14:06:57'),
+(7, 10, 7, 'xdrgxdh', '<p>ckjfchxlouihçihgçtoixtlyçxtdohyjxpçrhyidthºoç</p>', 1, 0, '2022-10-04 09:19:03', '2022-10-04 09:19:20'),
+(8, 11, 10, 'sersytysrty', '<p>rtysrtysytry</p>', 0, 0, '2022-10-04 13:01:56', '2022-10-04 13:01:56'),
+(9, 10, 10, 'r56utdt7uifdti6', '<p>fyutyi7f</p>', 0, 0, '2022-10-04 15:59:56', '2022-10-04 15:59:56');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `system_info`
+-- Table structure for table `system_info`
 --
 
 CREATE TABLE `system_info` (
@@ -121,7 +125,7 @@ CREATE TABLE `system_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `system_info`
+-- Dumping data for table `system_info`
 --
 
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
@@ -134,7 +138,7 @@ INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -152,7 +156,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='2';
 
 --
--- Extraindo dados da tabela `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `firstname`, `middlename`, `lastname`, `username`, `password`, `avatar`, `last_login`, `type`, `date_added`, `date_updated`) VALUES
@@ -160,20 +164,26 @@ INSERT INTO `users` (`id`, `firstname`, `middlename`, `lastname`, `username`, `p
 (4, 'Mark', 'D', 'Cooper', 'mcooper', 'c7162ff89c647f444fcaa5c635dac8c3', 'uploads/avatars/4.png?v=1652667135', NULL, 2, '2022-05-16 10:12:15', '2022-05-16 13:44:49'),
 (5, 'John', 'D', 'Smith', 'jsmith', '1254737c076cf867dc53d60a0364f38e', NULL, NULL, 2, '2022-05-16 14:19:03', '2022-05-16 14:19:03'),
 (6, 'Carlos', 'Pedro', 'Silva', 'CarlosGaming', 'e10adc3949ba59abbe56e057f20f883e', 'uploads/avatars/6.png?v=1663931668', NULL, 2, '2022-09-14 14:21:42', '2022-09-28 14:05:09'),
-(7, 'adminteste', '', '', 'adminteste', '40cb116d1ed49eaa4e12efe044d8924c', 'uploads/avatars/7.png?v=1664283524', NULL, 1, '2022-09-27 13:58:44', '2022-09-27 13:59:16');
+(7, 'adminteste', '', '', 'adminteste', '40cb116d1ed49eaa4e12efe044d8924c', 'uploads/avatars/7.png?v=1664283524', NULL, 1, '2022-09-27 13:58:44', '2022-09-27 13:59:16'),
+(8, 'jp', 'p', 'g', 'jp', 'c4ca4238a0b923820dcc509a6f75849b', NULL, NULL, 2, '2022-09-28 15:26:41', '2022-09-28 15:26:41'),
+(9, 'João', 'Pedro Pereira', 'Graça', 'joao', 'e10adc3949ba59abbe56e057f20f883e', '', NULL, 2, '2022-09-29 09:06:52', '2022-09-29 09:19:08'),
+(10, '1', '1', '1', '1', 'c4ca4238a0b923820dcc509a6f75849b', NULL, NULL, 2, '2022-10-03 15:16:05', '2022-10-03 15:16:05'),
+(11, '3', '3', '3', '3', 'eccbc87e4b5ce2fe28308fd9f2a7baf3', NULL, NULL, 2, '2022-10-03 21:40:39', '2022-10-03 21:40:39'),
+(12, '', '', '', '', '', NULL, NULL, 2, '2022-10-04 14:17:50', '2022-10-04 14:17:50'),
+(13, '7', '7', '7', '7', '8f14e45fceea167a5a36dedd4bea2543', NULL, NULL, 2, '2022-10-04 14:20:23', '2022-10-04 14:20:23');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `category_list`
+-- Indexes for table `category_list`
 --
 ALTER TABLE `category_list`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `comment_list`
+-- Indexes for table `comment_list`
 --
 ALTER TABLE `comment_list`
   ADD PRIMARY KEY (`id`),
@@ -181,7 +191,7 @@ ALTER TABLE `comment_list`
   ADD KEY `post_id` (`post_id`);
 
 --
--- Índices para tabela `post_list`
+-- Indexes for table `post_list`
 --
 ALTER TABLE `post_list`
   ADD PRIMARY KEY (`id`),
@@ -189,64 +199,64 @@ ALTER TABLE `post_list`
   ADD KEY `category_id` (`category_id`);
 
 --
--- Índices para tabela `system_info`
+-- Indexes for table `system_info`
 --
 ALTER TABLE `system_info`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `category_list`
+-- AUTO_INCREMENT for table `category_list`
 --
 ALTER TABLE `category_list`
   MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT de tabela `comment_list`
+-- AUTO_INCREMENT for table `comment_list`
 --
 ALTER TABLE `comment_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT de tabela `post_list`
---
-ALTER TABLE `post_list`
   MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de tabela `system_info`
+-- AUTO_INCREMENT for table `post_list`
+--
+ALTER TABLE `post_list`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `system_info`
 --
 ALTER TABLE `system_info`
   MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT de tabela `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- Restrições para despejos de tabelas
+-- Constraints for dumped tables
 --
 
 --
--- Limitadores para a tabela `comment_list`
+-- Constraints for table `comment_list`
 --
 ALTER TABLE `comment_list`
   ADD CONSTRAINT `post_id_fk_cl` FOREIGN KEY (`post_id`) REFERENCES `post_list` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `user_id_fk_cl` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
--- Limitadores para a tabela `post_list`
+-- Constraints for table `post_list`
 --
 ALTER TABLE `post_list`
   ADD CONSTRAINT `category_id_fk_tl` FOREIGN KEY (`category_id`) REFERENCES `category_list` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,

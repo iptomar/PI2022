@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2022 at 04:31 PM
+-- Generation Time: Oct 06, 2022 at 03:08 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -47,13 +47,13 @@ INSERT INTO `category_list` (`id`, `name`, `description`, `status`, `delete_flag
 (3, 'Python', 'Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected.', 1, 1, '2022-05-16 10:03:48', '2022-09-26 10:33:29'),
 (4, 'JavaScript', 'JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.', 1, 1, '2022-05-16 10:04:11', '2022-09-26 10:33:19'),
 (5, 'test', 'test', 1, 1, '2022-05-16 10:04:54', '2022-05-16 10:04:59'),
-(6, 'Geral', '', 1, 0, '2022-09-26 10:20:21', '2022-09-26 10:20:21'),
+(6, 'General', 'Use this category when asking general questions about algorithmi  ', 1, 0, '2022-09-26 10:20:21', '2022-10-06 02:05:09'),
 (7, 'Editor', '', 1, 0, '2022-09-26 10:20:59', '2022-09-26 10:20:59'),
-(8, 'Linguagem', '', 1, 0, '2022-09-26 10:22:08', '2022-09-26 10:22:08'),
-(9, 'Cálculo computacional', '', 1, 0, '2022-09-26 10:22:44', '2022-09-26 10:22:44'),
-(10, 'Desisões', '', 1, 0, '2022-09-26 10:23:38', '2022-09-26 10:23:38'),
-(11, 'Repetições', '', 1, 0, '2022-09-26 10:23:53', '2022-09-26 10:23:53'),
-(12, 'Módulos', '', 1, 0, '2022-09-26 10:24:16', '2022-09-26 10:24:16');
+(8, 'Language', 'A programming language is a way for programmers to communicate with computers.', 1, 0, '2022-09-26 10:22:08', '2022-10-06 01:58:28'),
+(9, 'computational calculation', 'Addition, subtraction, multiplication and division. Generally speaking, computations entail finding an answer to a problem via math or logic.', 1, 0, '2022-09-26 10:22:44', '2022-10-06 01:43:02'),
+(10, 'Decisions', 'Conditional statements allow you to make a decision based upon the result of a condition', 1, 0, '2022-09-26 10:23:38', '2022-10-06 01:48:45'),
+(11, 'Repetitions', 'Repetition is the process of looping or repeating sections of a computer program. There are different types of loop. The most basic is where a set of instructions is repeated a set number of times. Another type of loop repeats continuously until a certain condition is met.', 1, 0, '2022-09-26 10:23:53', '2022-10-06 01:50:16'),
+(12, 'Modules', 'A module is an extension to a main program dedicated to a specific function.', 1, 0, '2022-09-26 10:24:16', '2022-10-06 01:52:25');
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,8 @@ INSERT INTO `users` (`id`, `firstname`, `middlename`, `lastname`, `username`, `p
 (5, 'John', 'D', 'Smith', 'jsmith', '1254737c076cf867dc53d60a0364f38e', NULL, NULL, 2, '2022-05-16 14:19:03', '2022-05-16 14:19:03'),
 (6, 'Carlos', 'Pedro', 'Silva', 'CarlosGaming', 'e10adc3949ba59abbe56e057f20f883e', 'uploads/avatars/6.png?v=1663931668', NULL, 2, '2022-09-14 14:21:42', '2022-09-28 14:05:09'),
 (7, 'adminteste', '', '', 'adminteste', '40cb116d1ed49eaa4e12efe044d8924c', 'uploads/avatars/7.png?v=1664283524', NULL, 1, '2022-09-27 13:58:44', '2022-09-27 13:59:16'),
-(8, 'joao', 'pedro', 'graca', 'joao', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, 2, '2022-10-03 15:10:27', '2022-10-03 15:10:27');
+(8, 'joao', 'pedro', 'graca', 'joao', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, 2, '2022-10-03 15:10:27', '2022-10-03 15:10:27'),
+(9, '1', '1', '1', '1', 'c4ca4238a0b923820dcc509a6f75849b', NULL, NULL, 2, '2022-10-06 02:07:59', '2022-10-06 02:07:59');
 
 --
 -- Indexes for dumped tables
@@ -233,7 +234,7 @@ ALTER TABLE `system_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
