@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha10_014.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha10_014.prog" download> Ficha10_014 </a> 
+</td>
+                <td align="center">Desafiador</td>
+                <td align="center">5.0</td>
+                <td align="center">12/10/2022 19:32:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>AM/PM valid time </h1>
+    <pre>Write a program that 
+ - prompts the user for the value a valid time.
+ - If the user enters a wrong value it should be given error messages.
+ - print the time in the format AM / PM (Ante Meridiem / Post Meridiem). 
+ * Hours in the range [0,12[
+ * Minutes and seconds separated by : 
+ * at the end write AM if the time is before noon or PM otherwise.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>-1
+4
+100
+56
+-3
+0</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -1
+Wrong time
+Hours : 4
+
+
+Minuts : 100
+Wrong Minuts
+Minuts : 56
+
+
+Seconds : -3
+Wrong Seconds
+Seconds : 0
+
+Time = 4:56:0 AM</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+17
+100
+56
+-3
+0</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -1
+Wrong time
+Hours : 17
+
+
+Minuts : 100
+Wrong Minuts
+Minuts : 56
+
+
+Seconds : -3
+Wrong Seconds
+Seconds : 0
+
+Time = 5:56:0 PM</input_output></td>
+
+</tr><tr>
+<td><input_output>-2
+10
+
+62
+32
+
+-16
+66
+37</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -2
+Wrong time
+Hours : 10
+
+
+Minuts : 62
+Wrong Minuts
+Minuts : 32
+
+
+Seconds : -16
+Wrong Seconds
+Seconds : 66
+Wrong Seconds
+Seconds : 37
+
+Time = 10:32:37 AM</input_output></td>
+
+</tr><tr>
+<td><input_output>-9
+24
+23
+
+-17
+66
+53
+
+-18
+64
+13</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -9
+Wrong time
+Hours : 24
+Wrong time
+Hours : 23
+
+
+Minuts : -17
+Wrong Minuts
+Minuts : 66
+Wrong Minuts
+Minuts : 53
+
+
+Seconds : -18
+Wrong Seconds
+Seconds : 64
+Wrong Seconds
+Seconds : 13
+
+Time = 11:53:13 PM</input_output></td>
+
+</tr><tr>
+<td><input_output>41
+39
+11
+
+-5
+-11
+36
+
+-17
+-11
+63
+20</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : 41
+Wrong time
+Hours : 39
+Wrong time
+Hours : 11
+
+
+Minuts : -5
+Wrong Minuts
+Minuts : -11
+Wrong Minuts
+Minuts : 36
+
+
+Seconds : -17
+Wrong Seconds
+Seconds : -11
+Wrong Seconds
+Seconds : 63
+Wrong Seconds
+Seconds : 20
+
+Time = 11:36:20 AM</input_output></td>
+
+</tr><tr>
+<td><input_output>-5
+15
+
+61
+0
+
+-2
+60
+26</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -5
+Wrong time
+Hours : 15
+
+
+Minuts : 61
+Wrong Minuts
+Minuts : 0
+
+
+Seconds : -2
+Wrong Seconds
+Seconds : 60
+Wrong Seconds
+Seconds : 26
+
+Time = 3:0:26 PM</input_output></td>
+
+</tr><tr>
+<td><input_output>-4
+48
+1
+
+-16
+64
+57
+
+-13
+61
+30</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -4
+Wrong time
+Hours : 48
+Wrong time
+Hours : 1
+
+
+Minuts : -16
+Wrong Minuts
+Minuts : 64
+Wrong Minuts
+Minuts : 57
+
+
+Seconds : -13
+Wrong Seconds
+Seconds : 61
+Wrong Seconds
+Seconds : 30
+
+Time = 1:57:30 AM</input_output></td>
+
+</tr><tr>
+<td><input_output>34
+39
+1
+
+-3
+-11
+54
+
+-12
+-8
+62
+32</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : 34
+Wrong time
+Hours : 39
+Wrong time
+Hours : 1
+
+
+Minuts : -3
+Wrong Minuts
+Minuts : -11
+Wrong Minuts
+Minuts : 54
+
+
+Seconds : -12
+Wrong Seconds
+Seconds : -8
+Wrong Seconds
+Seconds : 62
+Wrong Seconds
+Seconds : 32
+
+Time = 1:54:32 AM</input_output></td>
+
+</tr><tr>
+<td><input_output>-9
+17
+
+61
+26
+
+-7
+63
+59</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -9
+Wrong time
+Hours : 17
+
+
+Minuts : 61
+Wrong Minuts
+Minuts : 26
+
+
+Seconds : -7
+Wrong Seconds
+Seconds : 63
+Wrong Seconds
+Seconds : 59
+
+Time = 5:26:59 PM</input_output></td>
+
+</tr><tr>
+<td><input_output>-8
+26
+7
+
+-18
+67
+18
+
+-12
+68
+11</input_output></td>
+<td><input_output>AM/PM Time
+
+Hours : -8
+Wrong time
+Hours : 26
+Wrong time
+Hours : 7
+
+
+Minuts : -18
+Wrong Minuts
+Minuts : 67
+Wrong Minuts
+Minuts : 18
+
+
+Seconds : -12
+Wrong Seconds
+Seconds : 68
+Wrong Seconds
+Seconds : 11
+
+Time = 7:18:11 AM</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

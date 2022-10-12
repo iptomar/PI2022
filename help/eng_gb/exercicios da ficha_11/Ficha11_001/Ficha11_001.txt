@@ -1,0 +1,9 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    inicio ProgramaPrincipal
+        escrever "Hello World"
+    fim ProgramaPrincipal
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:22

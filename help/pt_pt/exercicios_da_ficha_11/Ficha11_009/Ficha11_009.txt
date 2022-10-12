@@ -1,0 +1,23 @@
+// Programador           -
+
+    inicio ProgramaPrincipal
+        ler inteiro altura "Altura : "
+        executar triangulo(altura)
+    fim ProgramaPrincipal
+
+    funcao vazio linha(inteiro n)
+        iterar inteiro i de 0 até n  passo 1
+            escrever "*"
+        fim iterar
+        escrever "\n"
+    fim linha
+
+    funcao vazio triangulo(inteiro altura)
+        iterar inteiro i de 1 até altura + 1  passo 1
+            executar linha(i)
+        fim iterar
+    fim triangulo
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:10

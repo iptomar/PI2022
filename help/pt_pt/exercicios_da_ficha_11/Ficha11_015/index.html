@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha11_015.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha11_015.prog" download> Ficha11_015 </a> 
+</td>
+                <td align="center">Difícil</td>
+                <td align="center">5.0</td>
+                <td align="center">12/10/2022 19:37:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Caixa de caracteres</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Construa um algoritmo que permita desenhar na consola uma caixa igual á da figura figura.
+A altura, largura, caracter limite e caracter interior devem ser introduzidos pelo utilizador.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png">
+<img src="flowchart1.png">
+<img src="flowchart2.png">
+<img src="flowchart3.png"></td>
+            <td valign=top><pre>    inicio ProgramaPrincipal
+        ler inteiro altura "Altura   : "
+        ler inteiro largura "Largura  : "
+        ler texto limite "Limite   : "
+        ler texto interior "Interior : "
+        executar caixa(largura , altura , limite , interior)
+    fim ProgramaPrincipal
+
+    funcao vazio linha(inteiro n ,  texto c)
+        iterar inteiro i de 0 até n  passo 1
+            escrever c
+        fim iterar
+        escrever "\n"
+    fim linha
+
+    funcao vazio interior(inteiro n ,  texto cl ,  texto ci)
+        escrever cl
+        iterar inteiro i de 1 até n - 1  passo 1
+            escrever ci
+        fim iterar
+        escrever cl + "\n"
+    fim interior
+
+    funcao vazio caixa(inteiro larg ,  inteiro alt ,  texto cl ,  texto ci)
+        executar linha(larg , cl)
+        iterar inteiro i de 1 até alt - 1  passo 1
+            executar interior(larg , cl , ci)
+        fim iterar
+        executar linha(larg , cl)
+    fim caixa
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha11_015.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_015.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>10
+20
+#
+.</input_output></td>
+<td><input_output>Altura   : 10
+Largura  : 20
+Limite   : #
+Interior : .
+####################
+#..................#
+#..................#
+#..................#
+#..................#
+#..................#
+#..................#
+#..................#
+#..................#
+####################</input_output></td>
+
+</tr><tr>
+<td><input_output>8
+7
+:
+8</input_output></td>
+<td><input_output>Altura   : 8
+Largura  : 7
+Limite   : :
+Interior : 8
+:::::::
+:88888:
+:88888:
+:88888:
+:88888:
+:88888:
+:88888:
+:::::::</input_output></td>
+
+</tr><tr>
+<td><input_output>6
+5
+G
+6</input_output></td>
+<td><input_output>Altura   : 6
+Largura  : 5
+Limite   : G
+Interior : 6
+GGGGG
+G666G
+G666G
+G666G
+G666G
+GGGGG</input_output></td>
+
+</tr><tr>
+<td><input_output>4
+6
+5
+F</input_output></td>
+<td><input_output>Altura   : 4
+Largura  : 6
+Limite   : 5
+Interior : F
+555555
+5FFFF5
+5FFFF5
+555555</input_output></td>
+
+</tr><tr>
+<td><input_output>10
+5
+T
+8</input_output></td>
+<td><input_output>Altura   : 10
+Largura  : 5
+Limite   : T
+Interior : 8
+TTTTT
+T888T
+T888T
+T888T
+T888T
+T888T
+T888T
+T888T
+T888T
+TTTTT</input_output></td>
+
+</tr><tr>
+<td><input_output>8
+4
+5
+#</input_output></td>
+<td><input_output>Altura   : 8
+Largura  : 4
+Limite   : 5
+Interior : #
+5555
+5##5
+5##5
+5##5
+5##5
+5##5
+5##5
+5555</input_output></td>
+
+</tr><tr>
+<td><input_output>10
+8
+V
+'</input_output></td>
+<td><input_output>Altura   : 10
+Largura  : 8
+Limite   : V
+Interior : '
+VVVVVVVV
+V''''''V
+V''''''V
+V''''''V
+V''''''V
+V''''''V
+V''''''V
+V''''''V
+V''''''V
+VVVVVVVV</input_output></td>
+
+</tr><tr>
+<td><input_output>4
+9
+H
++</input_output></td>
+<td><input_output>Altura   : 4
+Largura  : 9
+Limite   : H
+Interior : +
+HHHHHHHHH
+H+++++++H
+H+++++++H
+HHHHHHHHH</input_output></td>
+
+</tr><tr>
+<td><input_output>5
+8
++
+H</input_output></td>
+<td><input_output>Altura   : 5
+Largura  : 8
+Limite   : +
+Interior : H
+++++++++
++HHHHHH+
++HHHHHH+
++HHHHHH+
+++++++++</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+3
+Z
+)</input_output></td>
+<td><input_output>Altura   : 3
+Largura  : 3
+Limite   : Z
+Interior : )
+ZZZ
+Z)Z
+ZZZ</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

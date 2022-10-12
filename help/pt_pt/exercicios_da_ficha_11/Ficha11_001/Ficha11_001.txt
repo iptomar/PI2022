@@ -1,0 +1,9 @@
+// Programador           -
+
+    inicio ProgramaPrincipal
+        escrever "Olá Mundo"
+    fim ProgramaPrincipal
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:09

@@ -1,0 +1,36 @@
+// Programador           -
+
+    inicio ProgramaPrincipal
+        ler inteiro altura "Altura   : "
+        ler inteiro largura "Largura  : "
+        ler texto limite "Limite   : "
+        ler texto interior "Interior : "
+        executar caixa(largura , altura , limite , interior)
+    fim ProgramaPrincipal
+
+    funcao vazio linha(inteiro n ,  texto c)
+        iterar inteiro i de 0 até n  passo 1
+            escrever c
+        fim iterar
+        escrever "\n"
+    fim linha
+
+    funcao vazio interior(inteiro n ,  texto cl ,  texto ci)
+        escrever cl
+        iterar inteiro i de 1 até n - 1  passo 1
+            escrever ci
+        fim iterar
+        escrever cl + "\n"
+    fim interior
+
+    funcao vazio caixa(inteiro larg ,  inteiro alt ,  texto cl ,  texto ci)
+        executar linha(larg , cl)
+        iterar inteiro i de 1 até alt - 1  passo 1
+            executar interior(larg , cl , ci)
+        fim iterar
+        executar linha(larg , cl)
+    fim caixa
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:14

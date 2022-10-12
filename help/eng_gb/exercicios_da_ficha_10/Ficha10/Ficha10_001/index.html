@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha10_001.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha10_001.prog" download> Ficha10_001 </a> 
+</td>
+                <td align="center">Demonstração</td>
+                <td align="center">1.0</td>
+                <td align="center"></td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Infinite cycle - Read positive number</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Write a program that prompts the user for a positive number.
+If the user enters a wrong value, an error message should be printed.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png"></td>
+            <td valign=top><pre>    inicio ProgramaPrincipal
+        definir inteiro i = 0
+        enquanto verdadeiro faz
+            escrever "Positive number : "
+            ler i
+            se i > 0 então
+                quebrar
+            fim se
+            escrever "Error in reading\n\n"
+        fim enquanto
+        escrever "Entered value = " + i
+    fim ProgramaPrincipal
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha10_001.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha10_001.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha10_001.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>-5
+-2
+6</input_output></td>
+<td><input_output>Positive number : -5
+Error in reading
+
+Positive number : -2
+Error in reading
+
+Positive number : 6
+Entered value = 6</input_output></td>
+
+</tr><tr>
+<td><input_output>-4
+-10
+-2
+18</input_output></td>
+<td><input_output>Positive number : -4
+Error in reading
+
+Positive number : -10
+Error in reading
+
+Positive number : -2
+Error in reading
+
+Positive number : 18
+Entered value = 18</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+-5
+-5
+7</input_output></td>
+<td><input_output>Positive number : -1
+Error in reading
+
+Positive number : -5
+Error in reading
+
+Positive number : -5
+Error in reading
+
+Positive number : 7
+Entered value = 7</input_output></td>
+
+</tr><tr>
+<td><input_output>-6
+-10
+-10
+6</input_output></td>
+<td><input_output>Positive number : -6
+Error in reading
+
+Positive number : -10
+Error in reading
+
+Positive number : -10
+Error in reading
+
+Positive number : 6
+Entered value = 6</input_output></td>
+
+</tr><tr>
+<td><input_output>-8
+-3
+-5
+12</input_output></td>
+<td><input_output>Positive number : -8
+Error in reading
+
+Positive number : -3
+Error in reading
+
+Positive number : -5
+Error in reading
+
+Positive number : 12
+Entered value = 12</input_output></td>
+
+</tr><tr>
+<td><input_output>-7
+-2
+-7
+15</input_output></td>
+<td><input_output>Positive number : -7
+Error in reading
+
+Positive number : -2
+Error in reading
+
+Positive number : -7
+Error in reading
+
+Positive number : 15
+Entered value = 15</input_output></td>
+
+</tr><tr>
+<td><input_output>-5
+-8
+-9
+9</input_output></td>
+<td><input_output>Positive number : -5
+Error in reading
+
+Positive number : -8
+Error in reading
+
+Positive number : -9
+Error in reading
+
+Positive number : 9
+Entered value = 9</input_output></td>
+
+</tr><tr>
+<td><input_output>-7
+-6
+-10
+3</input_output></td>
+<td><input_output>Positive number : -7
+Error in reading
+
+Positive number : -6
+Error in reading
+
+Positive number : -10
+Error in reading
+
+Positive number : 3
+Entered value = 3</input_output></td>
+
+</tr><tr>
+<td><input_output>-7
+-5
+-1
+10</input_output></td>
+<td><input_output>Positive number : -7
+Error in reading
+
+Positive number : -5
+Error in reading
+
+Positive number : -1
+Error in reading
+
+Positive number : 10
+Entered value = 10</input_output></td>
+
+</tr><tr>
+<td><input_output>-10
+-2
+-8
+15</input_output></td>
+<td><input_output>Positive number : -10
+Error in reading
+
+Positive number : -2
+Error in reading
+
+Positive number : -8
+Error in reading
+
+Positive number : 15
+Entered value = 15</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Java</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_012</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Triângulo de Caractereres</h2>
+            <plain>Construa um algoritmo que imprima o triângulo da figura.
+A altura e o caracter devem ser introduzidos pelo utilizador.
+
+Utilize a funcao:
+  vazio linhaC(inteiro n ,  texto c)
+
+Escreva a funcao:
+ vazio trianguloC(inteiro altura ,  texto c)</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_012.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_012.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_012.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Java</h1>
+<pre  class="prettyprint">
+// Programador           -
+
+import java.util.Scanner;
+
+public class Ficha11_012 {
+
+    static Scanner keyb = new Scanner(System.in);//keyboard
+
+    //Main Function
+    public static void main( String[] args) {
+        System.out.print(&quot;Altura : &quot; );
+        int altura = Integer.valueOf(keyb.nextLine());
+        System.out.print(&quot;Caract&eacute;r : &quot; );
+        String c = keyb.nextLine();
+        trianguloC(altura , c ) ;
+    }
+
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    //User Defined Functions Code
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    public static void linhaC( int n , String c){
+        for( int i = 0; i &lt; n; i = i + 1 ) {
+            System.out.print(c );
+        }
+        System.out.print(&quot;\n&quot; );
+    }
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    public static void trianguloC( int altura , String c){
+        for( int i = 1; i &lt; altura + 1; i = i + 1 ) {
+            linhaC(i , c ) ;
+        }
+    }
+
+}
+//Java  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:12
+
+</pre>    
+<a href="Ficha11_012.java" download>  <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="48" width="48"> Download Ficha11_012.java </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

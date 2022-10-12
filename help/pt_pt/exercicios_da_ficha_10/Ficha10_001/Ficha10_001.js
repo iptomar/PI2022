@@ -1,0 +1,21 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+//Main Function
+function main() {
+    var i = 0 ;
+    while(true ){
+        document.write("Número positvo : " );
+        document.write();// print text
+        i = parseInt(prompt("i","0") );
+        
+        document.write(i + "\n");// print input 
+        if(i > 0 ){
+            break
+        }
+        document.write("Erro na leitura\n\n" );
+    }
+    document.write("Valor introduzido = " + i );
+}
+
+//JavaScript  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 19:26

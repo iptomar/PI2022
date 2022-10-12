@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha10_006.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha10_006.prog" download> Ficha10_006 </a> 
+</td>
+                <td align="center">Normal</td>
+                <td align="center">4.0</td>
+                <td align="center">12/10/2022 19:32:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Valid Time </h1>
+    <pre>Write a program that prompts the user for a valid time.
+If the user enters a wrong value, error messages should be given.
+
+At the end the time should be printed in the format H:M:S</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>-1
+4
+100
+56
+-3
+0</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -1
+Wrong Hours
+Hours : 4
+
+Minuts : 100
+Wrong Minuts
+Minuts : 56
+
+Seconds : -3
+Wrong Seconds
+Seconds : 0
+
+Time = 4:56:0</input_output></td>
+
+</tr><tr>
+<td><input_output>-11
+-4
+30
+29
+15
+
+-2
+-7
+85
+65
+0
+
+-10
+-18
+79
+67
+17</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -11
+Wrong Hours
+Hours : -4
+Wrong Hours
+Hours : 30
+Wrong Hours
+Hours : 29
+Wrong Hours
+Hours : 15
+
+Minuts : -2
+Wrong Minuts
+Minuts : -7
+Wrong Minuts
+Minuts : 85
+Wrong Minuts
+Minuts : 65
+Wrong Minuts
+Minuts : 0
+
+Seconds : -10
+Wrong Seconds
+Seconds : -18
+Wrong Seconds
+Seconds : 79
+Wrong Seconds
+Seconds : 67
+Wrong Seconds
+Seconds : 17
+
+Time = 15:0:17</input_output></td>
+
+</tr><tr>
+<td><input_output>-18
+-8
+29
+27
+7
+
+-4
+-13
+74
+82
+22
+
+-17
+-4
+98
+79
+44</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -18
+Wrong Hours
+Hours : -8
+Wrong Hours
+Hours : 29
+Wrong Hours
+Hours : 27
+Wrong Hours
+Hours : 7
+
+Minuts : -4
+Wrong Minuts
+Minuts : -13
+Wrong Minuts
+Minuts : 74
+Wrong Minuts
+Minuts : 82
+Wrong Minuts
+Minuts : 22
+
+Seconds : -17
+Wrong Seconds
+Seconds : -4
+Wrong Seconds
+Seconds : 98
+Wrong Seconds
+Seconds : 79
+Wrong Seconds
+Seconds : 44
+
+Time = 7:22:44</input_output></td>
+
+</tr><tr>
+<td><input_output>-15
+-18
+26
+30
+2
+
+-7
+-10
+75
+71
+49
+
+-16
+-19
+91
+86
+39</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -15
+Wrong Hours
+Hours : -18
+Wrong Hours
+Hours : 26
+Wrong Hours
+Hours : 30
+Wrong Hours
+Hours : 2
+
+Minuts : -7
+Wrong Minuts
+Minuts : -10
+Wrong Minuts
+Minuts : 75
+Wrong Minuts
+Minuts : 71
+Wrong Minuts
+Minuts : 49
+
+Seconds : -16
+Wrong Seconds
+Seconds : -19
+Wrong Seconds
+Seconds : 91
+Wrong Seconds
+Seconds : 86
+Wrong Seconds
+Seconds : 39
+
+Time = 2:49:39</input_output></td>
+
+</tr><tr>
+<td><input_output>-8
+-1
+29
+30
+15
+
+-13
+-8
+83
+100
+8
+
+-17
+-14
+91
+71
+44</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -8
+Wrong Hours
+Hours : -1
+Wrong Hours
+Hours : 29
+Wrong Hours
+Hours : 30
+Wrong Hours
+Hours : 15
+
+Minuts : -13
+Wrong Minuts
+Minuts : -8
+Wrong Minuts
+Minuts : 83
+Wrong Minuts
+Minuts : 100
+Wrong Minuts
+Minuts : 8
+
+Seconds : -17
+Wrong Seconds
+Seconds : -14
+Wrong Seconds
+Seconds : 91
+Wrong Seconds
+Seconds : 71
+Wrong Seconds
+Seconds : 44
+
+Time = 15:8:44</input_output></td>
+
+</tr><tr>
+<td><input_output>-17
+-9
+27
+25
+21
+
+-16
+-4
+77
+73
+26
+
+-20
+-9
+100
+80
+26</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -17
+Wrong Hours
+Hours : -9
+Wrong Hours
+Hours : 27
+Wrong Hours
+Hours : 25
+Wrong Hours
+Hours : 21
+
+Minuts : -16
+Wrong Minuts
+Minuts : -4
+Wrong Minuts
+Minuts : 77
+Wrong Minuts
+Minuts : 73
+Wrong Minuts
+Minuts : 26
+
+Seconds : -20
+Wrong Seconds
+Seconds : -9
+Wrong Seconds
+Seconds : 100
+Wrong Seconds
+Seconds : 80
+Wrong Seconds
+Seconds : 26
+
+Time = 21:26:26</input_output></td>
+
+</tr><tr>
+<td><input_output>-11
+-8
+26
+28
+1
+
+-13
+-19
+79
+69
+3
+
+-5
+-2
+73
+97
+19</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -11
+Wrong Hours
+Hours : -8
+Wrong Hours
+Hours : 26
+Wrong Hours
+Hours : 28
+Wrong Hours
+Hours : 1
+
+Minuts : -13
+Wrong Minuts
+Minuts : -19
+Wrong Minuts
+Minuts : 79
+Wrong Minuts
+Minuts : 69
+Wrong Minuts
+Minuts : 3
+
+Seconds : -5
+Wrong Seconds
+Seconds : -2
+Wrong Seconds
+Seconds : 73
+Wrong Seconds
+Seconds : 97
+Wrong Seconds
+Seconds : 19
+
+Time = 1:3:19</input_output></td>
+
+</tr><tr>
+<td><input_output>-4
+-2
+28
+28
+17
+
+-11
+-11
+93
+69
+33
+
+-11
+-7
+97
+96
+20</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -4
+Wrong Hours
+Hours : -2
+Wrong Hours
+Hours : 28
+Wrong Hours
+Hours : 28
+Wrong Hours
+Hours : 17
+
+Minuts : -11
+Wrong Minuts
+Minuts : -11
+Wrong Minuts
+Minuts : 93
+Wrong Minuts
+Minuts : 69
+Wrong Minuts
+Minuts : 33
+
+Seconds : -11
+Wrong Seconds
+Seconds : -7
+Wrong Seconds
+Seconds : 97
+Wrong Seconds
+Seconds : 96
+Wrong Seconds
+Seconds : 20
+
+Time = 17:33:20</input_output></td>
+
+</tr><tr>
+<td><input_output>-6
+-17
+30
+27
+4
+
+-18
+-19
+66
+89
+11
+
+-15
+-11
+70
+87
+45</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -6
+Wrong Hours
+Hours : -17
+Wrong Hours
+Hours : 30
+Wrong Hours
+Hours : 27
+Wrong Hours
+Hours : 4
+
+Minuts : -18
+Wrong Minuts
+Minuts : -19
+Wrong Minuts
+Minuts : 66
+Wrong Minuts
+Minuts : 89
+Wrong Minuts
+Minuts : 11
+
+Seconds : -15
+Wrong Seconds
+Seconds : -11
+Wrong Seconds
+Seconds : 70
+Wrong Seconds
+Seconds : 87
+Wrong Seconds
+Seconds : 45
+
+Time = 4:11:45</input_output></td>
+
+</tr><tr>
+<td><input_output>-19
+-9
+29
+28
+17
+
+-13
+-4
+98
+94
+20
+
+-14
+-5
+77
+100
+3</input_output></td>
+<td><input_output>Enter a time
+
+Hours : -19
+Wrong Hours
+Hours : -9
+Wrong Hours
+Hours : 29
+Wrong Hours
+Hours : 28
+Wrong Hours
+Hours : 17
+
+Minuts : -13
+Wrong Minuts
+Minuts : -4
+Wrong Minuts
+Minuts : 98
+Wrong Minuts
+Minuts : 94
+Wrong Minuts
+Minuts : 20
+
+Seconds : -14
+Wrong Seconds
+Seconds : -5
+Wrong Seconds
+Seconds : 77
+Wrong Seconds
+Seconds : 100
+Wrong Seconds
+Seconds : 3
+
+Time = 17:20:3</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

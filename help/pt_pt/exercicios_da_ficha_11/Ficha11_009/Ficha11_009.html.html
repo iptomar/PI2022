@@ -1,0 +1,159 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Javascript - HTML - CSS</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_009</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Triângulo - linha e triangulo</h2>
+            <plain>Construa um programa que imprima o triangulo da figura.
+A altura deve ser introduzida pelo utilizador.
+
+Escreva a funcao:
+vazio triangulo(inteiro altura)
+
+Utilize a funcao:
+vazio linha(inteiro n)</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_009.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_009.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_009.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Javascript - HTML - CSS</h1>
+<pre  class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;style&gt;
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        &lt;/style&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;title&gt;Ficha11_009&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;color:green&quot;&gt;Tri&acirc;ngulo - linha e triangulo&lt;/h1&gt;
+        &lt;table&gt; 
+            &lt;tr&gt;
+                &lt;td valign=&quot;top&quot;&gt;
+                    &lt;plain&gt; Construa um programa que imprima o triangulo da figura.
+A altura deve ser introduzida pelo utilizador.
+
+Escreva a funcao:
+vazio triangulo(inteiro altura)
+
+Utilize a funcao:
+vazio linha(inteiro n) 
+                        &lt;br&gt;   
+                        &lt;a  href=&quot;Ficha11_009.html&quot;&gt;Execute &lt;img style=&quot;vertical-align:middle&quot; src=&quot;http://algorithmi.ipt.pt/img/langs/run.png&quot; height=&quot;32&quot; width=&quot;32&quot; &gt;&lt;/a&gt; 
+                    &lt;/plain&gt;
+                &lt;/td&gt; 
+                &lt;td&gt;
+                    &lt;img src=&quot;data:image/jpg;base64,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&quot;&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;pre&gt;
+        &lt;script&gt;
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write(&quot;\n&quot;);
+        document.write(&quot;Altura : &quot; );// print text
+        altura = parseInt(prompt(&quot;Altura : &quot; ,&quot;0&quot;) );
+        
+        document.write(altura + &quot;\n&quot;);// print input 
+        triangulo(altura ) ;
+    }
+
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    //User Defined Functions Code
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    function linha(n) {
+        for( var i = 0; i &lt; n; i = i + 1 ) {
+            document.write(&quot;*&quot; );
+        }
+        document.write(&quot;\n&quot; );
+    }
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    function triangulo(altura) {
+        for( var i = 1; i &lt; altura + 1; i = i + 1 ) {
+            linha(i ) ;
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        &lt;/script&gt;
+        &lt;p style=&quot;color:gray;text-align:right;font-size: small &quot;&gt;Algorithmi 22.05&lt;br&gt;Ant0nio M@nso
+        &lt;/pre&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>    
+<a href="Ficha11_009.html" download>  <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="48" width="48"> Download Ficha11_009.html </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

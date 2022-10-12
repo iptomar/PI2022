@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha10_006.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha10_006.prog" download> Ficha10_006 </a> 
+</td>
+                <td align="center">Normal</td>
+                <td align="center">4.0</td>
+                <td align="center">12/10/2022 19:26:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Tempo válido </h1>
+    <pre>Escreva um programa que solicite ao utilizador um tempo válido.
+Se o utilizador introduzir um valores errados deve ser dadas mensagens de erro.
+
+No final deve ser impresso o tempo no formato H:M:S</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>-1
+4
+100
+56
+-3
+0</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -1
+Horas erradas
+Horas : 4
+
+Minutos : 100
+Minutos errados
+Minutos : 56
+
+Segundos : -3
+Segundos errados
+Segundos : 0
+
+Tempo = 4:56:0</input_output></td>
+
+</tr><tr>
+<td><input_output>-5
+-3
+25
+24
+20
+
+-13
+-1
+85
+99
+5
+
+-14
+-18
+90
+92
+24</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -5
+Horas erradas
+Horas : -3
+Horas erradas
+Horas : 25
+Horas erradas
+Horas : 24
+Horas erradas
+Horas : 20
+
+Minutos : -13
+Minutos errados
+Minutos : -1
+Minutos errados
+Minutos : 85
+Minutos errados
+Minutos : 99
+Minutos errados
+Minutos : 5
+
+Segundos : -14
+Segundos errados
+Segundos : -18
+Segundos errados
+Segundos : 90
+Segundos errados
+Segundos : 92
+Segundos errados
+Segundos : 24
+
+Tempo = 20:5:24</input_output></td>
+
+</tr><tr>
+<td><input_output>-16
+-15
+24
+27
+18
+
+-8
+-8
+87
+99
+40
+
+-7
+-13
+94
+69
+25</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -16
+Horas erradas
+Horas : -15
+Horas erradas
+Horas : 24
+Horas erradas
+Horas : 27
+Horas erradas
+Horas : 18
+
+Minutos : -8
+Minutos errados
+Minutos : -8
+Minutos errados
+Minutos : 87
+Minutos errados
+Minutos : 99
+Minutos errados
+Minutos : 40
+
+Segundos : -7
+Segundos errados
+Segundos : -13
+Segundos errados
+Segundos : 94
+Segundos errados
+Segundos : 69
+Segundos errados
+Segundos : 25
+
+Tempo = 18:40:25</input_output></td>
+
+</tr><tr>
+<td><input_output>-8
+-3
+25
+24
+21
+
+-2
+-18
+82
+75
+41
+
+-20
+-4
+83
+65
+48</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -8
+Horas erradas
+Horas : -3
+Horas erradas
+Horas : 25
+Horas erradas
+Horas : 24
+Horas erradas
+Horas : 21
+
+Minutos : -2
+Minutos errados
+Minutos : -18
+Minutos errados
+Minutos : 82
+Minutos errados
+Minutos : 75
+Minutos errados
+Minutos : 41
+
+Segundos : -20
+Segundos errados
+Segundos : -4
+Segundos errados
+Segundos : 83
+Segundos errados
+Segundos : 65
+Segundos errados
+Segundos : 48
+
+Tempo = 21:41:48</input_output></td>
+
+</tr><tr>
+<td><input_output>-16
+-16
+25
+29
+9
+
+-2
+-19
+64
+81
+12
+
+-17
+-20
+65
+76
+10</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -16
+Horas erradas
+Horas : -16
+Horas erradas
+Horas : 25
+Horas erradas
+Horas : 29
+Horas erradas
+Horas : 9
+
+Minutos : -2
+Minutos errados
+Minutos : -19
+Minutos errados
+Minutos : 64
+Minutos errados
+Minutos : 81
+Minutos errados
+Minutos : 12
+
+Segundos : -17
+Segundos errados
+Segundos : -20
+Segundos errados
+Segundos : 65
+Segundos errados
+Segundos : 76
+Segundos errados
+Segundos : 10
+
+Tempo = 9:12:10</input_output></td>
+
+</tr><tr>
+<td><input_output>-17
+-13
+26
+26
+10
+
+-5
+-13
+69
+68
+32
+
+-8
+-20
+75
+62
+10</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -17
+Horas erradas
+Horas : -13
+Horas erradas
+Horas : 26
+Horas erradas
+Horas : 26
+Horas erradas
+Horas : 10
+
+Minutos : -5
+Minutos errados
+Minutos : -13
+Minutos errados
+Minutos : 69
+Minutos errados
+Minutos : 68
+Minutos errados
+Minutos : 32
+
+Segundos : -8
+Segundos errados
+Segundos : -20
+Segundos errados
+Segundos : 75
+Segundos errados
+Segundos : 62
+Segundos errados
+Segundos : 10
+
+Tempo = 10:32:10</input_output></td>
+
+</tr><tr>
+<td><input_output>-20
+-6
+30
+27
+1
+
+-4
+-17
+89
+85
+46
+
+-2
+-14
+75
+67
+6</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -20
+Horas erradas
+Horas : -6
+Horas erradas
+Horas : 30
+Horas erradas
+Horas : 27
+Horas erradas
+Horas : 1
+
+Minutos : -4
+Minutos errados
+Minutos : -17
+Minutos errados
+Minutos : 89
+Minutos errados
+Minutos : 85
+Minutos errados
+Minutos : 46
+
+Segundos : -2
+Segundos errados
+Segundos : -14
+Segundos errados
+Segundos : 75
+Segundos errados
+Segundos : 67
+Segundos errados
+Segundos : 6
+
+Tempo = 1:46:6</input_output></td>
+
+</tr><tr>
+<td><input_output>-11
+-6
+30
+30
+10
+
+-5
+-7
+97
+98
+49
+
+-4
+-11
+98
+100
+3</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -11
+Horas erradas
+Horas : -6
+Horas erradas
+Horas : 30
+Horas erradas
+Horas : 30
+Horas erradas
+Horas : 10
+
+Minutos : -5
+Minutos errados
+Minutos : -7
+Minutos errados
+Minutos : 97
+Minutos errados
+Minutos : 98
+Minutos errados
+Minutos : 49
+
+Segundos : -4
+Segundos errados
+Segundos : -11
+Segundos errados
+Segundos : 98
+Segundos errados
+Segundos : 100
+Segundos errados
+Segundos : 3
+
+Tempo = 10:49:3</input_output></td>
+
+</tr><tr>
+<td><input_output>-16
+-11
+27
+24
+13
+
+-17
+-2
+68
+69
+6
+
+-7
+-7
+79
+70
+11</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -16
+Horas erradas
+Horas : -11
+Horas erradas
+Horas : 27
+Horas erradas
+Horas : 24
+Horas erradas
+Horas : 13
+
+Minutos : -17
+Minutos errados
+Minutos : -2
+Minutos errados
+Minutos : 68
+Minutos errados
+Minutos : 69
+Minutos errados
+Minutos : 6
+
+Segundos : -7
+Segundos errados
+Segundos : -7
+Segundos errados
+Segundos : 79
+Segundos errados
+Segundos : 70
+Segundos errados
+Segundos : 11
+
+Tempo = 13:6:11</input_output></td>
+
+</tr><tr>
+<td><input_output>-11
+-16
+27
+30
+22
+
+-3
+-16
+69
+80
+23
+
+-16
+-11
+89
+64
+45</input_output></td>
+<td><input_output>Introduza um tempo
+
+Horas : -11
+Horas erradas
+Horas : -16
+Horas erradas
+Horas : 27
+Horas erradas
+Horas : 30
+Horas erradas
+Horas : 22
+
+Minutos : -3
+Minutos errados
+Minutos : -16
+Minutos errados
+Minutos : 69
+Minutos errados
+Minutos : 80
+Minutos errados
+Minutos : 23
+
+Segundos : -16
+Segundos errados
+Segundos : -11
+Segundos errados
+Segundos : 89
+Segundos errados
+Segundos : 64
+Segundos errados
+Segundos : 45
+
+Tempo = 22:23:45</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

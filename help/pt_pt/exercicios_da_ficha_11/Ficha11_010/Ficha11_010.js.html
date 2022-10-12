@@ -1,0 +1,94 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>JavaScript</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_010</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Quadrado de Asteriscos</h2>
+            <plain>Construa um algoritmo que imprima o quadrado da figura.
+A altura deve ser introduzida pelo utilizador.
+ 
+Utilize a funcao:
+ vazio linha(inteiro n)
+
+Escreva a funcao:
+ vazio Quadrado(inteiro n)</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>JavaScript</h1>
+<pre  class="prettyprint">
+// Programador           -
+
+//Main Function
+function main() {
+    document.write(&quot;Altura : &quot; );// print text
+    altura = parseInt(prompt(&quot;Altura : &quot; ,&quot;0&quot;) );
+    
+    document.write(altura + &quot;\n&quot;);// print input 
+    quadrado(altura ) ;
+}
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+//User Defined Functions Code
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+function linha(n) {
+    for( var i = 0; i &lt; n; i = i + 1 ) {
+        document.write(&quot;*&quot; );
+    }
+    document.write(&quot;\n&quot; );
+}
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+function quadrado(altura) {
+    for( var i = 1; i &lt; altura + 1; i = i + 1 ) {
+        linha(altura ) ;
+    }
+}
+
+//JavaScript  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:11
+
+</pre>    
+<a href="Ficha11_010.js" download>  <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="48" width="48"> Download Ficha11_010.js </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

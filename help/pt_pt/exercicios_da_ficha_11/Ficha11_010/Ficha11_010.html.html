@@ -1,0 +1,159 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>Javascript - HTML - CSS</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_010</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Quadrado de Asteriscos</h2>
+            <plain>Construa um algoritmo que imprima o quadrado da figura.
+A altura deve ser introduzida pelo utilizador.
+ 
+Utilize a funcao:
+ vazio linha(inteiro n)
+
+Escreva a funcao:
+ vazio Quadrado(inteiro n)</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_010.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_010.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_010.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>Javascript - HTML - CSS</h1>
+<pre  class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;style&gt;
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        &lt;/style&gt;
+        &lt;!------------- CSS - Cascading Style Sheets code ---------------------&gt;
+        &lt;title&gt;Ficha11_010&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;color:green&quot;&gt;Quadrado de Asteriscos&lt;/h1&gt;
+        &lt;table&gt; 
+            &lt;tr&gt;
+                &lt;td valign=&quot;top&quot;&gt;
+                    &lt;plain&gt; Construa um algoritmo que imprima o quadrado da figura.
+A altura deve ser introduzida pelo utilizador.
+ 
+Utilize a funcao:
+ vazio linha(inteiro n)
+
+Escreva a funcao:
+ vazio Quadrado(inteiro n) 
+                        &lt;br&gt;   
+                        &lt;a  href=&quot;Ficha11_010.html&quot;&gt;Execute &lt;img style=&quot;vertical-align:middle&quot; src=&quot;http://algorithmi.ipt.pt/img/langs/run.png&quot; height=&quot;32&quot; width=&quot;32&quot; &gt;&lt;/a&gt; 
+                    &lt;/plain&gt;
+                &lt;/td&gt; 
+                &lt;td&gt;
+                    &lt;img src=&quot;data:image/jpg;base64,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&quot;&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;pre&gt;
+        &lt;script&gt;
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write(&quot;\n&quot;);
+        document.write(&quot;Altura : &quot; );// print text
+        altura = parseInt(prompt(&quot;Altura : &quot; ,&quot;0&quot;) );
+        
+        document.write(altura + &quot;\n&quot;);// print input 
+        quadrado(altura ) ;
+    }
+
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    //User Defined Functions Code
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    function linha(n) {
+        for( var i = 0; i &lt; n; i = i + 1 ) {
+            document.write(&quot;*&quot; );
+        }
+        document.write(&quot;\n&quot; );
+    }
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    function quadrado(altura) {
+        for( var i = 1; i &lt; altura + 1; i = i + 1 ) {
+            linha(altura ) ;
+        }
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        &lt;/script&gt;
+        &lt;p style=&quot;color:gray;text-align:right;font-size: small &quot;&gt;Algorithmi 22.05&lt;br&gt;Ant0nio M@nso
+        &lt;/pre&gt; 
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>    
+<a href="Ficha11_010.html" download>  <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="48" width="48"> Download Ficha11_010.html </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

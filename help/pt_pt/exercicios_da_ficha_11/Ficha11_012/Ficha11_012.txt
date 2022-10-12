@@ -1,0 +1,24 @@
+// Programador           -
+
+    inicio ProgramaPrincipal
+        ler inteiro altura "Altura : "
+        ler texto c "Caractér : "
+        executar trianguloC(altura , c)
+    fim ProgramaPrincipal
+
+    funcao vazio linhaC(inteiro n ,  texto c)
+        iterar inteiro i de 0 até n  passo 1
+            escrever c
+        fim iterar
+        escrever "\n"
+    fim linhaC
+
+    funcao vazio trianguloC(inteiro altura ,  texto c)
+        iterar inteiro i de 1 até altura + 1  passo 1
+            executar linhaC(i , c)
+        fim iterar
+    fim trianguloC
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:12

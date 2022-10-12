@@ -1,0 +1,106 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>C#</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_017</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Pinheiro</h2>
+            <plain>Construa um algoritmo que imprima na consola a figura seguinte.
+O numero de copas, a altura e o caracter devem ser introduzidos pelo utilizador.</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_017.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_017.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>C#</h1>
+<pre  class="prettyprint">
+// Programador           -
+
+using System.IO;
+using System;
+public class Ficha11_017 {
+
+    //Main Function
+    static void Main() {
+        Console.Write(&quot;Copas    : &quot; );
+        int copas = int.Parse(Console.ReadLine());
+        Console.Write(&quot;Altura   : &quot; );
+        int alt = int.Parse(Console.ReadLine());
+        Console.Write(&quot;Caract&eacute;r : &quot; );
+        String char = Console.ReadLine();
+        pinheiro(copas , alt , char ) ;
+    }
+
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    //User Defined Functions Code
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    public static void linhaCopa( int sp , int chars , String txt){
+        for( int i = 0; i &lt; sp; i = i + 1 ) {
+            Console.Write(&quot; &quot; );
+        }
+        for( int i = 0; i &lt; chars; i = i + 1 ) {
+            Console.Write(txt );
+        }
+        Console.Write(&quot;\n&quot; );
+    }
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    public static void copa( int alt , String txt){
+        for( int i = 1; i &lt; alt + 1; i = i + 1 ) {
+            int sp = alt - i ;
+            int chrs1 = i * 2 - 1 ;
+            linhaCopa(sp , chrs1 , txt ) ;
+        }
+    }
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    public static void pinheiro( int c , int n , String txt){
+        for( int i = 0; i &lt; c; i = i + 1 ) {
+            copa(n , txt ) ;
+        }
+    }
+
+}
+//C#  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:16
+
+</pre>    
+<a href="Ficha11_017.cs" download>  <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="48" width="48"> Download Ficha11_017.cs </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+// Programador           -
+
+    inicio ProgramaPrincipal
+        executar linha(3)
+        executar linha(5)
+        executar linha(7)
+        executar linha(5)
+        executar linha(3)
+    fim ProgramaPrincipal
+
+    funcao vazio linha(inteiro n)
+        iterar inteiro i de 0 até n  passo 1
+            escrever "*"
+        fim iterar
+        escrever "\n"
+    fim linha
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:09

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha11_013.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha11_013.prog" download> Ficha11_013 </a> 
+</td>
+                <td align="center">Normal</td>
+                <td align="center">4.0</td>
+                <td align="center">12/10/2022 19:37:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Triângulo Invertido</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Construa um algoritmo que imprima o triângulo da figura.
+A altura e o caracter devem ser introduzidos pelo utilizador.
+
+Utilize a funcao:
+  vazio linhaC(inteiro n ,  texto c)
+
+Escreva a funcao:
+ vazio trianguloInv(inteiro altura ,  texto c)</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png">
+<img src="flowchart1.png">
+<img src="flowchart2.png"></td>
+            <td valign=top><pre>    inicio ProgramaPrincipal
+        ler inteiro altura "Altura : "
+        ler texto c "Caractér : "
+        executar trianguloC(altura , c)
+    fim ProgramaPrincipal
+
+    funcao vazio linhaC(inteiro n ,  texto c)
+        iterar inteiro i de 0 até n  passo 1
+            escrever c
+        fim iterar
+        escrever "\n"
+    fim linhaC
+
+    funcao vazio trianguloC(inteiro altura ,  texto c)
+        iterar inteiro i de 0 até altura  passo 1
+            executar linhaC(altura - i , c)
+        fim iterar
+    fim trianguloC
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha11_013.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_013.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_013.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>8
+#</input_output></td>
+<td><input_output>Altura : 8
+Caractér : #
+########
+#######
+######
+#####
+####
+###
+##
+#</input_output></td>
+
+</tr><tr>
+<td><input_output>5
+;</input_output></td>
+<td><input_output>Altura : 5
+Caractér : ;
+;;;;;
+;;;;
+;;;
+;;
+;</input_output></td>
+
+</tr><tr>
+<td><input_output>13
+:</input_output></td>
+<td><input_output>Altura : 13
+Caractér : :
+:::::::::::::
+::::::::::::
+:::::::::::
+::::::::::
+:::::::::
+::::::::
+:::::::
+::::::
+:::::
+::::
+:::
+::
+:</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+H</input_output></td>
+<td><input_output>Altura : 3
+Caractér : H
+HHH
+HH
+H</input_output></td>
+
+</tr><tr>
+<td><input_output>9
+7</input_output></td>
+<td><input_output>Altura : 9
+Caractér : 7
+777777777
+77777777
+7777777
+777777
+77777
+7777
+777
+77
+7</input_output></td>
+
+</tr><tr>
+<td><input_output>4
+6</input_output></td>
+<td><input_output>Altura : 4
+Caractér : 6
+6666
+666
+66
+6</input_output></td>
+
+</tr><tr>
+<td><input_output>6
+G</input_output></td>
+<td><input_output>Altura : 6
+Caractér : G
+GGGGGG
+GGGGG
+GGGG
+GGG
+GG
+G</input_output></td>
+
+</tr><tr>
+<td><input_output>13
+T</input_output></td>
+<td><input_output>Altura : 13
+Caractér : T
+TTTTTTTTTTTTT
+TTTTTTTTTTTT
+TTTTTTTTTTT
+TTTTTTTTTT
+TTTTTTTTT
+TTTTTTTT
+TTTTTTT
+TTTTTT
+TTTTT
+TTTT
+TTT
+TT
+T</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+9</input_output></td>
+<td><input_output>Altura : 3
+Caractér : 9
+999
+99
+9</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+6</input_output></td>
+<td><input_output>Altura : 2
+Caractér : 6
+66
+6</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>6
+66666666
+6666666
+666666
+66666
+6666
+666
+66
+6</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

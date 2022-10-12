@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <style>
+
+            plain {
+                white-space: pre-wrap;
+                font-family: monospace;
+                font-size: large;
+            }
+            pre {
+                color: #33FF33;                
+                font-size: large;
+                background-color: #282828;
+                border-color: #c0c0c0;
+                border-style: ridge;
+                border-width: 5pt;
+                padding: 10pt;
+            }
+            a:link, a:visited {
+               background-color: white;
+               color: black;
+               border: 2px solid green;
+               padding: 10px 20px;
+               text-align: center;
+               text-decoration: none;
+            }
+            a:hover, a:active {
+              background-color: green;
+              color: white;
+            } 
+        </style>
+        <!------------- CSS - Cascading Style Sheets code --------------------->
+        <title>Ficha11_007</title>
+    </head>
+    <body>
+        <h1 style="color:green">Figura - com parâmetros</h1>
+        <table> 
+            <tr>
+                <td valign="top">
+                    <plain> Construa um algoritmo que imprima a figura seguinte 
+                        <br>   
+                        <a  href="Ficha11_007.html">Execute <img style="vertical-align:middle" src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32" ></a> 
+                    </plain>
+                </td> 
+                <td>
+                    <img src="data:image/jpg;base64,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">
+                </td>
+            </tr>
+        </table>
+        <pre>
+        <script>
+//----------------------------- Javascript Code -------------------------------
+//Main Function
+        function main() {
+	document.write("\n");
+        linha(3 ) ;
+        linha(5 ) ;
+        linha(7 ) ;
+        linha(5 ) ;
+        linha(3 ) ;
+    }
+
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    //User Defined Functions Code
+    //::::::::::::::::::::::::::::::::::::::::::::::::::
+    function linha(n) {
+        for( var i = 0; i < n; i = i + 1 ) {
+            document.write("*" );
+        }
+        document.write("\n" );
+    }
+
+main()
+//----------------------------- Javascript Code -------------------------------
+        </script>
+        <p style="color:gray;text-align:right;font-size: small ">Algorithmi 22.05<br>Ant0nio M@nso
+        </pre> 
+    </body>
+</html>

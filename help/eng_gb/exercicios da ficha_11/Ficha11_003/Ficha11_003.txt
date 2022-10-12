@@ -1,0 +1,16 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    inicio ProgramaPrincipal
+        iterar inteiro i de 0 até 10  passo 1
+            executar funcao1()
+            escrever "\n"
+        fim iterar
+    fim ProgramaPrincipal
+
+    funcao vazio funcao1()
+        escrever "Olá mundo das funções"
+    fim funcao1
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:22

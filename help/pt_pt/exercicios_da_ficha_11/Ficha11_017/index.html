@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha11_017.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha11_017.prog" download> Ficha11_017 </a> 
+</td>
+                <td align="center">Desafiador</td>
+                <td align="center">6.0</td>
+                <td align="center">12/10/2022 19:37:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Pinheiro</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Construa um algoritmo que imprima na consola a figura seguinte.
+O numero de copas, a altura e o caracter devem ser introduzidos pelo utilizador.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png">
+<img src="flowchart1.png">
+<img src="flowchart2.png">
+<img src="flowchart3.png"></td>
+            <td valign=top><pre>    inicio ProgramaPrincipal
+        ler inteiro copas "Copas    : "
+        ler inteiro alt "Altura   : "
+        ler texto char "Caractér : "
+        executar pinheiro(copas , alt , char)
+    fim ProgramaPrincipal
+
+    funcao vazio linhaCopa(inteiro sp ,  inteiro chars ,  texto txt)
+        iterar inteiro i de 0 até sp  passo 1
+            escrever " "
+        fim iterar
+        iterar inteiro i de 0 até chars  passo 1
+            escrever txt
+        fim iterar
+        escrever "\n"
+    fim linhaCopa
+
+    funcao vazio copa(inteiro alt ,  texto txt)
+        iterar inteiro i de 1 até alt + 1  passo 1
+            definir inteiro sp = alt - i
+            definir inteiro chrs1 = i * 2 - 1
+            executar linhaCopa(sp , chrs1 , txt)
+        fim iterar
+    fim copa
+
+    funcao vazio pinheiro(inteiro c ,  inteiro n ,  texto txt)
+        iterar inteiro i de 0 até c  passo 1
+            executar copa(n , txt)
+        fim iterar
+    fim pinheiro
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha11_017.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_017.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_017.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>2
+3
+X</input_output></td>
+<td><input_output>Copas    : 2
+Altura   : 3
+Caractér : X
+  X
+ XXX
+XXXXX
+  X
+ XXX
+XXXXX</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+3
+:</input_output></td>
+<td><input_output>Copas    : 1
+Altura   : 3
+Caractér : :
+  :
+ :::
+:::::</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+2
+8</input_output></td>
+<td><input_output>Copas    : 1
+Altura   : 2
+Caractér : 8
+ 8
+888</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+4
+G</input_output></td>
+<td><input_output>Copas    : 3
+Altura   : 4
+Caractér : G
+   G
+  GGG
+ GGGGG
+GGGGGGG
+   G
+  GGG
+ GGGGG
+GGGGGGG
+   G
+  GGG
+ GGGGG
+GGGGGGG</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+2
+6</input_output></td>
+<td><input_output>Copas    : 2
+Altura   : 2
+Caractér : 6
+ 6
+666
+ 6
+666</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+2
+5</input_output></td>
+<td><input_output>Copas    : 2
+Altura   : 2
+Caractér : 5
+ 5
+555
+ 5
+555</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+2
+F</input_output></td>
+<td><input_output>Copas    : 2
+Altura   : 2
+Caractér : F
+ F
+FFF
+ F
+FFF</input_output></td>
+
+</tr><tr>
+<td><input_output>2
+4
+T</input_output></td>
+<td><input_output>Copas    : 2
+Altura   : 4
+Caractér : T
+   T
+  TTT
+ TTTTT
+TTTTTTT
+   T
+  TTT
+ TTTTT
+TTTTTTT</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+4
+8</input_output></td>
+<td><input_output>Copas    : 3
+Altura   : 4
+Caractér : 8
+   8
+  888
+ 88888
+8888888
+   8
+  888
+ 88888
+8888888
+   8
+  888
+ 88888
+8888888</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+4
+5</input_output></td>
+<td><input_output>Copas    : 1
+Altura   : 4
+Caractér : 5
+   5
+  555
+ 55555
+5555555</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html> Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

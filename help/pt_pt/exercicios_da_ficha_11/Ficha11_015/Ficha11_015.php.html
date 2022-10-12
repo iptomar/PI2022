@@ -1,0 +1,112 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>PHP 5.3 +</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_015</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Caixa de caracteres</h2>
+            <plain>Construa um algoritmo que permita desenhar na consola uma caixa igual á da figura figura.
+A altura, largura, caracter limite e caracter interior devem ser introduzidos pelo utilizador.</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_015.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_015.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_015.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>PHP 5.3 +</h1>
+<pre  class="prettyprint">
+&lt;?php
+// Programador           -
+
+//Main Function
+function main() {
+    echo  &quot;Altura   : &quot; ;
+    $altura = intval(isset($_POST[&quot;altura&quot;])? $_POST[&quot;altura&quot;] : isset($_GET[&quot;altura&quot;]) ? $_GET[&quot;altura&quot;] : 0);
+    
+    echo $altura . &quot;&lt;br/&gt;&quot;;// print input 
+    echo  &quot;Largura  : &quot; ;
+    $largura = intval(isset($_POST[&quot;largura&quot;])? $_POST[&quot;largura&quot;] : isset($_GET[&quot;largura&quot;]) ? $_GET[&quot;largura&quot;] : 0);
+    
+    echo $largura . &quot;&lt;br/&gt;&quot;;// print input 
+    echo  &quot;Limite   : &quot; ;
+    $limite = isset($_POST[&quot;$limite&quot;])? $_POST[&quot;$limite&quot;] : isset($_GET[&quot;$limite&quot;]) ? $_GET[&quot;$limite&quot;] : 0;
+    echo $limite . &quot;&lt;br/&gt;&quot;;// print input 
+    echo  &quot;Interior : &quot; ;
+    $interior = isset($_POST[&quot;$interior&quot;])? $_POST[&quot;$interior&quot;] : isset($_GET[&quot;$interior&quot;]) ? $_GET[&quot;$interior&quot;] : 0;
+    echo $interior . &quot;&lt;br/&gt;&quot;;// print input 
+    caixa($largura , $altura , $limite , $interior ) ;
+}
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+//User Defined Functions Code
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+function linha($n, $c) {
+    for( $i = 0; $i &lt; $n; $i = $i + 1 ) {
+        echo $c  ;
+    }
+    echo  &quot;\n&quot; ;
+}
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+function interior($n, $cl, $ci) {
+    echo $cl  ;
+    for( $i = 1; $i &lt; $n - 1; $i = $i + 1 ) {
+        echo $ci  ;
+    }
+    echo $cl  .  &quot;\n&quot; ;
+}
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+function caixa($larg, $alt, $cl, $ci) {
+    linha($larg , $cl ) ;
+    for( $i = 1; $i &lt; $alt - 1; $i = $i + 1 ) {
+        interior($larg , $cl , $ci ) ;
+    }
+    linha($larg , $cl ) ;
+}
+
+main();
+
+//PHP 5.3 +  - Automatic translated by Algorithmi 22.05
+//(c) Lu&iacute;s Lopes 	quarta, 2022 out 12 20:14
+
+?&gt;
+</pre>    
+<a href="Ficha11_015.php" download>  <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="48" width="48"> Download Ficha11_015.php </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

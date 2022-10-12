@@ -1,0 +1,106 @@
+
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='http://algorithmi.ipt.pt/lib/google-code-prettify/sons-of-obsidian.css' rel='stylesheet' type='text/css'/>  
+        <script src='http://algorithmi.ipt.pt/lib/google-code-prettify/run_prettify.js'></script>	
+
+        <title>pseudocode</title>
+
+
+
+    </head>
+    <body>
+<h1>Ficha11_018</h1>
+<table   style="width:100%" >
+            <tbody>
+                <tr>
+                    <td valign=top> 
+                        <h2>Árvore</h2>
+            <plain>Construa um programa que desenhe a árvore da figura seguinte onde a copa e o tronco têm a mesma altura. 
+A altura da árvore e o caracter devem ser solicitados ao utilizador.
+A altura da arvore e um numero par e maior que 2.</plain>
+        </td>
+        <td valign=top>     <img src="folder.jpg">                        
+        </td>                         
+    </tr>
+</tbody>
+</table>
+
+<hr>   
+
+<a  target="_blank" href="Ficha11_018.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_018.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+  
+<hr>
+<h1>pseudocode</h1>
+<pre  class="prettyprint">
+// Programador           -
+
+    inicio 
+        inteiro alt
+        enquanto verdadeiro faz
+            ler alt &quot;Altura   : &quot;
+            se alt % 2 == 0 &amp;&amp; alt &gt;= 4 ent&atilde;o
+                quebrar
+            fim
+            escrever &quot;\tValor errado\n&quot;
+        fim
+        ler texto txt &quot;Caract&eacute;r : &quot;
+        copa(alt / 2 , txt)
+        tronco(alt / 2 , txt)
+    fim 
+
+    funcao vazio linhaCopa(inteiro sp ,  inteiro chars ,  texto txt)
+        iterar inteiro i de 0 at&eacute; sp  passo 1
+            escrever &quot; &quot;
+        fim
+        iterar inteiro i de 0 at&eacute; chars  passo 1
+            escrever txt
+        fim
+        escrever &quot;\n&quot;
+    fim 
+
+    funcao vazio copa(inteiro alt ,  texto txt)
+        iterar inteiro i de 1 at&eacute; alt + 1  passo 1
+            inteiro sp = alt - i
+            inteiro chrs1 = i * 2 - 1
+            linhaCopa(sp , chrs1 , txt)
+        fim
+    fim 
+
+    funcao vazio tronco(inteiro n ,  texto ch)
+        iterar inteiro i de 0 at&eacute; n  passo 1
+            iterar inteiro j de 0 at&eacute; n - 1  passo 1
+                escrever &quot; &quot;
+            fim
+            escrever ch + &quot;\n&quot;
+        fim
+    fim 
+
+
+//pseudocode  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:17
+
+</pre>    
+<a href="Ficha11_018.alg" download>  <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="48" width="48"> Download Ficha11_018.alg </a> 
+<font face="verdana" color=#C8C8C8 size=2>
+<hr> Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

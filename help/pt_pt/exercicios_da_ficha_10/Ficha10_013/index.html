@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha10_013.prog </title>
+    </head>
+    <body>     
+        <table   style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha10_013.prog" download> Ficha10_013 </a> 
+</td>
+                <td align="center">Desafiador</td>
+                <td align="center">5.0</td>
+                <td align="center">12/10/2022 19:26:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>  
+        </table>
+
+        <h1>Soma dos ímpares </h1>
+    <pre>Construa um programa que solicte ao utlizador uma sequência de números terminada por zero.
+O programa deve imprimir a soma de todos os números ímpares sempre que um número ímpar for introduzido.</pre>
+    <br><br>
+    <img src="folder.jpg">
+    <table   style="width:100%" >
+        <tbody>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>                
+            <tr>
+<td><input_output>1
+3
+4
+-3
+-5
+4
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :1
+		Soma ímpares = 1
+Número :3
+		Soma ímpares = 4
+Número :4
+Número :-3
+		Soma ímpares = 1
+Número :-5
+		Soma ímpares = -4
+Número :4
+Número :0
+Fim da sequência
+
+Total = -4</input_output></td>
+
+</tr><tr>
+<td><input_output>1
+7
+5
+5
+-3
+-3
+-3
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :1
+		Soma ímpares = 1
+Número :7
+		Soma ímpares = 8
+Número :5
+		Soma ímpares = 13
+Número :5
+		Soma ímpares = 18
+Número :-3
+		Soma ímpares = 15
+Número :-3
+		Soma ímpares = 12
+Número :-3
+		Soma ímpares = 9
+Número :0
+Fim da sequência
+
+Total = 9</input_output></td>
+
+</tr><tr>
+<td><input_output>-13
+-15
+-9
+-14
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :-13
+		Soma ímpares = -13
+Número :-15
+		Soma ímpares = -28
+Número :-9
+		Soma ímpares = -37
+Número :-14
+Número :0
+Fim da sequência
+
+Total = -37</input_output></td>
+
+</tr><tr>
+<td><input_output>20
+13
+6
+18
+13
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :20
+Número :13
+		Soma ímpares = 13
+Número :6
+Número :18
+Número :13
+		Soma ímpares = 26
+Número :0
+Fim da sequência
+
+Total = 26</input_output></td>
+
+</tr><tr>
+<td><input_output>-4
+-2
+4
+4
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :-4
+Número :-2
+Número :4
+Número :4
+Número :0
+Fim da sequência
+
+Total = 0</input_output></td>
+
+</tr><tr>
+<td><input_output>7
+10
+3
+6
+-5
+-4
+-6
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :7
+		Soma ímpares = 7
+Número :10
+Número :3
+		Soma ímpares = 10
+Número :6
+Número :-5
+		Soma ímpares = 5
+Número :-4
+Número :-6
+Número :0
+Fim da sequência
+
+Total = 5</input_output></td>
+
+</tr><tr>
+<td><input_output>-4
+-8
+-13
+-10
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :-4
+Número :-8
+Número :-13
+		Soma ímpares = -13
+Número :-10
+Número :0
+Fim da sequência
+
+Total = -13</input_output></td>
+
+</tr><tr>
+<td><input_output>6
+9
+18
+16
+12
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :6
+Número :9
+		Soma ímpares = 9
+Número :18
+Número :16
+Número :12
+Número :0
+Fim da sequência
+
+Total = 9</input_output></td>
+
+</tr><tr>
+<td><input_output>-2
+-3
+9
+10
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :-2
+Número :-3
+		Soma ímpares = -3
+Número :9
+		Soma ímpares = 6
+Número :10
+Número :0
+Fim da sequência
+
+Total = 6</input_output></td>
+
+</tr><tr>
+<td><input_output>7
+3
+6
+2
+-5
+-1
+-7
+0</input_output></td>
+<td><input_output>Soma dos números ímpares
+
+Número :7
+		Soma ímpares = 7
+Número :3
+		Soma ímpares = 10
+Número :6
+Número :2
+Número :-5
+		Soma ímpares = 5
+Número :-1
+		Soma ímpares = 4
+Número :-7
+		Soma ímpares = -3
+Número :0
+Fim da sequência
+
+Total = -3</input_output></td>
+
+</tr>		
+        </tbody>
+    </table>
+    <hr>
+    <font face="verdana" color=#C8C8C8 size=2>
+    Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>

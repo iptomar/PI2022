@@ -1,0 +1,19 @@
+// Programador          Ant0ni0 M@ns0 - Ant0ni0 M@ns0
+
+    inicio ProgramaPrincipal
+        ler inteiro Height "height : "
+        iterar inteiro i de 1 até Height + 1  passo 1
+            executar line(i)
+        fim iterar
+    fim ProgramaPrincipal
+
+    funcao vazio line(inteiro n)
+        iterar inteiro i de 0 até n  passo 1
+            escrever "*"
+        fim iterar
+        escrever "\n"
+    fim line
+
+
+//Pseudocódigo  - Automatic translated by Algorithmi 22.05
+//(c) Ant0nio M@nso 	quarta, 2022 out 12 20:22

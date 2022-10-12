@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title> Ficha11_018.prog </title>
+    </head>
+    <body>
+        <table  style="width:100%" >
+            <tr>
+                <th>Exercício</th> <th>Dificuldade</th><th>Pontos</th><th>Data limite</th><th>Créditos</th>
+            </tr>   
+            <tr bgcolor = #dddddd>
+                <td align="center"><a href="Ficha11_018.prog" download> Ficha11_018 </a> 
+</td>
+                <td align="center">Desafiador</td>
+                <td align="center">6.0</td>
+                <td align="center">12/10/2022 19:37:00</td>
+                <td align="center">(c)M@nso 2021</td>
+            </tr>   
+        </table>
+        <h1>Árvore</h1>
+        <table  style="width:100%" >
+            <tbody>
+                <tr>
+                    <th>Problema</th>
+                    <th>Fluxograma</th>	
+                    <th>Algorithmi</th>		  
+
+                </tr>
+                <tr>
+                    <td valign=top><plain>Construa um programa que desenhe a árvore da figura seguinte onde a copa e o tronco têm a mesma altura. 
+A altura da árvore e o caracter devem ser solicitados ao utilizador.
+A altura da arvore e um numero par e maior que 2.</plain><br><br><img src="folder.jpg"></td> 
+            <td  valign=top>
+<img src="flowchart0.png">
+<img src="flowchart1.png">
+<img src="flowchart2.png">
+<img src="flowchart3.png"></td>
+            <td valign=top><pre>    inicio ProgramaPrincipal
+        definir inteiro alt = 0
+        enquanto verdadeiro faz
+            ler alt "Altura   : "
+            se alt % 2 == 0 && alt >= 4 então
+                quebrar
+            fim se
+            escrever "\tValor errado\n"
+        fim enquanto
+        ler texto txt "Caractér : "
+        executar copa(alt / 2 , txt)
+        executar tronco(alt / 2 , txt)
+    fim ProgramaPrincipal
+
+    funcao vazio linhaCopa(inteiro sp ,  inteiro chars ,  texto txt)
+        iterar inteiro i de 0 até sp  passo 1
+            escrever " "
+        fim iterar
+        iterar inteiro i de 0 até chars  passo 1
+            escrever txt
+        fim iterar
+        escrever "\n"
+    fim linhaCopa
+
+    funcao vazio copa(inteiro alt ,  texto txt)
+        iterar inteiro i de 1 até alt + 1  passo 1
+            definir inteiro sp = alt - i
+            definir inteiro chrs1 = i * 2 - 1
+            executar linhaCopa(sp , chrs1 , txt)
+        fim iterar
+    fim copa
+
+    funcao vazio tronco(inteiro n ,  texto ch)
+        iterar inteiro i de 0 até n  passo 1
+            iterar inteiro j de 0 até n - 1  passo 1
+                escrever " "
+            fim iterar
+            escrever ch + "\n"
+        fim iterar
+    fim tronco
+
+</pre></td>                    
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<a  target="_blank" href="Ficha11_018.html"><img src="http://algorithmi.ipt.pt/img/langs/run.png" height="32" width="32"></a> 
+
+<a href="index.html"><img src="http://algorithmi.ipt.pt/img/langs/solution.png" height="32" width="32"></a> 
+<a href="Ficha11_018.alg.html"> <img src="http://algorithmi.ipt.pt/img/langs/alg.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.txt.html"> <img src="http://algorithmi.ipt.pt/img/langs/txt.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.py.html"> <img src="http://algorithmi.ipt.pt/img/langs/py.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.java.html"> <img src="http://algorithmi.ipt.pt/img/langs/java.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.c.html"> <img src="http://algorithmi.ipt.pt/img/langs/c.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.cpp.html"> <img src="http://algorithmi.ipt.pt/img/langs/cpp.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.cs.html"> <img src="http://algorithmi.ipt.pt/img/langs/cs.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.php.html"> <img src="http://algorithmi.ipt.pt/img/langs/php.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.js.html"> <img src="http://algorithmi.ipt.pt/img/langs/js.png" height="32" width="32"> </a> 
+<a href="Ficha11_018.html.html"> <img src="http://algorithmi.ipt.pt/img/langs/html.png" height="32" width="32"> </a> 
+
+<hr>
+<table   style="width:100%" >
+    <tbody>
+        <tr>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+<td><input_output>2
+3
+6
+A</input_output></td>
+<td><input_output>Altura   : 2
+	Valor errado
+Altura   : 3
+	Valor errado
+Altura   : 6
+Caractér : A
+  A
+ AAA
+AAAAA
+  A
+  A
+  A</input_output></td>
+
+</tr><tr>
+<td><input_output>5
+-1
+5
+5
+5
+6
+6
+5
+4
+4
+5
+:</input_output></td>
+<td><input_output>Altura   : 5
+	Valor errado
+Altura   : -1
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 6
+Caractér : 6
+  6
+ 666
+66666
+  6
+  6
+  6</input_output></td>
+
+</tr><tr>
+<td><input_output>-7
+5
+5
+5
+5
+6
+6
+4
+4
+8</input_output></td>
+<td><input_output>Altura   : -7
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 6
+Caractér : 6
+  6
+ 666
+66666
+  6
+  6
+  6</input_output></td>
+
+</tr><tr>
+<td><input_output>7
+5
+9
+5
+5
+4
+6
+6
+4
+4
+6
+G</input_output></td>
+<td><input_output>Altura   : 7
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 9
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 4
+Caractér : 6
+ 6
+666
+ 6
+ 6</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+5
+5
+4
+4
+5
+4
+4
+5
+5
+6</input_output></td>
+<td><input_output>Altura   : -1
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 4
+Caractér : 4
+ 4
+444
+ 4
+ 4</input_output></td>
+
+</tr><tr>
+<td><input_output>9
+6
+6
+5
+4
+5
+4
+5
+6
+5
+4
+5</input_output></td>
+<td><input_output>Altura   : 9
+	Valor errado
+Altura   : 6
+Caractér : 6
+  6
+ 666
+66666
+  6
+  6
+  6</input_output></td>
+
+</tr><tr>
+<td><input_output>-3
+5
+7
+4
+5
+4
+6
+6
+5
+6
+6
+4
+F</input_output></td>
+<td><input_output>Altura   : -3
+	Valor errado
+Altura   : 5
+	Valor errado
+Altura   : 7
+	Valor errado
+Altura   : 4
+Caractér : 5
+ 5
+555
+ 5
+ 5</input_output></td>
+
+</tr><tr>
+<td><input_output>3
+9
+4
+5
+6
+5
+6
+4
+4
+4
+5
+4
+T</input_output></td>
+<td><input_output>Altura   : 3
+	Valor errado
+Altura   : 9
+	Valor errado
+Altura   : 4
+Caractér : 5
+ 5
+555
+ 5
+ 5</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+4
+4
+5
+4
+5
+6
+5
+5
+8</input_output></td>
+<td><input_output>Altura   : -1
+	Valor errado
+Altura   : 4
+Caractér : 4
+ 4
+444
+ 4
+ 4</input_output></td>
+
+</tr><tr>
+<td><input_output>-1
+-7
+-3
+4
+6
+4
+4
+5
+5
+4
+6
+5</input_output></td>
+<td><input_output>Altura   : -1
+	Valor errado
+Altura   : -7
+	Valor errado
+Altura   : -3
+	Valor errado
+Altura   : 4
+Caractér : 6
+ 6
+666
+ 6
+ 6</input_output></td>
+
+</tr>
+    </tbody>
+</table>
+<font face="verdana" color=#C8C8C8 size=2>
+Algorithmi 22.05 Student version 
+
+(c) Antonio M@nso 2022
+Instituto Politécnico de Tomar   - All rights reserved
+
+</body>
+</html>
